@@ -1,6 +1,8 @@
 import '../styles/index.scss';
 import $ from 'jquery';
 
+// Menu
+
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
     

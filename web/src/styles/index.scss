@@ -1,6 +1,8 @@
-@import 'variables';
+@import "variables";
+@import "~bootstrap/scss/bootstrap";
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   font-family: Helvetica;
@@ -18,14 +20,15 @@ html, body {
       padding: 10px 0;
       a {
         text-decoration: none;
-        color: #fff;
-        transition: all .3s ease-in-out;
+        color: #000;
+        transition: all 0.3s ease-in-out;
+        font-size: 1.5rem;
         &.active {
-          color: #002961;
+          color: #fff;
           padding-left: 20px;
-          transition: all .3s ease-in-out;
+          transition: all 0.3s ease-in-out;
           font-weight: 700;
-          border-left: 3px solid #002961;
+          border-left: 3px solid #fff;
         }
       }
     }
@@ -42,80 +45,10 @@ html, body {
   float: right;
   box-sizing: border-box;
   color: #636363;
-}
 
-.logo-wrapper {
-  width: 80%;
-  margin: 20px auto;
-  img {
-    width: 100%;
-    object-fit: cover;
-  }
-}
-
-.container {
-  border-bottom: 1px solid #d4d4d4;
-  margin: 20px auto;
-  padding: 0 0 50px 0;
-}
-
-.logo-varation-item {
-  width: 20%;
-  margin: 20px;
-  display: inline-block;
-  img {
-    width: 100%;
-    object-fit: cover;
-    border: 1px solid #eaeaea;
-  }
-  h3 {
-    text-align: center;
-    font-size: 15px;
-  }
-}
-
-.colour {
-  height: 150px;
-  width: 100%;
-  background: red;
-  margin: 0 auto;
-}
-
-.colour-var-item {
-  border: 1px solid #d4d4d4;
-  padding: 10px;
-  display: inline-block;
-  margin: 0 10px;
-  width: 20%;
-  h3 {
-    font-size: 15px;
-  }
-  h4 {
-    font-size: 12px;
-  }
-  .colour {
-    border: 1px solid #d4d4d4;
-  }
-}
-
-.colour-variation-wrapper {
-  margin: 40px auto;
-}
-
-.font-demo {
-  font-family: 'Ubuntu', sans-serif;
-  padding: 10px 20px;
-  border: 1px solid #d4d4d4;
-}
-
-.img-used-item {
-  display: inline-block;
-  width: 15%;
-  padding: 20px;
-  box-sizing: border-box;
-  border: 1px solid #d4d4d4;
-  img {
-    width: 100%;
-    object-fit: cover;
+  .container {
+    border-bottom: 1px solid #d4d4d4;
+    margin: 20px auto;
+    padding: 10px 0 50px 0;
   }
 }

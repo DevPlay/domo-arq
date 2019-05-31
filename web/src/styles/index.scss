@@ -1,3 +1,5 @@
+@import 'variables';
+
 html, body {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@ html, body {
 }
 
 .side-bar-menu {
-  background: #00ade5;
+  background: $color-principal;
   width: 20%;
   height: 100%;
   display: inline-block;

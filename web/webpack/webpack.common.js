@@ -25,9 +25,6 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
     }),
-    new webpack.ProvidePlugin({
-      Popper: ['popper.js', 'default']
-    }),
   ],
   resolve: {
     alias: {

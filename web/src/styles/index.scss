@@ -1,51 +1,6 @@
 @import 'variables';
 @import '~bootstrap/scss/bootstrap';
 
-// .side-bar-menu {
-//   background: $color-principal;
-//   width: 20%;
-//   height: 100%;
-//   display: inline-block;
-//   position: fixed;
-//   ul {
-//     li {
-//       list-style-type: none;
-//       padding: 10px 0;
-//       a {
-//         text-decoration: none;
-//         color: #000;
-//         transition: all 0.3s ease-in-out;
-//         font-size: 1.5rem;
-//         &.active {
-//           color: #fff;
-//           padding-left: 20px;
-//           transition: all 0.3s ease-in-out;
-//           font-weight: 700;
-//           border-left: 3px solid #fff;
-//         }
-//       }
-//     }
-//     padding: 10px 20px;
-//     color: #fff;
-//   }
-// }
-
-// .content-main-right {
-//   width: 80%;
-//   right: 0;
-//   padding: 20px 40px;
-//   display: inline-block;
-//   float: right;
-//   box-sizing: border-box;
-//   color: #636363;
-
-//   .container {
-//     border-bottom: 1px solid #d4d4d4;
-//     margin: 20px auto;
-//     padding: 10px 0 50px 0;
-//   }
-// }
-
 body {
   background: #fff;
   margin: 0;
@@ -59,17 +14,9 @@ main {
   height: 100vh;
 
   .helper {
-    // background: rgba(0, 0, 0, 0.2);
-    // color: $color-1st;
     position: absolute;
-    // top: 50%;
-    // left: 50%;
-    // transform: translate3d(-50%, -50%, 0);
-    // padding: 1.2em 2em;
-    // text-align: center;
     border-radius: 20px;
     font-size: 1rem;
-    // font-weight: bold;
   }
 }
 
@@ -91,21 +38,29 @@ main {
   }
 
   .avatar {
-    background: rgba(0, 0, 0, 0.1);
-    padding: 2em 0.5em;
-    text-align: center;
-
-    img {
-      width: 100px;
-      border-radius: 50%;
-      overflow: hidden;
-      border: 4px solid;
-      box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.2);
+    background: #000;
+    color: #fff;
+    text-align: left;
+    font-size: 1rem;
+    padding: 5% 5% 0% 5%;
+    height: 100vh;
+    ul {
+      list-style: none;
+      li {
+        height: auto;
+        padding: 0.5em 1em 0em 1.5em;
+        a {
+          color: #fff;
+        }
+      }
     }
-
-    h2 {
-      font-weight: normal;
-      margin-bottom: 0;
+    .social-text {
+      padding-left: 5px;
+    }
+    .social-icon {
+      width: 15px;
+      height: 15px;
+      margin-bottom: 5px;
     }
   }
 
@@ -117,8 +72,6 @@ main {
     li {
       height: 50px;
       padding: 0.5em 1em 0.5em 1.5em;
-      // font-size: 0.95em;
-      // font-weight: regular;
       background-repeat: no-repeat;
       background-position: left 15px center;
       background-size: auto 20px;
@@ -179,7 +132,6 @@ main {
         position: relative;
 
         span {
-          //display:none;
           opacity: 0;
           position: absolute;
           background: rgba(0, 0, 0, 0.5);

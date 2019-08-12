@@ -1,12 +1,66 @@
-@import 'variables';
+@import '_variables';
 @import '~bootstrap/scss/bootstrap';
+
+*{
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Open Sans',
+  Helvetica Neue,
+  Helvetica,
+  Arial,
+  sans-serif;
+}
 
 body {
   background: #fff;
   margin: 0;
-  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #000;
   padding-left: 240px;
+}
+#estudio , #proyectos ,#premios, #testimonio ,#contacto {
+  padding-left: 15vh;
+}
+.tituloSeccion{
+  margin-top: 5vh;
+  
+}
+
+#estudio{
+  overflow: hidden;
+
+}
+
+.elEquipo{
+  background-image: url="(../images/equipo.jpg)";
+  float: left;
+  height: 70vh;
+  img {
+  width: 480px; 
+  }
+}
+
+.fraseEstudio{
+  float: right;
+  width: 480px;
+  position: relative;
+  padding-right: 100px;
+  .botonEquipo {
+    position: absolute;
+    right: 20%;
+    bottom: -157%;
+  }
+
+
+}
+
+.logoDomo{
+  position:fixed;
+  top:2vh;
+  width: 80px;
+  height: 80px;
+  left: 31vh;
+  z-index: 90;
+
 }
 
 main {

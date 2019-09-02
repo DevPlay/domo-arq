@@ -20,7 +20,7 @@ body {
 #contacto {
   padding-left: 15vh;
 }
-.tituloSeccion {
+.titulo-seccion {
   margin-top: 5vh;
 }
 
@@ -28,7 +28,7 @@ body {
   overflow: hidden;
 }
 
-.elEquipo {
+.el-equipo {
   background-image: url= '(../images/equipo.jpg)';
   float: left;
   height: 70vh;
@@ -37,19 +37,19 @@ body {
   }
 }
 
-.fraseEstudio {
+.frase-estudio {
   float: right;
   width: 480px;
   position: relative;
   padding-right: 100px;
-  .botonEquipo {
+  .boton-equipo {
     position: absolute;
     right: 20%;
     bottom: -157%;
   }
 }
 
-.logoDomo {
+.logo-domo {
   position: fixed;
   top: 2vh;
   width: 80px;

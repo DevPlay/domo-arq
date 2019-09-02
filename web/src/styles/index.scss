@@ -1,14 +1,10 @@
 @import '_variables';
 @import '~bootstrap/scss/bootstrap';
 
-*{
+* {
   margin: 0 auto;
   box-sizing: border-box;
-  font-family: 'Open Sans',
-  Helvetica Neue,
-  Helvetica,
-  Arial,
-  sans-serif;
+  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -17,29 +13,31 @@ body {
   color: #000;
   padding-left: 240px;
 }
-#estudio , #proyectos ,#premios, #testimonio ,#contacto {
+#estudio,
+#proyectos,
+#premios,
+#testimonio,
+#contacto {
   padding-left: 15vh;
 }
-.tituloSeccion{
+.tituloSeccion {
   margin-top: 5vh;
-  
 }
 
-#estudio{
+#estudio {
   overflow: hidden;
-
 }
 
-.elEquipo{
-  background-image: url="(../images/equipo.jpg)";
+.elEquipo {
+  background-image: url= '(../images/equipo.jpg)';
   float: left;
   height: 70vh;
   img {
-  width: 480px; 
+    width: 480px;
   }
 }
 
-.fraseEstudio{
+.fraseEstudio {
   float: right;
   width: 480px;
   position: relative;
@@ -49,18 +47,15 @@ body {
     right: 20%;
     bottom: -157%;
   }
-
-
 }
 
-.logoDomo{
-  position:fixed;
-  top:2vh;
+.logoDomo {
+  position: fixed;
+  top: 2vh;
   width: 80px;
   height: 80px;
   left: 31vh;
   z-index: 90;
-
 }
 
 main {
@@ -146,6 +141,41 @@ main {
     }
   }
 }
+
+// Seccion Portada
+
+.carousel-caption {
+  right: 5%;
+}
+
+.carousel-text {
+  font-size: 3rem;
+  text-align: left;
+  font-weight: 600;
+  margin-left: 50%;
+  margin-bottom: 10%;
+  color: #000;
+  background-color: rgba(160, 160, 160, 0.5);
+}
+
+.carousel-indicators {
+  justify-content: right;
+  right: -10%;
+  li {
+    height: 10px;
+    width: 10px;
+  }
+  .active {
+    background-color: $color-principal;
+  }
+}
+
+.container-portada {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+// Media Queries
 
 @media screen and (max-width: 768px) {
   body {

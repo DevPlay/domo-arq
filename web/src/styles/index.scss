@@ -185,6 +185,12 @@ main {
   transition: all 0.5s;
 }
 
+.radio-label {
+  font-size: 16px;
+  color: #474747;
+  margin-left: 2%;
+}
+
 .mat-input {
   position: relative;
   background: transparent;
@@ -198,6 +204,10 @@ main {
 .mat-div {
   padding: 30px 0 0 0;
   position: relative;
+}
+
+.novedades {
+  padding: 30px 0 0 0;
 }
 
 .mat-div:after,
@@ -228,6 +238,66 @@ main {
 .is-completed .mat-label {
   font-size: 12px;
   transform: translateY(0);
+}
+
+.dropdown {
+  .btn {
+    padding-left: 0px;
+    padding-bottom: 16px;
+    color: #e2e2e2;
+  }
+}
+
+.dropdown.show {
+  .btn {
+    color: $color-principal;
+  }
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    color: $color-principal;
+  }
+}
+
+.contact {
+  padding-left: 0px;
+  margin-top: 50%;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+ul {
+  list-style: none;
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: $color-principal;
+  }
+  li {
+    p {
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.send-button {
+  padding: 10%;
+  .btn {
+    width: 400px;
+    font-size: 1.2rem;
+    background-color: $color-principal;
+    color: #fff !important;
+    border-radius: 0px;
+  }
+  .btn:hover {
+    cursor: pointer;
+    background-color: white;
+    border-color: $color-principal;
+    color: $color-principal !important;
+  }
+  // TODO: Hacer una transicion o animacion para el hover
 }
 
 // Inicio footer
@@ -462,6 +532,18 @@ footer .designedBy p {
   }
   .carousel-text {
     font-size: 1rem;
+  }
+
+  .contact {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .send-button {
+    padding: 10% 0% 10% 0%;
+  }
+
+  #contacto {
+    padding-left: 0px;
   }
 }
 

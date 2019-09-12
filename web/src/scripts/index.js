@@ -1,4 +1,6 @@
 import '../styles/index.scss';
+import '../styles/master.scss';
+import '../styles/seccion_equipo.scss';
 // import $ from 'jquery';
 // import 'popper.js';
 import 'bootstrap';

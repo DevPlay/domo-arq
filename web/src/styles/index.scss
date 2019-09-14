@@ -60,8 +60,8 @@ body {
       padding-left: 30px;
       padding-right: 30px;
       padding-bottom: 19px;
-      margin-right: -48px;
-      margin-left: 20px;
+      margin-right: -45px;
+      margin-left: 0px;
     }
   }
 }
@@ -142,7 +142,7 @@ main {
   ul {
     list-style: none;
     padding: 0.5em 0;
-    margin: 30px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
 
     li {
       height: 50px;
@@ -214,6 +214,38 @@ main {
   }
 
 }
+
+//seccion premios{
+
+  #premios{
+    .content {
+      display: flex;
+      height: 70vh;
+      width: 100%;
+      // background-color: red;
+      .miembro {
+        display: flex;
+        justify-content: space-between;
+        margin: 5%;
+        height: 300px;
+        width: 300px;
+        // background-color: #474747;
+        border: 0.5px solid $color-secundario;
+
+        .more {
+          padding: 5px;
+          text-align: center;
+          color: #fff;
+          // flex-direction: row;
+          align-items: flex-end;
+          justify-content: flex-start;
+          height: 40px;
+          width: 40px;
+          background-color: $color-secundario;
+        }
+      }
+    }
+  }
 
 // Seccion Portada
 
@@ -391,7 +423,7 @@ ul {
       margin: 0;
       padding: 0;
       display: flex;
-      background-color: blue;
+      background-color: rgb(255, 255, 255);
       // .close{
       //   flex-direction:column;
       //   justify-content: space-between;
@@ -406,6 +438,7 @@ ul {
         font-size: 1em;
         margin-left: 15%;
         text-align: left;
+        color: $color-secundario;
       }
       .arrows{
         display: flex;
@@ -435,6 +468,10 @@ ul {
       
     }
   }
+}
+#reviews {
+  margin-left: 5vh;
+  color: white;
 }
 
 .send-button {

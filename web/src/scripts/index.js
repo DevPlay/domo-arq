@@ -2,6 +2,7 @@ import '../styles/index.scss';
 import '../styles/master.scss';
 import '../styles/seccion_equipo.scss';
 // import $ from 'jquery';
+import $ from 'jquery';
 // import 'popper.js';
 import 'bootstrap';
 
@@ -46,3 +47,19 @@ import 'bootstrap';
 //         }
 //     });
 // }
+
+$('.mat-input').focus(function() {
+  $(this)
+    .parent()
+    .addClass('is-active is-completed');
+});
+
+$('.mat-input').focusout(function() {
+  if ($(this).val() === '')
+    $(this)
+      .parent()
+      .removeClass('is-completed');
+  $(this)
+    .parent()
+    .removeClass('is-active');
+});

@@ -104,6 +104,14 @@
                 <h4 class="carousel-text">Diseñamos </br>espacios la vida</h4>
               </div>
             </div>
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
           </div>
           <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -115,6 +123,7 @@
           </a>
         </div>
       </div>
+
     </section>
 
     <section id="estudio" class="secciones container-fluid">
@@ -252,22 +261,95 @@
 
 
           </div>
+
+      <div id="contacto" class="container">
+        <h2 class="titulo-seccion"> <b>Contanos <br> TU PROYECTO</h2>
+        <section class="section">
+          <div class="row">
+            <div class="col-md-8 col-xl-8">
+              <form id="contact-form" name="contact-form" action="" method="POST">
+
+                <div class="row">
+                  <div class="col-md-10">
+                    <div class="md-form">
+                      <div class="mat-div">
+                        <label for="name" class="mat-label">NOMBRE</label>
+                        <input type="text" class="mat-input">
+                      </div>
+
+                      <div class="mat-div">
+                        <label for="email" class="mat-label">EMAIL</label>
+                        <input type="email" class="mat-input">
+                      </div>
+
+                      <div class="mat-div">
+                        <div class="dropdown">
+                          <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            PROYECTO DE INTERÉS (opcional)
+                          </button>
+                          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Proyecto #1</a>
+                            <a class="dropdown-item" href="#">Proyecto #2</a>
+                            <a class="dropdown-item" href="#">Proyecto #3</a>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mat-div">
+                        <label for="message" class="mat-label">MENSAJE</label>
+                        <input type="text" class="mat-input">
+                      </div>
+
+                      <div class="novedades">
+                        <input type="radio" autocomplete="off">
+                        <label class="radio-label">QUIERO RECIBIR NOVEDADES</label>
+                      </div>
+
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div class="col-md-4 col-xl-4">
+              <ul class="contact">
+                <li>
+                  <p><a href="https://goo.gl/maps/bbxSMYYWtmDBp6tL6">General Savio 2891 - 7° Piso</a></p>
+                </li>
+                <li>
+                  <p>CP1650 Villa Mailpú,</p>
+                </li>
+                <li>
+                  <p>Argentina</p>
+                </li>
+                <li>
+                  <p>Tel: (54-11) 4724-3747</p>
+                </li>
+              </ul>
+            </div>
+
+            <div class="send-button">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+              <!-- TODO: manejar este evento cuando el formulario este online -->
+            </div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+    <footer>
+      <div class="col-xs-12 col-md-12 col-lg-12" style="background-color:#000129">
+        <div class="designedBy">
+          <p>Copyright © 2019 - Buenos Aires - designed by <a href="https://www.devplay.com.ar"><img
+                src="./images/Recurso 2.svg" alt="Logo DevPlay"></a>
+          </p>
         </div>
 
       </div>
 
-    </section>
-
-    <section id="contacto" class="secciones container-fluid">
-      <h2 class="titulo-seccion"> <b>Contacto</b> </h2>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum augue sit
-        amet dui mollis, vel congue justo tristique. Nulla facilisi. Vivamus tincidunt cursus
-        nisi, non auctor eros varius lobortis. Etiam finibus justo vel dolor facilisis
-        consectetur quis vitae libero. Aenean eget mattis orci.
-      </p>
-    </section>
-  </div>
-</body>
+    </footer>
+    
+  </body>
 
 </html>

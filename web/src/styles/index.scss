@@ -1,5 +1,5 @@
 @import '_variables';
-@import '/node_modules/bootstrap/dist/bootstrap.min.css';
+// @import '/node_modules/bootstrap/dist/bootstrap.min.css';
 
 * {
   margin: 0 auto;
@@ -60,17 +60,21 @@ body {
       padding-left: 30px;
       padding-right: 30px;
       padding-bottom: 19px;
+      margin-right: -45px;
+      margin-left: 0px;
     }
   }
 }
 
 .logo-domo {
-  position: fixed;
-  top: 2vh;
-  width: 80px;
-  height: 80px;
-  left: 31vh;
-  z-index: 90;
+  img {
+    position: fixed;
+    top: 2vh;
+    width: 80px;
+    height: 80px;
+    left: 31vh;
+    z-index: 90;
+  }
 }
 
 main {
@@ -137,7 +141,7 @@ main {
   ul {
     list-style: none;
     padding: 0.5em 0;
-    margin: 30px 0px 0px 0px;
+    margin: 40px 0px 0px 0px;
 
     li {
       height: 50px;
@@ -168,18 +172,19 @@ main {
       height: 80vh;
       width: 30vw;
       padding-right: 5%;
-      background-color: aquamarine;
+      background-color: rgb(255, 255, 255);
       font-size: 1.2rem;
     }
     #btn-proyecto {
       align-items: flex-end;
-      right: 20%;
-      bottom: -157%;
+      position: absolute;
       height: 60px;
       width: 200px;
       background-color: $color-principal;
       font-weight: bold;
       border-radius: 0px;
+      right: 60%;
+      bottom: -185%;
 
       a {
         height: 60px;
@@ -189,6 +194,8 @@ main {
         padding-left: 30px;
         padding-right: 30px;
         padding-bottom: 19px;
+        margin-right: -48px;
+        margin-left: 20px;
       }
     }
     .project-pic {
@@ -197,6 +204,45 @@ main {
       background-color: rgb(197, 212, 55);
       background-position: center;
       background-size: cover;
+    }
+  }
+  .project-pic {
+    height: 80vh;
+    width: 30vw;
+    background-color: rgb(197, 212, 55);
+    background-position: center;
+    background-size: cover;
+  }
+}
+
+//seccion premios{
+
+#premios {
+  .content {
+    display: flex;
+    height: 70vh;
+    width: 100%;
+    // background-color: red;
+    .miembro {
+      display: flex;
+      justify-content: space-between;
+      margin: 5%;
+      height: 300px;
+      width: 300px;
+      // background-color: #474747;
+      border: 0.5px solid $color-secundario;
+
+      .more {
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+        // flex-direction: row;
+        align-items: flex-end;
+        justify-content: flex-start;
+        height: 40px;
+        width: 40px;
+        background-color: $color-secundario;
+      }
     }
   }
 }
@@ -419,7 +465,110 @@ main {
           }
         }
       }
+      .contact {
+        padding-left: 0px;
+        margin-top: 50%;
+        font-size: 1.5rem;
+      }
 
+      ul {
+        list-style: none;
+        a {
+          color: #000;
+        }
+        a:hover {
+          color: $color-principal;
+        }
+        li {
+          p {
+            margin-bottom: 0px;
+          }
+        }
+      }
+      // seccion testimonios
+
+      #testimonio {
+        .review_content {
+          margin: 0;
+          padding: 0;
+          display: flex;
+          width: 800px;
+          height: 500px;
+          background-color: aqua;
+
+          .reviewer {
+            margin: 0;
+            padding: 0;
+            justify-content: baseline;
+            .reviewer_pic {
+              height: 70%;
+              margin: 0;
+              img {
+                margin: 0;
+                height: 100%;
+              }
+            }
+            .reviewer_name {
+              height: 30%;
+              padding: 10%;
+              background-color: #000;
+            }
+          }
+          .review {
+            display: flex;
+            flex-direction: row;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            background-color: rgb(255, 255, 255);
+            // .close{
+            //   flex-direction:column;
+            //   justify-content: space-between;
+            //   height: 40px;
+            //   width: 40px;
+            //   background-color: #000;
+            //   padding: 1%;
+            // }
+            .review_text {
+              align-self: center;
+              // justify-content:flex-start;
+              font-size: 1em;
+              margin-left: 15%;
+              text-align: left;
+              color: $color-secundario;
+            }
+            .arrows {
+              display: flex;
+              align-items: flex-end;
+              flex-direction: row;
+
+              .arrow_left {
+                flex-direction: row;
+                align-items: flex-end;
+                height: 60px;
+                width: 60px;
+                padding: 15%;
+                background-color: $color-principal;
+                color: $color-secundario;
+              }
+
+              .arrow_right {
+                flex-direction: row;
+                align-items: flex-end;
+                height: 60px;
+                width: 60px;
+                padding: 15%;
+                background-color: $color-secundario;
+                color: white;
+              }
+            }
+          }
+        }
+      }
+      #reviews {
+        margin-left: 5vh;
+        color: white;
+      }
       .send-button {
         padding: 10%;
         .btn {

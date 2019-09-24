@@ -1,0 +1,7 @@
+// @import '~bootstrap/scss/bootstrap';
+@import '_variables';
+// @import 'seccion_equipo';
+<<<<<<< HEAD
+=======
+
+>>>>>>> demo

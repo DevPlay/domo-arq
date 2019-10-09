@@ -215,34 +215,40 @@ main {
   }
 }
 
-//seccion premios{
+//seccion premios
 
 #premios {
   .content {
     display: flex;
-    height: 70vh;
+    height: 100vh;
     width: 100%;
-    // background-color: red;
     .miembro {
       display: flex;
       justify-content: space-between;
-      margin: 5%;
-      height: 300px;
-      width: 300px;
-      // background-color: #474747;
+      height: 250px;
+      width: 250px;
       border: 0.5px solid $color-secundario;
-
-      .more {
-        padding: 5px;
+      margin: 10px 5px 0px 0px;
+      .texto {
         text-align: center;
-        color: #fff;
-        // flex-direction: row;
-        align-items: flex-end;
-        justify-content: flex-start;
-        height: 40px;
-        width: 40px;
-        background-color: $color-secundario;
+        padding: 5%;
+        margin-top: 10%;
       }
+      .texto:hover {
+        font-weight: 600;
+      }
+    }
+    .more {
+      position: absolute;
+      bottom: 0;
+      padding: 5px;
+      text-align: center;
+      color: #fff;
+      align-items: flex-end;
+      justify-content: flex-start;
+      height: 40px;
+      width: 40px;
+      background-color: $color-secundario;
     }
   }
 }

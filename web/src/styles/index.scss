@@ -250,6 +250,15 @@ main {
       width: 40px;
       background-color: $color-secundario;
     }
+    .close-modal-btn {
+      text-align: center;
+      color: #fff;
+      align-items: flex-end;
+      justify-content: flex-start;
+      height: 10px;
+      width: 10px;
+      background-color: $color-secundario;
+    }
   }
 }
 

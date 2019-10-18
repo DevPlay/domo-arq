@@ -49,6 +49,7 @@
   "dependencies": {
     "@babel/polyfill": "^7.4.0",
     "bootstrap": "^4.3.1",
+    "braces": "^3.0.2",
     "core-js": "^3.0.1",
     "copy-webpack-plugin": "^5.0.3",
     "clean-webpack-plugin": "^2.0.2",

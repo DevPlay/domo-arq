@@ -1,3 +1,19 @@
 // @import '~bootstrap/scss/bootstrap';
 @import '_variables';
-// @import 'seccion_equipo';
+@import 'index';
+@import 'seccion_equipo';
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    font-family: 'Open Sans',
+        Helvetica Neue,
+        Helvetica,
+        Arial,
+        sans-serif;
+}

@@ -1,12 +1,4 @@
-* {
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-}
-
 body {
-  background: #fff;
-  margin: 0;
   color: #000;
   padding-left: 240px;
 }
@@ -81,7 +73,7 @@ main {
   height: 100vh;
 }
 
-main .helper {
+main .sections-content {
   position: absolute;
   border-radius: 20px;
   font-size: 1rem;
@@ -110,7 +102,11 @@ main .helper {
 }
 
 .menu .menu-items {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 70vh;
+  padding: 24px;
 }
 
 .menu .menu-social {
@@ -120,6 +116,7 @@ main .helper {
   font-size: 1rem;
   padding: 5% 0% 5% 0%;
   height: 30vh;
+  justify-content: center;
 }
 
 .menu .menu-social ul {
@@ -136,13 +133,13 @@ main .helper {
 }
 
 .menu .menu-social .social-text {
-  padding-left: 5px;
+  padding-left: 6px;
+  font-weight: 400;
 }
 
 .menu .menu-social .social-icon {
   width: 15px;
-  height: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 3px;
 }
 
 .menu ul {
@@ -152,8 +149,7 @@ main .helper {
 }
 
 .menu ul li {
-  height: 50px;
-  padding: 0.5em 1em 0.5em 1.5em;
+  padding: 0.8em 0.5em 0.8em 1.2em;
   background-repeat: no-repeat;
   background-position: left 15px center;
   background-size: auto 20px;
@@ -213,22 +209,42 @@ main .helper {
   background-size: cover;
 }
 
+#proyectos .project-pic {
+  height: 80vh;
+  width: 30vw;
+  background-color: #c5d437;
+  background-position: center;
+  background-size: cover;
+}
+
 #premios .content {
   display: flex;
-  height: 70vh;
+  height: 100vh;
   width: 100%;
 }
 
 #premios .content .miembro {
   display: flex;
   justify-content: space-between;
-  margin: 5%;
-  height: 300px;
-  width: 300px;
+  height: 250px;
+  width: 250px;
   border: 0.5px solid #000;
+  margin: 10px 5px 0px 0px;
 }
 
-#premios .content .miembro .more {
+#premios .content .miembro .texto {
+  text-align: center;
+  padding: 5%;
+  margin-top: 10%;
+}
+
+#premios .content .miembro .texto:hover {
+  font-weight: 600;
+}
+
+#premios .content .more {
+  position: absolute;
+  bottom: 0;
   padding: 5px;
   text-align: center;
   color: #fff;
@@ -244,7 +260,7 @@ main .helper {
 }
 
 .carousel-text {
-  font-size: 4rem;
+  font-size: 3rem;
   text-align: left;
   font-weight: bold;
   margin-left: 40%;
@@ -272,105 +288,6 @@ main .helper {
 .container-portada {
   padding-left: 0px;
   padding-right: 0px;
-}
-
-.mat-label {
-  display: block;
-  font-size: 16px;
-  transform: translateY(25px);
-  color: #e2e2e2;
-  transition: all 0.5s;
-}
-
-.radio-label {
-  font-size: 16px;
-  color: #474747;
-  margin-left: 2%;
-}
-
-.mat-input {
-  position: relative;
-  background: transparent;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 8px 0;
-  font-size: 16px;
-}
-
-.mat-div {
-  padding: 30px 0 0 0;
-  position: relative;
-}
-
-.novedades {
-  padding: 30px 0 0 0;
-}
-
-.mat-div:after,
-.mat-div:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #e2e2e2;
-  bottom: 0;
-  left: 0;
-  transition: all 0.5s;
-}
-
-.mat-div::after {
-  transform: scaleX(0);
-}
-
-.is-active::after {
-  transform: scaleX(1);
-}
-
-.is-active .mat-label {
-  color: #ff0a7e;
-}
-
-.is-completed .mat-label {
-  font-size: 12px;
-  transform: translateY(0);
-}
-
-.dropdown .btn {
-  padding-left: 0px;
-  padding-bottom: 16px;
-  color: #e2e2e2;
-}
-
-.dropdown.show .btn {
-  color: #ff0a7e;
-}
-
-.dropdown-menu .dropdown-item {
-  color: #ff0a7e;
-}
-
-.contact {
-  padding-left: 0px;
-  margin-top: 50%;
-  font-size: 1.5rem;
-}
-
-ul {
-  list-style: none;
-}
-
-ul a {
-  color: #000;
-}
-
-ul a:hover {
-  color: #ff0a7e;
-}
-
-ul li p {
-  margin-bottom: 0px;
 }
 
 #testimonio .review_content {
@@ -410,7 +327,7 @@ ul li p {
   margin: 0;
   padding: 0;
   display: flex;
-  background-color: white;
+  background-color: blue;
 }
 
 #testimonio .review_content .review .review_text {
@@ -418,7 +335,6 @@ ul li p {
   font-size: 1em;
   margin-left: 15%;
   text-align: left;
-  color: #000;
 }
 
 #testimonio .review_content .review .arrows {
@@ -447,16 +363,212 @@ ul li p {
   color: white;
 }
 
-#reviews {
+#testimonio .review_content .review .mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color: #e2e2e2;
+  transition: all 0.5s;
+}
+
+#testimonio .review_content .review .radio-label {
+  font-size: 16px;
+  color: #474747;
+  margin-left: 2%;
+}
+
+#testimonio .review_content .review .mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+#testimonio .review_content .review .mat-div {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+
+#testimonio .review_content .review .novedades {
+  padding: 30px 0 0 0;
+}
+
+#testimonio .review_content .review .mat-div:after,
+#testimonio .review_content .review .mat-div:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#testimonio .review_content .review .mat-div::after {
+  transform: scaleX(0);
+}
+
+#testimonio .review_content .review .is-active::after {
+  transform: scaleX(1);
+}
+
+#testimonio .review_content .review .is-active .mat-label {
+  color: #ff0a7e;
+}
+
+#testimonio .review_content .review .is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+#testimonio .review_content .review .dropdown .btn {
+  padding-left: 0px;
+  padding-bottom: 16px;
+  color: #e2e2e2;
+}
+
+#testimonio .review_content .review .dropdown.show .btn {
+  color: #ff0a7e;
+}
+
+#testimonio .review_content .review .dropdown-menu .dropdown-item {
+  color: #ff0a7e;
+}
+
+#testimonio .review_content .review .contact {
+  padding-left: 0px;
+  margin-top: 50%;
+  font-size: 1.2rem;
+  font-weight: 200;
+}
+
+#testimonio .review_content .review ul {
+  list-style: none;
+}
+
+#testimonio .review_content .review ul a {
+  color: #000;
+}
+
+#testimonio .review_content .review ul a:hover {
+  color: #ff0a7e;
+}
+
+#testimonio .review_content .review ul li p {
+  margin-bottom: 0px;
+}
+
+#testimonio .review_content .review .contact {
+  padding-left: 0px;
+  margin-top: 50%;
+  font-size: 1.5rem;
+}
+
+#testimonio .review_content .review ul {
+  list-style: none;
+}
+
+#testimonio .review_content .review ul a {
+  color: #000;
+}
+
+#testimonio .review_content .review ul a:hover {
+  color: #ff0a7e;
+}
+
+#testimonio .review_content .review ul li p {
+  margin-bottom: 0px;
+}
+
+#testimonio .review_content .review #testimonio .review_content {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  width: 800px;
+  height: 500px;
+  background-color: aqua;
+}
+
+#testimonio .review_content .review #testimonio .review_content .reviewer {
+  margin: 0;
+  padding: 0;
+  justify-content: baseline;
+}
+
+#testimonio .review_content .review #testimonio .review_content .reviewer .reviewer_pic {
+  height: 70%;
+  margin: 0;
+}
+
+#testimonio .review_content .review #testimonio .review_content .reviewer .reviewer_pic img {
+  margin: 0;
+  height: 100%;
+}
+
+#testimonio .review_content .review #testimonio .review_content .reviewer .reviewer_name {
+  height: 30%;
+  padding: 10%;
+  background-color: #000;
+}
+
+#testimonio .review_content .review #testimonio .review_content .review {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  background-color: white;
+}
+
+#testimonio .review_content .review #testimonio .review_content .review .review_text {
+  align-self: center;
+  font-size: 1em;
+  margin-left: 15%;
+  text-align: left;
+  color: #000;
+}
+
+#testimonio .review_content .review #testimonio .review_content .review .arrows {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+}
+
+#testimonio .review_content .review #testimonio .review_content .review .arrows .arrow_left {
+  flex-direction: row;
+  align-items: flex-end;
+  height: 60px;
+  width: 60px;
+  padding: 15%;
+  background-color: #ff0a7e;
+  color: #000;
+}
+
+#testimonio .review_content .review #testimonio .review_content .review .arrows .arrow_right {
+  flex-direction: row;
+  align-items: flex-end;
+  height: 60px;
+  width: 60px;
+  padding: 15%;
+  background-color: #000;
+  color: white;
+}
+
+#testimonio .review_content .review #reviews {
   margin-left: 5vh;
   color: white;
 }
 
-.send-button {
+#testimonio .review_content .review .send-button {
   padding: 10%;
 }
 
-.send-button .btn {
+#testimonio .review_content .review .send-button .btn {
   width: 400px;
   font-size: 1.2rem;
   background-color: #ff0a7e;
@@ -464,25 +576,25 @@ ul li p {
   border-radius: 0px;
 }
 
-.send-button .btn:hover {
+#testimonio .review_content .review .send-button .btn:hover {
   cursor: pointer;
   background-color: white;
   border-color: #ff0a7e;
   color: #ff0a7e !important;
 }
 
-footer {
+#testimonio .review_content .review footer {
   border-top: 2px;
   border-color: black;
   margin-bottom: 40px;
 }
 
-footer img {
+#testimonio .review_content .review footer img {
   width: 100px;
 }
 
-footer .designedBy p {
-  margin-top: 40px;
+#testimonio .review_content .review footer .designedBy p {
+  margin-bottom: 10px;
   text-align: center;
   padding: 10px;
   color: white;
@@ -490,22 +602,22 @@ footer .designedBy p {
 }
 
 @media screen and (max-width: 1200px) {
-  .carousel-text {
+  #testimonio .review_content .review .carousel-text {
     font-size: 1.5rem;
   }
 }
 
 @media screen and (max-width: 768px) {
-  body {
+  #testimonio .review_content .review body {
     padding-left: 35px;
   }
-  .menu {
+  #testimonio .review_content .review .menu {
     width: 45px;
     /*
      * Just a quick hamburger
      */
   }
-  .menu .hamburguer-menu-trigger {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger {
     display: block;
     position: absolute;
     top: 5%;
@@ -514,7 +626,7 @@ footer .designedBy p {
     -webkit-user-select: none;
     user-select: none;
   }
-  .menu .hamburguer-menu-trigger input {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger input {
     display: block;
     width: 40px;
     height: 32px;
@@ -528,7 +640,7 @@ footer .designedBy p {
     /* and place it over the hamburger */
     -webkit-touch-callout: none;
   }
-  .menu .hamburguer-menu-trigger span {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger span {
     display: block;
     width: 33px;
     height: 4px;
@@ -540,25 +652,25 @@ footer .designedBy p {
     transform-origin: 4px 0px;
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
   }
-  .menu .hamburguer-menu-trigger span:first-child {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger span:first-child {
     transform-origin: 0% 0%;
   }
-  .menu .hamburguer-menu-trigger span:nth-last-child(2) {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger span:nth-last-child(2) {
     transform-origin: 0% 100%;
   }
-  .menu .hamburguer-menu-trigger input:checked ~ span {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger input:checked ~ span {
     opacity: 1;
     transform: rotate(45deg) translate(-2px, -1px);
   }
-  .menu .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
     opacity: 0;
     transform: rotate(0deg) scale(0.2, 0.2);
   }
-  .menu .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
     opacity: 1;
     transform: rotate(-45deg) translate(0, -1px);
   }
-  .menu .hamburguer-menu {
+  #testimonio .review_content .review .menu .hamburguer-menu {
     position: absolute;
     width: 300px;
     margin: -100px 0 0 0;
@@ -572,13 +684,13 @@ footer .designedBy p {
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   }
-  .menu .hamburguer-menu .hamburguer-menu-items {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-items {
     list-style: none;
     padding: 1.5em 0.5em;
     margin: 30px 0px 0px 0px;
     font-weight: 700;
   }
-  .menu .hamburguer-menu .hamburguer-menu-items li {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-items li {
     height: 50px;
     padding: 0.5em 1em 0.5em 1.5em;
     background-repeat: no-repeat;
@@ -587,13 +699,13 @@ footer .designedBy p {
     transition: all 0.15s linear;
     cursor: pointer;
   }
-  .menu .hamburguer-menu .hamburguer-menu-items li:hover {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-items li:hover {
     background-color: rgba(0, 0, 0, 0.1);
   }
-  .menu .hamburguer-menu .hamburguer-menu-items li:focus {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-items li:focus {
     outline: none;
   }
-  .menu .hamburguer-menu .hamburguer-menu-social {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-social {
     background: #000;
     color: #fff;
     text-align: left;
@@ -601,36 +713,36 @@ footer .designedBy p {
     padding: 5% 5% 0% 5%;
     height: 100vh;
   }
-  .menu .hamburguer-menu .hamburguer-menu-social ul {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-social ul {
     list-style: none;
   }
-  .menu .hamburguer-menu .hamburguer-menu-social ul li {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-social ul li {
     height: auto;
     padding: 0.5em 1em 0em 1.5em;
   }
-  .menu .hamburguer-menu .hamburguer-menu-social ul li a {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-social ul li a {
     color: #fff;
   }
-  .menu .hamburguer-menu .hamburguer-menu-social .social-text {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-social .social-text {
     padding-left: 5px;
     display: inline;
   }
-  .menu .hamburguer-menu .hamburguer-menu-social .social-icon {
+  #testimonio .review_content .review .menu .hamburguer-menu .hamburguer-menu-social .social-icon {
     width: 15px;
     height: 15px;
     margin-bottom: 5px;
   }
-  .menu .hamburguer-menu-trigger input:checked ~ ul {
+  #testimonio .review_content .review .menu .hamburguer-menu-trigger input:checked ~ ul {
     transform: scale(1, 1);
     opacity: 1;
   }
-  .menu .smartphone-menu-trigger {
+  #testimonio .review_content .review .menu .smartphone-menu-trigger {
     width: 40px;
     height: 40px;
     position: absolute;
     background: #ff0a7e;
   }
-  .menu .smartphone-menu-trigger:before, .menu .smartphone-menu-trigger:after {
+  #testimonio .review_content .review .menu .smartphone-menu-trigger:before, #testimonio .review_content .review .menu .smartphone-menu-trigger:after {
     content: '';
     width: 50%;
     height: 2px;
@@ -641,43 +753,46 @@ footer .designedBy p {
     left: 50%;
     transform: translate3d(-50%, -50%, 0);
   }
-  .menu .smartphone-menu-trigger:after {
+  #testimonio .review_content .review .menu .smartphone-menu-trigger:after {
     top: 55%;
     transform: translate3d(-50%, -50%, 0);
   }
-  .menu .menu-items {
+  #testimonio .review_content .review .menu .menu-items {
     visibility: hidden;
   }
-  .menu .menu-social {
+  #testimonio .review_content .review .menu ul li {
+    padding: 0;
+  }
+  #testimonio .review_content .review .menu .menu-social {
     padding: 0.5em;
     position: relative;
   }
-  .menu .menu-social ul li {
+  #testimonio .review_content .review .menu .menu-social ul li {
     background-position: center center;
     background-size: 30px auto;
     position: relative;
     padding: 5px 0px 0px 5px;
   }
-  .menu .menu-social ul li span {
+  #testimonio .review_content .review .menu .menu-social ul li span {
     display: none;
   }
-  .carousel-text {
+  #testimonio .review_content .review .carousel-text {
     font-size: 1rem;
   }
-  .contact {
+  #testimonio .review_content .review .contact {
     margin-top: 10%;
     text-align: center;
   }
-  .send-button {
+  #testimonio .review_content .review .send-button {
     padding: 10% 0% 10% 0%;
   }
-  #contacto {
+  #testimonio .review_content .review #contacto {
     padding-left: 0px;
   }
 }
 
 @media screen and (max-width: 480px) {
-  .carousel-text {
+  #testimonio .review_content .review .carousel-text {
     font-size: 0.8rem;
   }
 }

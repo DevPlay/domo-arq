@@ -19,12 +19,10 @@ module.exports = {
   },
   plugins: [
     new CleanWebpackPlugin(),
-    new CopyWebpackPlugin([
-      { from: Path.resolve(__dirname, '../public'), to: 'public' }
-    ]),
+    new CopyWebpackPlugin([{ from: Path.resolve(__dirname, '../public'), to: 'public' }]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
-    }),
+    })
   ],
   resolve: {
     alias: {
@@ -50,13 +48,15 @@ module.exports = {
       {
         test: require.resolve('jquery'),
         use: [{
-          loader: 'expose-loader',
-          options: 'jQuery'
-        }, {
-          loader: 'expose-loader',
-          options: '$'
-        }]
+                loader: 'expose-loader',
+                options: 'jQuery'
+              },
+              {
+                loader: 'expose-loader',
+                options: '$'
+              }
+        ]
       },
     ]
-  }
+  },
 };

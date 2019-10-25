@@ -1,62 +1,10 @@
 @import '_variables';
 // @import '/node_modules/bootstrap/dist/bootstrap.min.css';
 
+//Generales
 body {
-  // margin: 0;
   color: $color-secundario;
   padding-left: 240px;
-}
-
-.secciones {
-  padding-left: 15vh;
-  height: 100vh;
-  .titulo-seccion {
-    padding-top: 5vh;
-    margin-top: 5vh;
-    margin-bottom: 5vh;
-    z-index: 99;
-  }
-}
-
-#estudio {
-  overflow: hidden;
-}
-
-.el-equipo {
-  background-image: url= '(../images/equipo.jpg)';
-  float: left;
-  height: 70vh;
-  img {
-    width: 480px;
-  }
-}
-
-.frase-estudio {
-  float: right;
-  width: 480px;
-  position: relative;
-  padding-right: 100px;
-  #btn-equipo {
-    position: absolute;
-    right: 20%;
-    bottom: -157%;
-    height: 60px;
-    width: 200px;
-    background-color: $color-principal;
-    font-weight: bold;
-    border-radius: 0px;
-    a {
-      height: 60px;
-      width: 60px;
-      background-color: $color-secundario;
-      padding-top: 19px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-bottom: 19px;
-      margin-right: -45px;
-      margin-left: 0px;
-    }
-  }
 }
 
 .logo-domo {
@@ -101,6 +49,7 @@ main {
   a {
     color: $color-secundario;
   }
+
   .menu-items {
     display: flex;
     flex-direction: column;
@@ -108,9 +57,10 @@ main {
     height: 70vh;
     padding: 24px;
   }
+
   .menu-social {
     background: $color-secundario;
-    color: #fff;
+    color: $color-secondary-text;
     text-align: left;
     font-size: 1rem;
     padding: 5% 0% 5% 0%;
@@ -119,18 +69,22 @@ main {
 
     ul {
       list-style: none;
+
       li {
         height: auto;
         padding: 0.5em 1em 0em 1.5em;
+
         a {
-          color: #fff;
+          color:$color-secondary-text;
         }
       }
     }
+
     .social-text {
       padding-left: 6px;
       font-weight: 400;
     }
+
     .social-icon {
       width: 15px;
       margin-bottom: 3px;
@@ -150,19 +104,107 @@ main {
       transition: all 0.15s linear;
       cursor: pointer;
 
-      &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
-      }
-
       &:focus {
         outline: none;
+      }
+      a:hover {
+        text-decoration: none;
+        color:$color-secondary-text;
       }
     }
   }
 }
 
-//secion proyectos
+.secciones {
+  padding-left: 15vh;
+  height: 100vh;
 
+  .titulo-seccion {
+    padding-top: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    z-index: 99;
+  }
+}
+
+// Seccion Portada
+.container-portada {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.carousel-caption {
+  right: 5%;
+}
+
+.carousel-text {
+  font-size: 3rem;
+  text-align: left;
+  font-weight: bold;
+  margin-left: 40%;
+  padding: 2%;
+  margin-bottom: 10%;
+  color: #000;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.carousel-indicators {
+  display: flex;
+  width: 80%;
+  justify-content: flex-end;
+  li {
+    height: 15px;
+    width: 15px;
+  }
+  .active {
+    background-color: $color-principal;
+  }
+}
+
+//Seccion estudio
+#estudio {
+  overflow: hidden;
+.frase-estudio {
+  float: right;
+  width: 480px;
+  position: relative;
+  padding-right: 100px;
+  #btn-equipo {
+    position: absolute;
+    right: 20%;
+    bottom: -157%;
+    height: 60px;
+    width: 200px;
+    background-color: $color-principal;
+    font-weight: bold;
+    border-radius: 0px;
+    a {
+      height: 60px;
+      width: 60px;
+      background-color: $color-secundario;
+      padding-top: 19px;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 19px;
+      margin-right: -45px;
+      margin-left: 0px;
+    }
+  }
+}
+}
+
+//Seccion equipo
+.el-equipo {
+  background-image: url='(../images/equipo.jpg)';
+  float: left;
+  height: 70vh;
+
+  img {
+    width: 480px;
+  }
+}
+
+//secion proyectos
 #proyectos {
   .project-content {
     display: flex;
@@ -175,7 +217,7 @@ main {
     }
     #btn-proyecto {
       align-items: flex-end;
-      position: absolute;
+      // position: absolute;
       height: 60px;
       width: 200px;
       background-color: $color-principal;
@@ -211,10 +253,36 @@ main {
     background-position: center;
     background-size: cover;
   }
+  .arrows {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+
+    .arrow_left {
+      flex-direction: row;
+      align-items: flex-end;
+      height: 40px;
+      width: 40px;
+      padding: 15%;
+      background-color: $color-principal;
+      color: $color-secundario;
+    }
+
+    .arrow_right {
+      flex-direction: row;
+      align-items: flex-end;
+      height: 40px;
+      width: 40px;
+      padding: 15%;
+      background-color: $color-secundario;
+      color: white;
+    }
+  }
+
+
 }
 
 //seccion premios
-
 #premios {
   .content {
     display: flex;
@@ -251,371 +319,153 @@ main {
   }
 }
 
-// Seccion Portada
-
-.carousel-caption {
-  right: 5%;
+// Seccion contacto
+#contacto{
+.mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color: #e2e2e2;
+  transition: all 0.5s;
 }
 
-.carousel-text {
-  font-size: 3rem;
-  text-align: left;
-  font-weight: bold;
-  margin-left: 40%;
-  padding: 2%;
-  margin-bottom: 10%;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.5);
+.radio-label {
+  font-size: 16px;
+  color: #474747;
+  margin-left: 2%;
 }
 
-.carousel-indicators {
-  display: flex;
-  width: 80%;
-  justify-content: flex-end;
+.mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+.mat-div {
+  padding: 30px 0 0 0;
+  position: relative;
+}
+
+.novedades {
+  padding: 30px 0 0 0;
+}
+
+.mat-div:after,
+.mat-div:before {
+  content: '';
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+.mat-div::after {
+  transform: scaleX(0);
+}
+
+.is-active::after {
+  transform: scaleX(1);
+}
+
+.is-active .mat-label {
+  color: $color-principal;
+}
+
+.is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+.dropdown {
+  .btn {
+    padding-left: 0px;
+    padding-bottom: 16px;
+    color: #e2e2e2;
+  }
+}
+
+.dropdown.show {
+  .btn {
+    color: $color-principal;
+  }
+}
+
+.dropdown-menu {
+  .dropdown-item {
+    color: $color-principal;
+  }
+}
+
+ul {
+  list-style: none;
+
+  a {
+    color: #000;
+  }
+
+  a:hover {
+    color: $color-principal;
+  }
+
   li {
-    height: 15px;
-    width: 15px;
-  }
-  .active {
-    background-color: $color-principal;
-  }
-}
-
-.container-portada {
-  padding-left: 0px;
-  padding-right: 0px;
-}
-
-// seccion testimonios
-
-#testimonio {
-  .review_content {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    width: 800px;
-    height: 500px;
-    background-color: aqua;
-
-    .reviewer {
-      margin: 0;
-      padding: 0;
-      justify-content: baseline;
-      .reviewer_pic {
-        height: 70%;
-        margin: 0;
-        img {
-          margin: 0;
-          height: 100%;
-        }
-      }
-      .reviewer_name {
-        height: 30%;
-        padding: 10%;
-        background-color: #000;
-      }
+    p {
+      margin-bottom: 0px;
     }
-    .review {
-      display: flex;
-      flex-direction: row;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      background-color: blue;
-      // .close{
-      //   flex-direction:column;
-      //   justify-content: space-between;
-      //   height: 40px;
-      //   width: 40px;
-      //   background-color: #000;
-      //   padding: 1%;
-      // }
-      .review_text {
-        align-self: center;
-        // justify-content:flex-start;
-        font-size: 1em;
-        margin-left: 15%;
-        text-align: left;
-      }
-      .arrows {
-        display: flex;
-        align-items: flex-end;
-        flex-direction: row;
+  }
+}
 
-        .arrow_left {
-          flex-direction: row;
-          align-items: flex-end;
-          height: 60px;
-          width: 60px;
-          padding: 15%;
-          background-color: $color-principal;
-          color: $color-secundario;
-        }
+.contact {
+  margin-left: -40px;
+  padding-left: 0px;
+  margin-top: 45%;
+  font-size: 1.5rem;
+}
 
-        .arrow_right {
-          flex-direction: row;
-          align-items: flex-end;
-          height: 60px;
-          width: 60px;
-          padding: 15%;
-          background-color: $color-secundario;
-          color: white;
-        }
-      }
+ul {
+  list-style: none;
 
-      // Seccion contacto
+  a {
+    color: #000;
+  }
 
-      .mat-label {
-        display: block;
-        font-size: 16px;
-        transform: translateY(25px);
-        color: #e2e2e2;
-        transition: all 0.5s;
-      }
+  a:hover {
+    color: $color-principal;
+  }
 
-      .radio-label {
-        font-size: 16px;
-        color: #474747;
-        margin-left: 2%;
-      }
+  li {
+    p {
+      margin-bottom: 0px;
+    }
+  }
+}
 
-      .mat-input {
-        position: relative;
-        background: transparent;
-        width: 100%;
-        border: none;
-        outline: none;
-        padding: 8px 0;
-        font-size: 16px;
-      }
+}
 
-      .mat-div {
-        padding: 30px 0 0 0;
-        position: relative;
-      }
-
-      .novedades {
-        padding: 30px 0 0 0;
-      }
-
-      .mat-div:after,
-      .mat-div:before {
-        content: '';
-        position: absolute;
-        display: block;
-        width: 100%;
-        height: 2px;
-        background-color: #e2e2e2;
-        bottom: 0;
-        left: 0;
-        transition: all 0.5s;
-      }
-
-      .mat-div::after {
-        transform: scaleX(0);
-      }
-
-      .is-active::after {
-        transform: scaleX(1);
-      }
-
-      .is-active .mat-label {
-        color: $color-principal;
-      }
-
-      .is-completed .mat-label {
-        font-size: 12px;
-        transform: translateY(0);
-      }
-
-      .dropdown {
-        .btn {
-          padding-left: 0px;
-          padding-bottom: 16px;
-          color: #e2e2e2;
-        }
-      }
-
-      .dropdown.show {
-        .btn {
-          color: $color-principal;
-        }
-      }
-
-      .dropdown-menu {
-        .dropdown-item {
-          color: $color-principal;
-        }
-      }
-
-      .contact {
-        padding-left: 0px;
-        margin-top: 50%;
-        font-size: 1.2rem;
-        font-weight: 200;
-      }
-
-      ul {
-        list-style: none;
-        a {
-          color: #000;
-        }
-        a:hover {
-          color: $color-principal;
-        }
-        li {
-          p {
-            margin-bottom: 0px;
-          }
-        }
-      }
-      .contact {
-        padding-left: 0px;
-        margin-top: 50%;
-        font-size: 1.5rem;
-      }
-
-      ul {
-        list-style: none;
-        a {
-          color: #000;
-        }
-        a:hover {
-          color: $color-principal;
-        }
-        li {
-          p {
-            margin-bottom: 0px;
-          }
-        }
-      }
-      // seccion testimonios
-
-      #testimonio {
-        .review_content {
-          margin: 0;
-          padding: 0;
-          display: flex;
-          width: 800px;
-          height: 500px;
-          background-color: aqua;
-
-          .reviewer {
-            margin: 0;
-            padding: 0;
-            justify-content: baseline;
-            .reviewer_pic {
-              height: 70%;
-              margin: 0;
-              img {
-                margin: 0;
-                height: 100%;
-              }
-            }
-            .reviewer_name {
-              height: 30%;
-              padding: 10%;
-              background-color: #000;
-            }
-          }
-          .review {
-            display: flex;
-            flex-direction: row;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            background-color: rgb(255, 255, 255);
-            // .close{
-            //   flex-direction:column;
-            //   justify-content: space-between;
-            //   height: 40px;
-            //   width: 40px;
-            //   background-color: #000;
-            //   padding: 1%;
-            // }
-            .review_text {
-              align-self: center;
-              // justify-content:flex-start;
-              font-size: 1em;
-              margin-left: 15%;
-              text-align: left;
-              color: $color-secundario;
-            }
-            .arrows {
-              display: flex;
-              align-items: flex-end;
-              flex-direction: row;
-
-              .arrow_left {
-                flex-direction: row;
-                align-items: flex-end;
-                height: 60px;
-                width: 60px;
-                padding: 15%;
-                background-color: $color-principal;
-                color: $color-secundario;
-              }
-
-              .arrow_right {
-                flex-direction: row;
-                align-items: flex-end;
-                height: 60px;
-                width: 60px;
-                padding: 15%;
-                background-color: $color-secundario;
-                color: white;
-              }
-            }
-          }
-        }
-      }
-      #reviews {
-        margin-left: 5vh;
-        color: white;
-      }
-      .send-button {
-        padding: 10%;
-        .btn {
-          width: 400px;
-          font-size: 1.2rem;
-          background-color: $color-principal;
-          color: #fff !important;
-          border-radius: 0px;
-        }
-        .btn:hover {
-          cursor: pointer;
-          background-color: white;
-          border-color: $color-principal;
-          color: $color-principal !important;
-        }
-        // TODO: Hacer una transicion o animacion para el hover
-      }
-
-      // Inicio footer
-
-      footer {
-        border-top: 2px;
-        border-color: black;
-        margin-bottom: 40px;
-      }
-
-      footer img {
-        width: 100px;
-      }
-
-      footer .designedBy p {
-        margin-bottom: 10px;
-        text-align: center;
-        padding: 10px;
-        color: white;
-        // font-family: $fuenteDevPlay;
-        font-size: 18px;
-      }
-
-      // Fin footer
+// Inicio footer
+.designedBy {
+  p{
+    // font-family: $fuenteDevPlay;
+    margin-bottom: 0px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    img {
+      width: 100px;
+    }
+  }
+} 
+// Fin footer
 
       // Media Queries
-
       @media screen and (max-width: 1200px) {
         .carousel-text {
           font-size: 1.5rem;
@@ -847,7 +697,9 @@ main {
           font-size: 0.8rem;
         }
       }
-      // @media screen and (max-width: 400px) {
+
+      //este estaba cometado, pero no se si lo querias usar
+      @media screen and (max-width: 400px) {
       //   body {
       //     padding-left: 0;
       //   }
@@ -900,7 +752,183 @@ main {
       //       }
       //     }
       //   }
-      // }
-    }
-  }
-}
+      }
+
+
+// // seccion testimonios
+
+// #testimonio {
+//   .review_content {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     width: 800px;
+//     height: 500px;
+//     background-color: aqua;
+
+//     .reviewer {
+//       margin: 0;
+//       padding: 0;
+//       justify-content: baseline;
+//       .reviewer_pic {
+//         height: 70%;
+//         margin: 0;
+//         img {
+//           margin: 0;
+//           height: 100%;
+//         }
+//       }
+//       .reviewer_name {
+//         height: 30%;
+//         padding: 10%;
+//         background-color: #000;
+//       }
+//     }
+//     .review {
+//       display: flex;
+//       flex-direction: row;
+//       margin: 0;
+//       padding: 0;
+//       display: flex;
+//       background-color: rgb(255, 255, 255);
+//       // .close{
+//       //   flex-direction:column;
+//       //   justify-content: space-between;
+//       //   height: 40px;
+//       //   width: 40px;
+//       //   background-color: #000;
+//       //   padding: 1%;
+//       // }
+//       .review_text {
+//         align-self: center;
+//         // justify-content:flex-start;
+//         font-size: 1em;
+//         margin-left: 15%;
+//         text-align: left;
+//         color: $color-secundario;
+//       }
+//       .arrows {
+//         display: flex;
+//         align-items: flex-end;
+//         flex-direction: row;
+
+//         .arrow_left {
+//           flex-direction: row;
+//           align-items: flex-end;
+//           height: 60px;
+//           width: 60px;
+//           padding: 15%;
+//           background-color: $color-principal;
+//           color: $color-secundario;
+//         }
+
+//         .arrow_right {
+//           flex-direction: row;
+//           align-items: flex-end;
+//           height: 60px;
+//           width: 60px;
+//           padding: 15%;
+//           background-color: $color-secundario;
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+// }
+// #reviews {
+//   margin-left: 5vh;
+//   color: white;
+// }
+// .send-button {
+//   padding: 10%;
+//   .btn {
+//     width: 400px;
+//     font-size: 1.2rem;
+//     background-color: $color-principal;
+//     color: #fff !important;
+//     border-radius: 0px;
+//   }
+//   .btn:hover {
+//     cursor: pointer;
+//     background-color: white;
+//     border-color: $color-principal;
+//     color: $color-principal !important;
+//   }
+//   // TODO: Hacer una transicion o animacion para el hover
+// }
+
+// seccion testimonios
+// #testimonio {
+//   .review_content {
+//     margin: 0;
+//     padding: 0;
+//     display: flex;
+//     width: 800px;
+//     height: 500px;
+//     background-color: aqua;
+
+//     .reviewer {
+//       margin: 0;
+//       padding: 0;
+//       justify-content: baseline;
+
+//       .reviewer_pic {
+//         height: 70%;
+//         margin: 0;
+
+//         img {
+//           margin: 0;
+//           height: 100%;
+//         }
+//       }
+
+//       .reviewer_name {
+//         height: 30%;
+//         padding: 10%;
+//         background-color: #000;
+//       }
+//     }
+
+//     .review {
+//       display: flex;
+//       flex-direction: row;
+//       margin: 0;
+//       padding: 0;
+//       display: flex;
+//       background-color: blue;
+
+//       .review_text {
+//         align-self: center;
+//         font-size: 1em;
+//         margin-left: 15%;
+//         text-align: left;
+//       }
+
+//       .arrows {
+//         display: flex;
+//         align-items: flex-end;
+//         flex-direction: row;
+
+//         .arrow_left {
+//           flex-direction: row;
+//           align-items: flex-end;
+//           height: 60px;
+//           width: 60px;
+//           padding: 15%;
+//           background-color: $color-principal;
+//           color: $color-secundario;
+//         }
+
+//         .arrow_right {
+//           flex-direction: row;
+//           align-items: flex-end;
+//           height: 60px;
+//           width: 60px;
+//           padding: 15%;
+//           background-color: $color-secundario;
+//           color: white;
+//         }
+//       }
+//     }
+//   }
+// }

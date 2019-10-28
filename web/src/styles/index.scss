@@ -1,11 +1,4 @@
 @import '_variables';
-// @import '/node_modules/bootstrap/dist/bootstrap.min.css';
-
-* {
-  margin: 0 auto;
-  box-sizing: border-box;
-  font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
-}
 
 body {
   background: #fff;
@@ -259,6 +252,31 @@ main {
       width: 10px;
       background-color: $color-secundario;
     }
+  }
+  #modal-dialog {
+    max-width: 70% !important;
+  }
+  .img-modal {
+    width: 100%;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-body {
+    padding: 0.5rem;
+  }
+  .close-modal {
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    background-color: $color-secundario;
+  }
+  .close {
+    font-size: 1rem;
+    text-shadow: none;
+    opacity: 1;
   }
 }
 

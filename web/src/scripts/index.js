@@ -51,7 +51,6 @@ import 'popper.js';
 //     .addClass('is-active is-completed');
 // });
 
-<<<<<<< HEAD
 $('.mat-input').focus(function() {
   $(this)
     .parent()
@@ -67,14 +66,3 @@ $('.mat-input').focusout(function() {
     .parent()
     .removeClass('is-active');
 });
-=======
-// $('.mat-input').focusout(function () {
-//   if ($(this).val() === '')
-//     $(this)
-//       .parent()
-//       .removeClass('is-completed');
-//   $(this)
-//     .parent()
-//     .removeClass('is-active');
-// });
->>>>>>> 03a2c13d962971e80917ca7c8d126e787b786220

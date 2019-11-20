@@ -1,9 +1,12 @@
-import '../styles/index.scss';
-// import $ from 'jquery';
+// import 'owl.carousel/dist/assets/owl.carousel.css';
+// import 'owl.carousel';
 import '../styles/master.scss';
-import '../styles/seccion_equipo.scss';
-// import 'popper.js';
 import 'bootstrap';
+import $ from 'jquery';
+
+// import '../styles/index.scss';
+// import '../styles/seccion_equipo.scss';
+// import 'popper.js';
 
 // Menu
 

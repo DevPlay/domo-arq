@@ -122,7 +122,7 @@ main {
 
   .titulo-seccion {
     padding-top: 5vh;
-    margin-top: 5vh;
+    // margin-top: 5vh;
     margin-bottom: 5vh;
     z-index: 99;
   }
@@ -165,124 +165,125 @@ main {
 //Seccion estudio
 #estudio {
   overflow: hidden;
-.frase-estudio {
-  float: right;
-  width: 480px;
-  position: relative;
-  padding-right: 100px;
-  #btn-equipo {
-    position: absolute;
-    right: 20%;
-    bottom: -157%;
+  .article_container{
+    display: flex;
+    height: 70vh;
+    align-content: space-between; 
+    .el-equipo {
+      width: 40%;
+      img {
+        width: 100%;
+        background-position: center;
+      }
+    }
+    .frase-estudio {
+      align-self: center;
+      width: 40%;
+      margin-left: 10%;
+      font-size: 20px;
+    }
+  }
+  #btn_equipo {
+    float: right;
+    margin-right: 10%;
+    flex-direction: row;
+    justify-content: flex-end;
     height: 60px;
     width: 200px;
     background-color: $color-principal;
-    font-weight: bold;
     border-radius: 0px;
-    a {
-      height: 60px;
-      width: 60px;
-      background-color: $color-secundario;
-      padding-top: 19px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-bottom: 19px;
-      margin-right: -45px;
-      margin-left: 0px;
+    a{
+    font-weight: bold;
+    color: $color-primary-text;
+    text-align:center;
     }
   }
-}
 }
 
 //Seccion equipo
-.el-equipo {
-  background-image: url='(../images/equipo.jpg)';
-  float: left;
-  height: 70vh;
 
-  img {
-    width: 480px;
-  }
-}
+//seccion proyectos
+// #proyectos {
+//   .project_content {
+//     display: flex;
+//     .project-text {
+//       height: 80vh;
+//       width: 30vw;
+//       padding-right: 5%;
+//       background-color: rgb(255, 255, 255);
+//       font-size: 1.2rem;
+//     }
+//     #btn-proyecto {
+//       align-items: flex-end;
+//       height: 60px;
+//       width: 200px;
+//       background-color: $color-principal;
+//       font-weight: bold;
+//       border-radius: 0px;
+//       right: 60%;
+//       bottom: -185%;
 
-//secion proyectos
+//       a {
+//         height: 60px;
+//         width: 60px;
+//         background-color: $color-secundario;
+//         padding-top: 19px;
+//         padding-left: 30px;
+//         padding-right: 30px;
+//         padding-bottom: 19px;
+//         margin-right: -48px;
+//         margin-left: 20px;
+//       }
+//     }
+//     .project-pic {
+//       height: 70vh;
+//       width: 30vw;
+//       background-color: rgb(197, 212, 55);
+//       background-position: center;
+//       background-size: cover;
+//     }
+//   }
+//   .arrows {
+//     display: flex;
+//     align-items: flex-end;
+//     flex-direction: row;
+
+//     .arrow_left {
+//       flex-direction: row;
+//       align-items: flex-end;
+//       height: 40px;
+//       width: 40px;
+//       padding: 15%;
+//       background-color: $color-principal;
+//       color: $color-secundario;
+//     }
+
+//     .arrow_right {
+//       flex-direction: row;
+//       align-items: flex-end;
+//       height: 40px;
+//       width: 40px;
+//       padding: 15%;
+//       background-color: $color-secundario;
+//       color: white;
+//     }
+//   }
+// }
+
 #proyectos {
-  .project-content {
-    display: flex;
-    .project-text {
-      height: 80vh;
-      width: 30vw;
-      padding-right: 5%;
-      background-color: rgb(255, 255, 255);
-      font-size: 1.2rem;
-    }
-    #btn-proyecto {
-      align-items: flex-end;
-      // position: absolute;
-      height: 60px;
-      width: 200px;
-      background-color: $color-principal;
-      font-weight: bold;
-      border-radius: 0px;
-      right: 60%;
-      bottom: -185%;
 
-      a {
-        height: 60px;
-        width: 60px;
-        background-color: $color-secundario;
-        padding-top: 19px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 19px;
-        margin-right: -48px;
-        margin-left: 20px;
-      }
-    }
-    .project-pic {
-      height: 80vh;
-      width: 30vw;
-      background-color: rgb(197, 212, 55);
-      background-position: center;
-      background-size: cover;
-    }
-  }
-  .project-pic {
-    height: 80vh;
-    width: 30vw;
-    background-color: rgb(197, 212, 55);
-    background-position: center;
-    background-size: cover;
-  }
-  .arrows {
-    display: flex;
-    align-items: flex-end;
-    flex-direction: row;
-
-    .arrow_left {
-      flex-direction: row;
-      align-items: flex-end;
-      height: 40px;
-      width: 40px;
-      padding: 15%;
-      background-color: $color-principal;
-      color: $color-secundario;
-    }
-
-    .arrow_right {
-      flex-direction: row;
-      align-items: flex-end;
-      height: 40px;
-      width: 40px;
-      padding: 15%;
-      background-color: $color-secundario;
-      color: white;
-    }
+  #owl-demo .item {
+    margin: 3px;
   }
 
+  #owl-demo .item img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
+  
 }
-
 //seccion premios
 #premios {
   .content {

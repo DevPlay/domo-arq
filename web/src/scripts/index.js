@@ -2,8 +2,7 @@
 // import 'owl.carousel';
 import '../styles/master.scss';
 import 'bootstrap';
-import $ from 'jquery';
-
+// import $ from 'jquery';
 // import '../styles/index.scss';
 // import '../styles/seccion_equipo.scss';
 // import 'popper.js';

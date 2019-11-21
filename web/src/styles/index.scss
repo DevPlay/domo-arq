@@ -76,7 +76,7 @@ main {
         padding: 0.5em 1em 0em 1.5em;
 
         a {
-          color:$color-secondary-text;
+          color: $color-secondary-text;
         }
       }
     }
@@ -110,7 +110,7 @@ main {
       }
       a:hover {
         text-decoration: none;
-        color:$color-secondary-text;
+        color: $color-secondary-text;
       }
     }
   }
@@ -165,10 +165,10 @@ main {
 //Seccion estudio
 #estudio {
   overflow: hidden;
-  .article_container{
+  .article_container {
     display: flex;
     height: 70vh;
-    align-content: space-between; 
+    align-content: space-between;
     .el-equipo {
       width: 40%;
       img {
@@ -192,10 +192,10 @@ main {
     width: 200px;
     background-color: $color-principal;
     border-radius: 0px;
-    a{
-    font-weight: bold;
-    color: $color-primary-text;
-    text-align:center;
+    a {
+      font-weight: bold;
+      color: $color-primary-text;
+      text-align: center;
     }
   }
 }
@@ -271,7 +271,6 @@ main {
 // }
 
 #proyectos {
-
   #owl-demo .item {
     margin: 3px;
   }
@@ -282,7 +281,9 @@ main {
     height: auto;
   }
 
-  
+  .owl-image {
+    height: 500px;
+  }
 }
 //seccion premios
 #premios {
@@ -322,138 +323,137 @@ main {
 }
 
 // Seccion contacto
-#contacto{
-.mat-label {
-  display: block;
-  font-size: 16px;
-  transform: translateY(25px);
-  color: #e2e2e2;
-  transition: all 0.5s;
-}
-
-.radio-label {
-  font-size: 16px;
-  color: #474747;
-  margin-left: 2%;
-}
-
-.mat-input {
-  position: relative;
-  background: transparent;
-  width: 100%;
-  border: none;
-  outline: none;
-  padding: 8px 0;
-  font-size: 16px;
-}
-
-.mat-div {
-  padding: 30px 0 0 0;
-  position: relative;
-}
-
-.novedades {
-  padding: 30px 0 0 0;
-}
-
-.mat-div:after,
-.mat-div:before {
-  content: '';
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 2px;
-  background-color: #e2e2e2;
-  bottom: 0;
-  left: 0;
-  transition: all 0.5s;
-}
-
-.mat-div::after {
-  transform: scaleX(0);
-}
-
-.is-active::after {
-  transform: scaleX(1);
-}
-
-.is-active .mat-label {
-  color: $color-principal;
-}
-
-.is-completed .mat-label {
-  font-size: 12px;
-  transform: translateY(0);
-}
-
-.dropdown {
-  .btn {
-    padding-left: 0px;
-    padding-bottom: 16px;
+#contacto {
+  .mat-label {
+    display: block;
+    font-size: 16px;
+    transform: translateY(25px);
     color: #e2e2e2;
+    transition: all 0.5s;
   }
-}
 
-.dropdown.show {
-  .btn {
+  .radio-label {
+    font-size: 16px;
+    color: #474747;
+    margin-left: 2%;
+  }
+
+  .mat-input {
+    position: relative;
+    background: transparent;
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 8px 0;
+    font-size: 16px;
+  }
+
+  .mat-div {
+    padding: 30px 0 0 0;
+    position: relative;
+  }
+
+  .novedades {
+    padding: 30px 0 0 0;
+  }
+
+  .mat-div:after,
+  .mat-div:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #e2e2e2;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  .mat-div::after {
+    transform: scaleX(0);
+  }
+
+  .is-active::after {
+    transform: scaleX(1);
+  }
+
+  .is-active .mat-label {
     color: $color-principal;
   }
-}
 
-.dropdown-menu {
-  .dropdown-item {
-    color: $color-principal;
-  }
-}
-
-ul {
-  list-style: none;
-
-  a {
-    color: #000;
+  .is-completed .mat-label {
+    font-size: 12px;
+    transform: translateY(0);
   }
 
-  a:hover {
-    color: $color-principal;
-  }
-
-  li {
-    p {
-      margin-bottom: 0px;
+  .dropdown {
+    .btn {
+      padding-left: 0px;
+      padding-bottom: 16px;
+      color: #e2e2e2;
     }
   }
-}
 
-.contact {
-  margin-left: -40px;
-  padding-left: 0px;
-  margin-top: 45%;
-  font-size: 1.5rem;
-}
-
-ul {
-  list-style: none;
-
-  a {
-    color: #000;
-  }
-
-  a:hover {
-    color: $color-principal;
-  }
-
-  li {
-    p {
-      margin-bottom: 0px;
+  .dropdown.show {
+    .btn {
+      color: $color-principal;
     }
   }
-}
 
+  .dropdown-menu {
+    .dropdown-item {
+      color: $color-principal;
+    }
+  }
+
+  ul {
+    list-style: none;
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: $color-principal;
+    }
+
+    li {
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .contact {
+    margin-left: -40px;
+    padding-left: 0px;
+    margin-top: 45%;
+    font-size: 1.5rem;
+  }
+
+  ul {
+    list-style: none;
+
+    a {
+      color: #000;
+    }
+
+    a:hover {
+      color: $color-principal;
+    }
+
+    li {
+      p {
+        margin-bottom: 0px;
+      }
+    }
+  }
 }
 
 // Inicio footer
 .designedBy {
-  p{
+  p {
     // font-family: $fuenteDevPlay;
     margin-bottom: 0px;
     color: white;
@@ -464,296 +464,294 @@ ul {
       width: 100px;
     }
   }
-} 
+}
 // Fin footer
 
-      // Media Queries
-      @media screen and (max-width: 1200px) {
-        .carousel-text {
-          font-size: 1.5rem;
-        }
-      }
+// Media Queries
+@media screen and (max-width: 1200px) {
+  .carousel-text {
+    font-size: 1.5rem;
+  }
+}
 
-      @media screen and (max-width: 768px) {
-        body {
-          padding-left: 35px;
-        }
-        .menu {
-          width: 45px;
+@media screen and (max-width: 768px) {
+  body {
+    padding-left: 35px;
+  }
+  .menu {
+    width: 45px;
 
-          .hamburguer-menu-trigger {
-            display: block;
-            position: absolute;
-            top: 5%;
-            left: 10%;
-            z-index: 1;
-            -webkit-user-select: none;
-            user-select: none;
-          }
+    .hamburguer-menu-trigger {
+      display: block;
+      position: absolute;
+      top: 5%;
+      left: 10%;
+      z-index: 1;
+      -webkit-user-select: none;
+      user-select: none;
+    }
 
-          .hamburguer-menu-trigger input {
-            display: block;
-            width: 40px;
-            height: 32px;
-            position: absolute;
-            top: -7px;
-            left: -5px;
+    .hamburguer-menu-trigger input {
+      display: block;
+      width: 40px;
+      height: 32px;
+      position: absolute;
+      top: -7px;
+      left: -5px;
 
-            cursor: pointer;
+      cursor: pointer;
 
-            opacity: 0; /* hide this */
-            z-index: 2; /* and place it over the hamburger */
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
 
-            -webkit-touch-callout: none;
-          }
+      -webkit-touch-callout: none;
+    }
 
-          /*
+    /*
      * Just a quick hamburger
      */
-          .hamburguer-menu-trigger span {
-            display: block;
-            width: 33px;
-            height: 4px;
-            margin-bottom: 5px;
-            position: relative;
+    .hamburguer-menu-trigger span {
+      display: block;
+      width: 33px;
+      height: 4px;
+      margin-bottom: 5px;
+      position: relative;
 
-            background: #fff;
-            border-radius: 3px;
+      background: #fff;
+      border-radius: 3px;
 
-            z-index: 1;
+      z-index: 1;
 
-            transform-origin: 4px 0px;
+      transform-origin: 4px 0px;
 
-            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-              background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    }
+
+    .hamburguer-menu-trigger span:first-child {
+      transform-origin: 0% 0%;
+    }
+
+    .hamburguer-menu-trigger span:nth-last-child(2) {
+      transform-origin: 0% 100%;
+    }
+
+    .hamburguer-menu-trigger input:checked ~ span {
+      opacity: 1;
+      transform: rotate(45deg) translate(-2px, -1px);
+    }
+
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+      opacity: 0;
+      transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+      opacity: 1;
+      transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    .hamburguer-menu {
+      position: absolute;
+      width: 300px;
+      margin: -100px 0 0 0;
+      padding-top: 25px;
+      left: -10px;
+
+      background: $color-principal;
+      list-style-type: none;
+      -webkit-font-smoothing: antialiased;
+      /* to stop flickering of text in safari */
+
+      transform-origin: 0% 0%;
+      transform: translate(-100%, 0);
+
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+
+      .hamburguer-menu-items {
+        list-style: none;
+        padding: 1.5em 0.5em;
+        margin: 30px 0px 0px 0px;
+        font-weight: 700;
+
+        li {
+          height: 50px;
+          padding: 0.5em 1em 0.5em 1.5em;
+          background-repeat: no-repeat;
+          background-position: left 15px center;
+          background-size: auto 20px;
+          transition: all 0.15s linear;
+          cursor: pointer;
+
+          &:hover {
+            background-color: rgba(0, 0, 0, 0.1);
           }
 
-          .hamburguer-menu-trigger span:first-child {
-            transform-origin: 0% 0%;
+          &:focus {
+            outline: none;
           }
-
-          .hamburguer-menu-trigger span:nth-last-child(2) {
-            transform-origin: 0% 100%;
-          }
-
-          .hamburguer-menu-trigger input:checked ~ span {
-            opacity: 1;
-            transform: rotate(45deg) translate(-2px, -1px);
-          }
-
-          .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
-            opacity: 0;
-            transform: rotate(0deg) scale(0.2, 0.2);
-          }
-
-          .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
-            opacity: 1;
-            transform: rotate(-45deg) translate(0, -1px);
-          }
-
-          .hamburguer-menu {
-            position: absolute;
-            width: 300px;
-            margin: -100px 0 0 0;
-            padding-top: 25px;
-            left: -10px;
-
-            background: $color-principal;
-            list-style-type: none;
-            -webkit-font-smoothing: antialiased;
-            /* to stop flickering of text in safari */
-
-            transform-origin: 0% 0%;
-            transform: translate(-100%, 0);
-
-            transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-
-            .hamburguer-menu-items {
-              list-style: none;
-              padding: 1.5em 0.5em;
-              margin: 30px 0px 0px 0px;
-              font-weight: 700;
-
-              li {
-                height: 50px;
-                padding: 0.5em 1em 0.5em 1.5em;
-                background-repeat: no-repeat;
-                background-position: left 15px center;
-                background-size: auto 20px;
-                transition: all 0.15s linear;
-                cursor: pointer;
-
-                &:hover {
-                  background-color: rgba(0, 0, 0, 0.1);
-                }
-
-                &:focus {
-                  outline: none;
-                }
-              }
-            }
-            .hamburguer-menu-social {
-              background: #000;
+        }
+      }
+      .hamburguer-menu-social {
+        background: #000;
+        color: #fff;
+        text-align: left;
+        font-size: 1rem;
+        padding: 5% 5% 0% 5%;
+        height: 100vh;
+        ul {
+          list-style: none;
+          li {
+            height: auto;
+            padding: 0.5em 1em 0em 1.5em;
+            a {
               color: #fff;
-              text-align: left;
-              font-size: 1rem;
-              padding: 5% 5% 0% 5%;
-              height: 100vh;
-              ul {
-                list-style: none;
-                li {
-                  height: auto;
-                  padding: 0.5em 1em 0em 1.5em;
-                  a {
-                    color: #fff;
-                  }
-                }
-              }
-              .social-text {
-                padding-left: 5px;
-                display: inline;
-              }
-              .social-icon {
-                width: 15px;
-                height: 15px;
-                margin-bottom: 5px;
-              }
-            }
-          }
-
-          .hamburguer-menu-trigger input:checked ~ ul {
-            transform: scale(1, 1);
-            opacity: 1;
-          }
-
-          .smartphone-menu-trigger {
-            width: 40px;
-            height: 40px;
-            position: absolute;
-            background: $color-principal;
-
-            &:before,
-            &:after {
-              content: '';
-              width: 50%;
-              height: 2px;
-              background: #fff;
-              border-radius: 10px;
-              position: absolute;
-              top: 45%;
-              left: 50%;
-              transform: translate3d(-50%, -50%, 0);
-            }
-
-            &:after {
-              top: 55%;
-              transform: translate3d(-50%, -50%, 0);
-            }
-          }
-
-          .menu-items {
-            visibility: hidden;
-          }
-          ul {
-            li {
-              padding: 0;
-            }
-          }
-
-          .menu-social {
-            padding: 0.5em;
-            position: relative;
-            ul {
-              li {
-                background-position: center center;
-                background-size: 30px auto;
-                position: relative;
-                padding: 5px 0px 0px 5px;
-
-                span {
-                  display: none;
-                }
-              }
             }
           }
         }
-        .carousel-text {
-          font-size: 1rem;
+        .social-text {
+          padding-left: 5px;
+          display: inline;
         }
-
-        .contact {
-          margin-top: 10%;
-          text-align: center;
-        }
-        .send-button {
-          padding: 10% 0% 10% 0%;
-        }
-
-        #contacto {
-          padding-left: 0px;
+        .social-icon {
+          width: 15px;
+          height: 15px;
+          margin-bottom: 5px;
         }
       }
+    }
 
-      @media screen and (max-width: 480px) {
-        .carousel-text {
-          font-size: 0.8rem;
+    .hamburguer-menu-trigger input:checked ~ ul {
+      transform: scale(1, 1);
+      opacity: 1;
+    }
+
+    .smartphone-menu-trigger {
+      width: 40px;
+      height: 40px;
+      position: absolute;
+      background: $color-principal;
+
+      &:before,
+      &:after {
+        content: '';
+        width: 50%;
+        height: 2px;
+        background: #fff;
+        border-radius: 10px;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+
+      &:after {
+        top: 55%;
+        transform: translate3d(-50%, -50%, 0);
+      }
+    }
+
+    .menu-items {
+      visibility: hidden;
+    }
+    ul {
+      li {
+        padding: 0;
+      }
+    }
+
+    .menu-social {
+      padding: 0.5em;
+      position: relative;
+      ul {
+        li {
+          background-position: center center;
+          background-size: 30px auto;
+          position: relative;
+          padding: 5px 0px 0px 5px;
+
+          span {
+            display: none;
+          }
         }
       }
+    }
+  }
+  .carousel-text {
+    font-size: 1rem;
+  }
 
-      //este estaba cometado, pero no se si lo querias usar
-      @media screen and (max-width: 400px) {
-      //   body {
-      //     padding-left: 0;
-      //   }
+  .contact {
+    margin-top: 10%;
+    text-align: center;
+  }
+  .send-button {
+    padding: 10% 0% 10% 0%;
+  }
 
-      //   .menu {
-      //     width: 230px;
-      //     box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
-      //     transform: translate3d(-230px, 0, 0);
-      //     transition: all 0.3s ease-in-out;
+  #contacto {
+    padding-left: 0px;
+  }
+}
 
-      //     .smartphone-menu-trigger {
-      //       width: 40px;
-      //       height: 40px;
-      //       position: absolute;
-      //       left: 100%;
-      //       cursor: pointer;
-      //       background: $color-principal;
+@media screen and (max-width: 480px) {
+  .carousel-text {
+    font-size: 0.8rem;
+  }
+}
 
-      //       &:before {
-      //         content: '';
-      //         width: 50%;
-      //         height: 2px;
-      //         background: #fff;
-      //         border-radius: 10px;
-      //         position: absolute;
-      //         top: 45%;
-      //         left: 50%;
-      //         transform: translate3d(-50%, -50%, 0);
-      //       }
+//este estaba cometado, pero no se si lo querias usar
+@media screen and (max-width: 400px) {
+  //   body {
+  //     padding-left: 0;
+  //   }
 
-      //       // &:after {
-      //       //   top: 55%;
-      //       //   transform: translate3d(-50%, -50%, 0);
-      //       // }
-      //     }
+  //   .menu {
+  //     width: 230px;
+  //     box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
+  //     transform: translate3d(-230px, 0, 0);
+  //     transition: all 0.3s ease-in-out;
 
-      //     ul {
-      //       li {
-      //         padding: 1em 1em 1em 3em;
-      //         font-size: 1.2em;
-      //       }
-      //     }
+  //     .smartphone-menu-trigger {
+  //       width: 40px;
+  //       height: 40px;
+  //       position: absolute;
+  //       left: 100%;
+  //       cursor: pointer;
+  //       background: $color-principal;
 
-      //     &:focus {
-      //       transform: translate3d(0, 0, 0);
-      //       box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
+  //       &:before {
+  //         content: '';
+  //         width: 50%;
+  //         height: 2px;
+  //         background: #fff;
+  //         border-radius: 10px;
+  //         position: absolute;
+  //         top: 45%;
+  //         left: 50%;
+  //         transform: translate3d(-50%, -50%, 0);
+  //       }
 
-      //       .smartphone-menu-trigger {
-      //         pointer-events: none;
-      //       }
-      //     }
-      //   }
-      }
+  //       // &:after {
+  //       //   top: 55%;
+  //       //   transform: translate3d(-50%, -50%, 0);
+  //       // }
+  //     }
 
+  //     ul {
+  //       li {
+  //         padding: 1em 1em 1em 3em;
+  //         font-size: 1.2em;
+  //       }
+  //     }
 
+  //     &:focus {
+  //       transform: translate3d(0, 0, 0);
+  //       box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
+
+  //       .smartphone-menu-trigger {
+  //         pointer-events: none;
+  //       }
+  //     }
+  //   }
+}

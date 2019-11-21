@@ -1,8 +1,11 @@
 // import 'owl.carousel/dist/assets/owl.carousel.css';
 // import 'owl.carousel';
 import '../styles/master.scss';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
 import 'bootstrap';
-// import $ from 'jquery';
+import 'owl.carousel';
+import $ from 'jquery';
 // import '../styles/index.scss';
 // import '../styles/seccion_equipo.scss';
 // import 'popper.js';
@@ -64,3 +67,17 @@ import 'bootstrap';
 //     .parent()
 //     .removeClass('is-active');
 // });
+
+let document;
+$(document).ready(function owlCarousel() {
+  $('.owl-carousel').owlCarousel();
+});
+
+$(document).ready(function() {
+  $('#owl-demo').owlCarousel({
+    autoPlay: 3000,
+    items: 4,
+    itemsDesktop: [1199, 3],
+    itemsDesktopSmall: [979, 3]
+  });
+});

@@ -2,6 +2,7 @@ const Path = require('path');
 const CleanWebpackPlugin = require('clean-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const webpack = require('webpack');
 
 module.exports = {
   entry: {
@@ -22,8 +23,16 @@ module.exports = {
     new CopyWebpackPlugin([{ from: Path.resolve(__dirname, '../public'), to: 'public' }]),
     new HtmlWebpackPlugin({
       template: Path.resolve(__dirname, '../src/index.html')
+    }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
     })
   ],
+  externals: {
+    jquery: 'jQuery'
+  },
   resolve: {
     alias: {
       '~': Path.resolve(__dirname, '../src')
@@ -47,16 +56,17 @@ module.exports = {
       },
       {
         test: require.resolve('jquery'),
-        use: [{
-                loader: 'expose-loader',
-                options: 'jQuery'
-              },
-              {
-                loader: 'expose-loader',
-                options: '$'
-              }
+        use: [
+          {
+            loader: 'expose-loader',
+            options: 'jQuery'
+          },
+          {
+            loader: 'expose-loader',
+            options: '$'
+          }
         ]
-      },
+      }
     ]
-  },
+  }
 };

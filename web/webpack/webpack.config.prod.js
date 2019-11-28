@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 const Path = require('path');
 const Webpack = require('webpack');
+const webpack = require('webpack');
 const merge = require('webpack-merge');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const common = require('./webpack.common.js');
@@ -21,6 +23,11 @@ module.exports = merge(common, {
     new MiniCssExtractPlugin({
       filename: 'bundle.css'
     }),
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+      'window.jQuery': 'jquery'
+    })
   ],
   module: {
     rules: [
@@ -31,11 +38,7 @@ module.exports = merge(common, {
       },
       {
         test: /\.s?css/i,
-        use : [
-          MiniCssExtractPlugin.loader,
-          'css-loader',
-          'sass-loader'
-        ]
+        use: ['MiniCssExtractPlugin.loader', 'css-loader', 'sass-loader']
       }
     ]
   }

@@ -1,7 +1,41 @@
+<<<<<<< HEAD
+/* eslint-disable prettier/prettier */
+/* eslint-disable func-names */
+import '../styles/master.scss';
+import 'owl.carousel/dist/assets/owl.carousel.css';
+import 'owl.carousel/dist/assets/owl.theme.default.css';
+import 'bootstrap';
+import 'owl.carousel';
+import $ from 'jquery';
+// import 'popper.js';
+
+let document;
+$(document).ready(function () {
+    $('#owl-demo').owlCarousel({
+        loop: true,
+        margin: 0,
+        nav: true,
+        // autoHeightClass: owl-height,
+        responsiveClass: true,
+        responsive: {
+            0: {
+                items: 1
+            },
+            600: {
+                items: 4
+            },
+            1000: {
+                items: 4
+            },
+        }
+    });
+});
+=======
 import 'bootstrap';
 // import $ from 'jquery';
 import '../styles/master.scss';
 import 'popper.js';
+>>>>>>> 28062bf5c76764e79b3d209cdecf78e4c244384b
 
 // Menu
 

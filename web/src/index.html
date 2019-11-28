@@ -4,6 +4,9 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="../master.scss">
   <title>Estudio DomoArq</title>
 </head>
 
@@ -84,19 +87,19 @@
             <div class="carousel-item active">
               <img src="../images/portada.png" style="height: 100vh;" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-md-block">
-                <h4 class="carousel-text"><u>D</u>iseñamos <br /><u>e</u>spacios para la vida</h4>
+                <h4 class="carousel-text"><u>D</u>iseñamos </br><u>e</u>spacios para la vida</h4>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../images/portada.png" style="height: 100vh;" class="d-block w-100" alt="..." />
               <div class="carousel-caption d-md-block">
-                <h4 class="carousel-text"><u>D</u>iseñamos <br /><u>e</u>spacios para la vida</h4>
+                <h4 class="carousel-text"><u>D</u>iseñamos </br><u>e</u>spacios para la vida</h4>
               </div>
             </div>
             <div class="carousel-item">
               <img src="../images/portada.png" style="height: 100vh;" class="d-block w-100" alt="portada" />
               <div class="carousel-caption d-md-block">
-                <h4 class="carousel-text"><u>D</u>iseñamos <br /><u>e</u>spacios para la vida</h4>
+                <h4 class="carousel-text"><u>D</u>iseñamos </br><u>e</u>spacios para la vida</h4>
               </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
@@ -117,222 +120,231 @@
             <span class="sr-only">Next</span>
           </a>
         </div>
+        <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
       </div>
-    </section>
+  </div>
+  </section>
 
-    <section id="estudio" class="secciones container-fluid ">
-      <span class="logo-domo">
-        <a href="#inicio"><img src="../images/domoarq.png" alt="logo de Domo" /></a>
-      </span>
-      <h2 class="titulo-seccion"><b>El estudio</b></h2>
-      <article class="article_container d-flex">
-        <p class="el-equipo d-flex">
-          <img src="../images/equipo2.JPG.png" alt="imagen del equipo" />
+  <section id="estudio" class="secciones container-fluid">
+    <span class="logo-domo"><img src="../images/domoarq.png" alt=""></span>
+    <h2 class="titulo-seccion"><b>El estudio</b></h2>
+    <p class="el-equipo"><img src="../images/equipo.jpg" alt="imagen del equipo"></p>
+    <p class="frase-estudio">
+      El estudio DOMO se crea en el año 2004 por los Arquitectos Pablo Phatouros, Guillermo Villamarin y
+      Adrian Cecileo.
+      La palabra DOMO proviene del castellano antiguo y su significado es “CASA”. <br><br>
+
+      El objeto del Estudio en esos años estaba enfocado
+      exclusivamente a proyectos y dirección de obra,
+      empezando como muchos por reformas pequeñas y
+      ampliaciones.
+
+      <button class="boton-equipo btn" id="btn-equipo">Conoce al equipo<a href="../src/equipo.html">t</a></button>
+
+    </p>
+
+  </section>
+
+  <section id="proyectos" class="secciones container-fluid">
+    <h2 class="titulo-seccion"> <b>Proyectos destacados</b> </h2>
+
+    <div class="project-content">
+
+      <div class="project-text">
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit, architecto magnam inventore
+          ducimus ad id harum quo ut sapiente laudantium. At inventore quo pariatur officiis explicabo quas, est
+          corrupti corporis omnis temporibus facilis modi sapiente? Laboriosam maxime sunt reiciendis quae vero
+          nobis soluta recusandae impedit error non, nostrum quis?
         </p>
-        <p class="frase-estudio d-flex">
-          El estudio DOMO se crea en el año 2004 por los Arquitectos Pablo Phatouros, Guillermo
-          Villamarin y Adrian Cecileo. La palabra DOMO proviene del castellano antiguo y su
-          significado es “CASA”. <br /><br />
-          El objeto del Estudio en esos años estaba enfocado exclusivamente a proyectos y
-          dirección de obra, empezando como muchos por reformas pequeñas y ampliaciones.
-        </p>
-      </article>
+        <button class="boton-equipo btn" id="btn-proyecto">Mas proyectos<a href="../src/equipo.html">t</a></button>
+      </div>
+      <div class="project-pic" style="background-image: url(../images/proyecto1.jpg)">
 
-      <button class="btn d-flex" id="btn_equipo">
-        <a href="../src/equipo.html" class="boton_equipo">Conoce al equipo =></a>
-      </button>
-    </section>
-
-    <section id="proyectos" class="secciones container-fluid">
-      <h2 class="titulo-seccion"><b>Proyectos destacados</b></h2>
-
-      <article class=" container project_content d-flex ">
-
-        <div class="project_text flex-column justify-content-between d-flex col-lg-4 col-md-4 col-sm-12">
-          <p>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit,
-            architecto magnam inventore ducimus ad id harum quo ut sapiente laudantium. At
-            inventore quo pariatur officiis explicabo quas, est corrupti corporis omnis
-            temporibus facilis modi sapiente? Laboriosam maxime sunt reiciendis quae vero
-            nobis soluta recusandae impedit error non, nostrum quis?
-          </p>
-          <button class="boton-equipo btn" id="btn-proyecto">
-            <a href="./todos_proyectos.html">Mas proyectos =></a>
-          </button>
+      </div>
+      <div class="arrows">
+        <div class="arrow_left">
+          <=</div> <div class="arrow_right">=>
         </div>
+      </div>
+    </div>
 
-        <div class="project_carrusel flex-column d-flex col-lg-8 col-md-8 col-sm-12">
-          <div id="owl-demo" class="owl-carousel owl-theme">
-            <div> <img class="owl-image" src="../images/proyecto1.jpg" alt="" /></div>
-            <div> <img class="owl-image" src="../images/proyecto2.jpg" alt="" /></div>
-            <div> <img class="owl-image" src="../images/proyecto1.jpg" alt="" /></div>
-            <div> <img class="owl-image" src="../images/proyecto2.jpg" alt="" /></div>
-            <div> <img class="owl-image" src="../images/proyecto1.jpg" alt="" /></div>
-            <div> <img class="owl-image" src="../images/proyecto1.jpg" alt="" /></div>
-          </div>
-          <div class="owl-nav">
-            <div class="owl-prev">prev</div>
-            <div class="owl-next">next</div>
-          </div>
-        </div>
+    </div>
 
+  </section>
 
-      </article>
-
-    </section>
-
-    <section id="premios" class="secciones container-fluid">
-      <h2 class="titulo-seccion"><b>Premios y menciones</b></h2>
-      <article class="content">
-        <!-- TODO: Completar con los textos correspondientes y el diseño final del modal -->
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="miembro">
-                <div class="container">
-                  <div class="row">
-                    <div class="texto">
-                      REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                      PREMIOS ARQ-FADEA Buenos Aires <br />
-                      OBRA PRIVADA – ESCALA MEDIA <br />
-                    </div>
+  <section id="premios" class="secciones container-fluid">
+    <h2 class="titulo-seccion"><b>Premios y menciones</b></h2>
+    <article class="content">
+      <!-- TODO: Completar con los textos correspondientes y el diseño final del modal -->
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="miembro">
+              <div class="container">
+                <div class="row">
+                  <div class="texto">
+                    REVISTA ARQ CLARÍN – 13.11.2018 <br>
+                    PREMIOS ARQ-FADEA Buenos Aires <br>
+                    OBRA PRIVADA – ESCALA MEDIA <br>
                   </div>
                   <div class="row">
                     <a data-toggle="modal" type="button" class="more" data-target="#ModalPremioClarin">+</a>
                   </div>
                 </div>
-              </div>
-            </div>
-            <!-- ModalPremioClarin -->
-            <div class="modal fade" id="ModalPremioClarin" tabindex="-1" role="dialog"
-              aria-labelledby="ModalPremioClarin" aria-hidden="true">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="ModalPremioClarin">Modal title</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    ...
-                  </div>
-                  <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="miembro">
-                <div class="container">
-                  <div class="row">
-                    <div class="texto">
-                      REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                      PREMIOS ARQ-FADEA Buenos Aires <br />
-                      OBRA PRIVADA – ESCALA MEDIA <br />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="more">+</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="miembro">
-                <div class="container">
-                  <div class="row">
-                    <div class="texto">
-                      REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                      PREMIOS ARQ-FADEA Buenos Aires <br />
-                      OBRA PRIVADA – ESCALA MEDIA <br />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="more">+</div>
-                  </div>
+                <div class="row">
+                  <a data-toggle="modal" type="button" class="more" data-target="#ModalPremioClarin">+</a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col">
-              <div class="miembro">
-                <div class="container">
-                  <div class="row">
-                    <div class="texto">
-                      REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                      PREMIOS ARQ-FADEA Buenos Aires <br />
-                      OBRA PRIVADA – ESCALA MEDIA <br />
-                    </div>
+          <div class="col">
+            <div class="miembro">
+              <div class="container">
+                <div class="row">
+                  <div class="texto">
+                    REVISTA ARQ CLARÍN – 13.11.2018 <br>
+                    PREMIOS ARQ-FADEA Buenos Aires <br>
+                    OBRA PRIVADA – ESCALA MEDIA <br>
                   </div>
                   <div class="row">
                     <div class="more">+</div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="more">+</div>
+                </div>
               </div>
             </div>
-            <div class="col">
-              <div class="miembro">
-                <div class="container">
-                  <div class="row">
-                    <div class="texto">
-                      REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                      PREMIOS ARQ-FADEA Buenos Aires <br />
-                      OBRA PRIVADA – ESCALA MEDIA <br />
-                    </div>
+          </div>
+          <div class="col">
+            <div class="miembro">
+              <div class="container">
+                <div class="row">
+                  <div class="texto">
+                    REVISTA ARQ CLARÍN – 13.11.2018 <br>
+                    PREMIOS ARQ-FADEA Buenos Aires <br>
+                    OBRA PRIVADA – ESCALA MEDIA <br>
                   </div>
                   <div class="row">
                     <div class="more">+</div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="miembro">
-                <div class="container">
-                  <div class="row">
-                    <div class="texto">
-                      REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                      PREMIOS ARQ-FADEA Buenos Aires <br />
-                      OBRA PRIVADA – ESCALA MEDIA <br />
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="more">+</div>
-                  </div>
+                <div class="row">
+                  <div class="more">+</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-      </article>
-    </section>
+        <div class="row">
+          <div class="col">
+            <div class="miembro">
+              <div class="container">
+                <div class="row">
+                  <div class="texto">
+                    REVISTA ARQ CLARÍN – 13.11.2018 <br>
+                    PREMIOS ARQ-FADEA Buenos Aires <br>
+                    OBRA PRIVADA – ESCALA MEDIA <br>
+                  </div>
+                  <div class="row">
+                    <div class="more">+</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="more">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="miembro">
+              <div class="container">
+                <div class="row">
+                  <div class="texto">
+                    REVISTA ARQ CLARÍN – 13.11.2018 <br>
+                    PREMIOS ARQ-FADEA Buenos Aires <br>
+                    OBRA PRIVADA – ESCALA MEDIA <br>
+                  </div>
+                  <div class="row">
+                    <div class="more">+</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="more">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="miembro">
+              <div class="container">
+                <div class="row">
+                  <div class="texto">
+                    REVISTA ARQ CLARÍN – 13.11.2018 <br>
+                    PREMIOS ARQ-FADEA Buenos Aires <br>
+                    OBRA PRIVADA – ESCALA MEDIA <br>
+                  </div>
+                  <div class="row">
+                    <div class="more">+</div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="more">+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+
+    <!-- ModalPremioClarin -->
+    <div class="modal fade" id="ModalPremioClarin" tabindex="-1" role="dialog" aria-labelledby="ModalPremioClarin"
+      aria-hidden="true">
+      <div class="modal-dialog" id="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close close-modal" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <img class="img-modal" src="../images/recorte-diario.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- TODO: Agregar los demas modales cuando esten definidos -->
+
+  </section>
 
     <section id="contacto" class="secciones container-fluid">
-      <h2 class="titulo-seccion">
-        <b>Contanos</b><br />
-        TU PROYECTO
-      </h2>
+      <h2 class="titulo-seccion"> <b>Contanos <br> TU PROYECTO</h2>
       <section class="section">
         <div class="row">
-          <div class="col-md-7 col-xl-7">
+          <div class="col-md-8 col-xl-8">
             <form id="contact-form" name="contact-form" action="" method="POST">
+
               <div class="row">
                 <div class="col-md-10">
                   <div class="md-form">
                     <div class="mat-div">
                       <label for="name" class="mat-label">NOMBRE</label>
-                      <input type="text" class="mat-input" />
+                      <input type="text" class="mat-input">
                     </div>
 
                     <div class="mat-div">
                       <label for="email" class="mat-label">EMAIL</label>
-                      <input type="email" class="mat-input" />
+                      <input type="email" class="mat-input">
                     </div>
 
                     <div class="mat-div">
@@ -351,25 +363,25 @@
 
                     <div class="mat-div">
                       <label for="message" class="mat-label">MENSAJE</label>
-                      <input type="text" class="mat-input" />
+                      <input type="text" class="mat-input">
                     </div>
 
                     <div class="novedades">
-                      <input type="radio" autocomplete="off" />
+                      <input type="radio" autocomplete="off">
                       <label class="radio-label">QUIERO RECIBIR NOVEDADES</label>
                     </div>
+
                   </div>
                 </div>
               </div>
+
             </form>
           </div>
 
           <div class="col-md-5 col-xl-5">
             <ul class="contact">
               <li>
-                <p>
-                  <a href="https://goo.gl/maps/bbxSMYYWtmDBp6tL6">General Savio 2891 - 7° Piso</a>
-                </p>
+                <p><a href="https://goo.gl/maps/bbxSMYYWtmDBp6tL6">General Savio 2891 - 7° Piso</a></p>
               </li>
               <li>
                 <p>CP1650 Villa Maipú, Argentina</p>
@@ -387,7 +399,7 @@
         </div>
       </section>
     </section>
-  </div>
+    </div>
 
   <footer>
     <div class="col-xs-12 col-md-12 col-lg-12" style="background-color:#000029">
@@ -398,8 +410,7 @@
             <img src="./images/Recurso 2.svg" alt="Logo DevPlay" /></a>
         </p>
       </div>
-    </div>
-  </footer>
+  </section>
 </body>
 
 </html>

@@ -1,4 +1,5 @@
 @import '_variables';
+
 // @import '/node_modules/bootstrap/dist/bootstrap.min.css';
 
 //Generales
@@ -168,48 +169,45 @@ main {
 //Seccion estudio
 #estudio {
   overflow: hidden;
-
-  .article_container {
-    display: flex;
-    height: 70vh;
-    align-content: space-between;
-
-    .el-equipo {
-      width: 40%;
-
-      img {
-        width: 100%;
-        background-position: center;
-      }
-    }
-
-    .frase-estudio {
-      align-self: center;
-      width: 40%;
-      margin-left: 10%;
-      font-size: 20px;
-    }
-  }
-
-  #btn_equipo {
+  .frase-estudio {
     float: right;
-    margin-right: 10%;
-    flex-direction: row;
-    justify-content: flex-end;
-    height: 60px;
-    width: 200px;
-    background-color: $color-principal;
-    border-radius: 0px;
-
-    a {
+    width: 480px;
+    position: relative;
+    padding-right: 100px;
+    #btn-equipo {
+      position: absolute;
+      right: 20%;
+      bottom: -157%;
+      height: 60px;
+      width: 200px;
+      background-color: $color-principal;
       font-weight: bold;
-      color: $color-primary-text;
-      text-align: center;
+      border-radius: 0px;
+      a {
+        height: 60px;
+        width: 60px;
+        background-color: $color-secundario;
+        padding-top: 19px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-bottom: 19px;
+        margin-right: -45px;
+        margin-left: 0px;
+      }
     }
   }
 }
 
 //Seccion equipo
+.el-equipo {
+  background-image: url= '(../images/equipo.jpg)';
+  float: left;
+  height: 70vh;
+
+  img {
+    width: 480px;
+  }
+}
 
 //seccion proyectos
 #proyectos {
@@ -323,6 +321,40 @@ main {
       width: 40px;
       background-color: $color-secundario;
     }
+    .close-modal-btn {
+      text-align: center;
+      color: #fff;
+      align-items: flex-end;
+      justify-content: flex-start;
+      height: 10px;
+      width: 10px;
+      background-color: $color-secundario;
+    }
+  }
+  #modal-dialog {
+    max-width: 70% !important;
+  }
+  .img-modal {
+    width: 100%;
+  }
+  .modal-header {
+    border-bottom: none;
+  }
+  .modal-body {
+    padding: 0.5rem;
+  }
+  .close-modal {
+    padding: 5px;
+    text-align: center;
+    color: #fff;
+    height: 25px;
+    width: 25px;
+    background-color: $color-secundario;
+  }
+  .close {
+    font-size: 1rem;
+    text-shadow: none;
+    opacity: 1;
   }
 }
 
@@ -470,7 +502,6 @@ main {
     }
   }
 }
-
 // Fin footer
 
 // Media Queries
@@ -484,7 +515,6 @@ main {
   body {
     padding-left: 35px;
   }
-
   .menu {
     width: 45px;
 
@@ -508,10 +538,8 @@ main {
 
       cursor: pointer;
 
-      opacity: 0;
-      /* hide this */
-      z-index: 2;
-      /* and place it over the hamburger */
+      opacity: 0; /* hide this */
+      z-index: 2; /* and place it over the hamburger */
 
       -webkit-touch-callout: none;
     }
@@ -545,17 +573,17 @@ main {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked~span {
+    .hamburguer-menu-trigger input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -595,13 +623,18 @@ main {
           &:hover {
             background-color: rgba(0, 0, 0, 0.1);
           }
+          ul {
+            li {
+              padding: 0;
+            }
+          }
 
-          &:focus {
-            outline: none;
+            a {
+              color: #fff;
+            }
           }
         }
       }
-
       .hamburguer-menu-social {
         background: #000;
         color: #fff;
@@ -609,25 +642,20 @@ main {
         font-size: 1rem;
         padding: 5% 5% 0% 5%;
         height: 100vh;
-
         ul {
           list-style: none;
-
           li {
             height: auto;
             padding: 0.5em 1em 0em 1.5em;
-
             a {
               color: #fff;
             }
           }
         }
-
         .social-text {
           padding-left: 5px;
           display: inline;
         }
-
         .social-icon {
           width: 15px;
           height: 15px;
@@ -636,7 +664,7 @@ main {
       }
     }
 
-    .hamburguer-menu-trigger input:checked~ul {
+    .hamburguer-menu-trigger input:checked ~ ul {
       transform: scale(1, 1);
       opacity: 1;
     }
@@ -659,6 +687,11 @@ main {
         left: 50%;
         transform: translate3d(-50%, -50%, 0);
       }
+    }
+
+    .menu-social {
+      padding: 0.5em;
+      position: relative;
 
       &:after {
         top: 55%;
@@ -668,12 +701,6 @@ main {
 
     .menu-items {
       visibility: hidden;
-    }
-
-    ul {
-      li {
-        padding: 0;
-      }
     }
 
     .menu-social {
@@ -694,83 +721,4 @@ main {
       }
     }
   }
-
-  .carousel-text {
-    font-size: 1rem;
-  }
-
-  .contact {
-    margin-top: 10%;
-    text-align: center;
-  }
-
-  .send-button {
-    padding: 10% 0% 10% 0%;
-  }
-
-  #contacto {
-    padding-left: 0px;
-  }
-}
-
-@media screen and (max-width: 480px) {
-  .carousel-text {
-    font-size: 0.8rem;
-  }
-}
-
-//este estaba cometado, pero no se si lo querias usar
-@media screen and (max-width: 400px) {
-  //   body {
-  //     padding-left: 0;
-  //   }
-
-  //   .menu {
-  //     width: 230px;
-  //     box-shadow: 0 0 0 100em rgba(0, 0, 0, 0);
-  //     transform: translate3d(-230px, 0, 0);
-  //     transition: all 0.3s ease-in-out;
-
-  //     .smartphone-menu-trigger {
-  //       width: 40px;
-  //       height: 40px;
-  //       position: absolute;
-  //       left: 100%;
-  //       cursor: pointer;
-  //       background: $color-principal;
-
-  //       &:before {
-  //         content: '';
-  //         width: 50%;
-  //         height: 2px;
-  //         background: #fff;
-  //         border-radius: 10px;
-  //         position: absolute;
-  //         top: 45%;
-  //         left: 50%;
-  //         transform: translate3d(-50%, -50%, 0);
-  //       }
-
-  //       // &:after {
-  //       //   top: 55%;
-  //       //   transform: translate3d(-50%, -50%, 0);
-  //       // }
-  //     }
-
-  //     ul {
-  //       li {
-  //         padding: 1em 1em 1em 3em;
-  //         font-size: 1.2em;
-  //       }
-  //     }
-
-  //     &:focus {
-  //       transform: translate3d(0, 0, 0);
-  //       box-shadow: 0 0 0 100em rgba(0, 0, 0, 0.6);
-
-  //       .smartphone-menu-trigger {
-  //         pointer-events: none;
-  //       }
-  //     }
-  //   }
 }

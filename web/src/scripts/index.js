@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* eslint-disable prettier/prettier */
 /* eslint-disable func-names */
 import '../styles/master.scss';
@@ -29,6 +30,12 @@ $(document).ready(function () {
         }
     });
 });
+=======
+import 'bootstrap';
+// import $ from 'jquery';
+import '../styles/master.scss';
+import 'popper.js';
+>>>>>>> 28062bf5c76764e79b3d209cdecf78e4c244384b
 
 // Menu
 
@@ -78,12 +85,18 @@ $(document).ready(function () {
 //     .addClass('is-active is-completed');
 // });
 
-// $('.mat-input').focusout(function () {
-//   if ($(this).val() === '')
-//     $(this)
-//       .parent()
-//       .removeClass('is-completed');
-//   $(this)
-//     .parent()
-//     .removeClass('is-active');
-// });
+$('.mat-input').focus(function() {
+  $(this)
+    .parent()
+    .addClass('is-active is-completed');
+});
+
+$('.mat-input').focusout(function() {
+  if ($(this).val() === '')
+    $(this)
+      .parent()
+      .removeClass('is-completed');
+  $(this)
+    .parent()
+    .removeClass('is-active');
+});

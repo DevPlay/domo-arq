@@ -108,6 +108,7 @@ main {
       &:focus {
         outline: none;
       }
+
       a:hover {
         text-decoration: none;
         color: $color-secondary-text;
@@ -153,10 +154,12 @@ main {
   display: flex;
   width: 80%;
   justify-content: flex-end;
+
   li {
     height: 15px;
     width: 15px;
   }
+
   .active {
     background-color: $color-principal;
   }
@@ -165,17 +168,21 @@ main {
 //Seccion estudio
 #estudio {
   overflow: hidden;
+
   .article_container {
     display: flex;
     height: 70vh;
     align-content: space-between;
+
     .el-equipo {
       width: 40%;
+
       img {
         width: 100%;
         background-position: center;
       }
     }
+
     .frase-estudio {
       align-self: center;
       width: 40%;
@@ -183,6 +190,7 @@ main {
       font-size: 20px;
     }
   }
+
   #btn_equipo {
     float: right;
     margin-right: 10%;
@@ -192,6 +200,7 @@ main {
     width: 200px;
     background-color: $color-principal;
     border-radius: 0px;
+
     a {
       font-weight: bold;
       color: $color-primary-text;
@@ -203,94 +212,81 @@ main {
 //Seccion equipo
 
 //seccion proyectos
-// #proyectos {
-//   .project_content {
-//     display: flex;
-//     .project-text {
-//       height: 80vh;
-//       width: 30vw;
-//       padding-right: 5%;
-//       background-color: rgb(255, 255, 255);
-//       font-size: 1.2rem;
-//     }
-//     #btn-proyecto {
-//       align-items: flex-end;
-//       height: 60px;
-//       width: 200px;
-//       background-color: $color-principal;
-//       font-weight: bold;
-//       border-radius: 0px;
-//       right: 60%;
-//       bottom: -185%;
-
-//       a {
-//         height: 60px;
-//         width: 60px;
-//         background-color: $color-secundario;
-//         padding-top: 19px;
-//         padding-left: 30px;
-//         padding-right: 30px;
-//         padding-bottom: 19px;
-//         margin-right: -48px;
-//         margin-left: 20px;
-//       }
-//     }
-//     .project-pic {
-//       height: 70vh;
-//       width: 30vw;
-//       background-color: rgb(197, 212, 55);
-//       background-position: center;
-//       background-size: cover;
-//     }
-//   }
-//   .arrows {
-//     display: flex;
-//     align-items: flex-end;
-//     flex-direction: row;
-
-//     .arrow_left {
-//       flex-direction: row;
-//       align-items: flex-end;
-//       height: 40px;
-//       width: 40px;
-//       padding: 15%;
-//       background-color: $color-principal;
-//       color: $color-secundario;
-//     }
-
-//     .arrow_right {
-//       flex-direction: row;
-//       align-items: flex-end;
-//       height: 40px;
-//       width: 40px;
-//       padding: 15%;
-//       background-color: $color-secundario;
-//       color: white;
-//     }
-//   }
-// }
-
 #proyectos {
-  #owl-demo .item {
-    margin: 3px;
-  }
+  .project_content {
+    //     display: flex;
+    //     .project-text {
+    height: 80vh;
+    //       width: 30vw;
+    //       padding-right: 5%;
+    //       background-color: rgb(255, 255, 255);
+    //       font-size: 1.2rem;
+    //     }
 
-  #owl-demo .item img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
+    //     .project-pic {
+    //       height: 70vh;
+    //       width: 30vw;
+    //       background-color: rgb(197, 212, 55);
+    //       background-position: center;
+    //       background-size: cover;
+    //     }
+    //   }
+    //   .arrows {
+    //     display: flex;
+    //     align-items: flex-end;
+    //     flex-direction: row;
 
-  .owl-image {
-    height: 500px;
+    //     .arrow_left {
+    //       flex-direction: row;
+    //       align-items: flex-end;
+    //       height: 40px;
+    //       width: 40px;
+    //       padding: 15%;
+    //       background-color: $color-principal;
+    //       color: $color-secundario;
+    //     }
+
+    //     .arrow_right {
+    //       flex-direction: row;
+    //       align-items: flex-end;
+    //       height: 40px;
+    //       width: 40px;
+    //       padding: 15%;
+    //       background-color: $color-secundario;
+    //       color: white;
+    //     }
+    //   }
+    // }
+
+    #proyectos {
+      #owl-demo .item {
+        margin: 3px;
+      }
+
+      #owl-demo .item img {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+
+      .owl-image {
+        height: 70vh;
+      }
+
+      .owl-image:hover {
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+    }
   }
 }
+
 //seccion premios
 #premios {
   .content {
     display: flex;
     height: 100vh;
     width: 100%;
+
     .miembro {
       display: flex;
       justify-content: space-between;
@@ -298,15 +294,23 @@ main {
       width: 250px;
       border: 0.5px solid $color-secundario;
       margin: 10px 5px 0px 0px;
+
       .texto {
         text-align: center;
         padding: 5%;
         margin-top: 10%;
       }
+
       .texto:hover {
         font-weight: 600;
       }
+
     }
+
+    .miembro:hover {
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
     .more {
       position: absolute;
       bottom: 0;
@@ -460,11 +464,13 @@ main {
     text-align: center;
     padding: 10px;
     font-size: 18px;
+
     img {
       width: 100px;
     }
   }
 }
+
 // Fin footer
 
 // Media Queries
@@ -478,6 +484,7 @@ main {
   body {
     padding-left: 35px;
   }
+
   .menu {
     width: 45px;
 
@@ -501,8 +508,10 @@ main {
 
       cursor: pointer;
 
-      opacity: 0; /* hide this */
-      z-index: 2; /* and place it over the hamburger */
+      opacity: 0;
+      /* hide this */
+      z-index: 2;
+      /* and place it over the hamburger */
 
       -webkit-touch-callout: none;
     }
@@ -536,17 +545,17 @@ main {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked ~ span {
+    .hamburguer-menu-trigger input:checked~span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -592,6 +601,7 @@ main {
           }
         }
       }
+
       .hamburguer-menu-social {
         background: #000;
         color: #fff;
@@ -599,20 +609,25 @@ main {
         font-size: 1rem;
         padding: 5% 5% 0% 5%;
         height: 100vh;
+
         ul {
           list-style: none;
+
           li {
             height: auto;
             padding: 0.5em 1em 0em 1.5em;
+
             a {
               color: #fff;
             }
           }
         }
+
         .social-text {
           padding-left: 5px;
           display: inline;
         }
+
         .social-icon {
           width: 15px;
           height: 15px;
@@ -621,7 +636,7 @@ main {
       }
     }
 
-    .hamburguer-menu-trigger input:checked ~ ul {
+    .hamburguer-menu-trigger input:checked~ul {
       transform: scale(1, 1);
       opacity: 1;
     }
@@ -654,6 +669,7 @@ main {
     .menu-items {
       visibility: hidden;
     }
+
     ul {
       li {
         padding: 0;
@@ -663,6 +679,7 @@ main {
     .menu-social {
       padding: 0.5em;
       position: relative;
+
       ul {
         li {
           background-position: center center;
@@ -677,6 +694,7 @@ main {
       }
     }
   }
+
   .carousel-text {
     font-size: 1rem;
   }
@@ -685,6 +703,7 @@ main {
     margin-top: 10%;
     text-align: center;
   }
+
   .send-button {
     padding: 10% 0% 10% 0%;
   }

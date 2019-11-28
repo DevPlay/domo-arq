@@ -200,14 +200,26 @@ main .sections-content {
   text-align: center;
 }
 
-#proyectos #owl-demo .item {
+#proyectos .project_content {
+  height: 80vh;
+}
+
+#proyectos .project_content #proyectos #owl-demo .item {
   margin: 3px;
 }
 
-#proyectos #owl-demo .item img {
+#proyectos .project_content #proyectos #owl-demo .item img {
   display: block;
   width: 100%;
   height: auto;
+}
+
+#proyectos .project_content #proyectos .owl-image {
+  height: 70vh;
+}
+
+#proyectos .project_content #proyectos .owl-image:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #premios .content {
@@ -233,6 +245,10 @@ main .sections-content {
 
 #premios .content .miembro .texto:hover {
   font-weight: 600;
+}
+
+#premios .content .miembro:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 #premios .content .more {

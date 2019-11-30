@@ -1,6 +1,4 @@
-@import '_variables';
-
-// @import '/node_modules/bootstrap/dist/bootstrap.min.css';
+@import "_variables";
 
 //Generales
 body {
@@ -170,8 +168,6 @@ main {
 #estudio {
   overflow: hidden;
   .frase-estudio {
-    float: right;
-    width: 480px;
     position: relative;
     padding-right: 100px;
     #btn-equipo {
@@ -200,7 +196,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url= '(../images/equipo.jpg)';
+  background-image: url= "(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -302,7 +298,6 @@ main {
       .texto:hover {
         font-weight: 600;
       }
-
     }
 
     .miembro:hover {
@@ -395,7 +390,7 @@ main {
 
   .mat-div:after,
   .mat-div:before {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     width: 100%;
@@ -629,94 +624,93 @@ main {
             }
           }
 
-            a {
-              color: #fff;
-            }
+          a {
+            color: #fff;
           }
         }
       }
-      .hamburguer-menu-social {
-        background: #000;
-        color: #fff;
-        text-align: left;
-        font-size: 1rem;
-        padding: 5% 5% 0% 5%;
-        height: 100vh;
-        ul {
-          list-style: none;
-          li {
-            height: auto;
-            padding: 0.5em 1em 0em 1.5em;
-            a {
-              color: #fff;
-            }
-          }
-        }
-        .social-text {
-          padding-left: 5px;
-          display: inline;
-        }
-        .social-icon {
-          width: 15px;
-          height: 15px;
-          margin-bottom: 5px;
-        }
-      }
     }
-
-    .hamburguer-menu-trigger input:checked ~ ul {
-      transform: scale(1, 1);
-      opacity: 1;
-    }
-
-    .smartphone-menu-trigger {
-      width: 40px;
-      height: 40px;
-      position: absolute;
-      background: $color-principal;
-
-      &:before,
-      &:after {
-        content: '';
-        width: 50%;
-        height: 2px;
-        background: #fff;
-        border-radius: 10px;
-        position: absolute;
-        top: 45%;
-        left: 50%;
-        transform: translate3d(-50%, -50%, 0);
-      }
-    }
-
-    .menu-social {
-      padding: 0.5em;
-      position: relative;
-
-      &:after {
-        top: 55%;
-        transform: translate3d(-50%, -50%, 0);
-      }
-    }
-
-    .menu-items {
-      visibility: hidden;
-    }
-
-    .menu-social {
-      padding: 0.5em;
-      position: relative;
-
+    .hamburguer-menu-social {
+      background: #000;
+      color: #fff;
+      text-align: left;
+      font-size: 1rem;
+      padding: 5% 5% 0% 5%;
+      height: 100vh;
       ul {
+        list-style: none;
         li {
-          background-position: center center;
-          background-size: 30px auto;
-          position: relative;
-          padding: 5px 0px 0px 5px;
-
-          span {
-            display: none;
+          height: auto;
+          padding: 0.5em 1em 0em 1.5em;
+          a {
+            color: #fff;
           }
+        }
+      }
+      .social-text {
+        padding-left: 5px;
+        display: inline;
+      }
+      .social-icon {
+        width: 15px;
+        height: 15px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .hamburguer-menu-trigger input:checked ~ ul {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+
+  .smartphone-menu-trigger {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    background: $color-principal;
+
+    &:before,
+    &:after {
+      content: "";
+      width: 50%;
+      height: 2px;
+      background: #fff;
+      border-radius: 10px;
+      position: absolute;
+      top: 45%;
+      left: 50%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+
+  .menu-social {
+    padding: 0.5em;
+    position: relative;
+
+    &:after {
+      top: 55%;
+      transform: translate3d(-50%, -50%, 0);
+    }
+  }
+
+  .menu-items {
+    visibility: hidden;
+  }
+
+  .menu-social {
+    padding: 0.5em;
+    position: relative;
+
+    ul {
+      li {
+        background-position: center center;
+        background-size: 30px auto;
+        position: relative;
+        padding: 5px 0px 0px 5px;
+
+        span {
+          display: none;
         }
       }
     }

@@ -167,36 +167,61 @@ main {
 //Seccion estudio
 #estudio {
   overflow: hidden;
-  .frase-estudio {
-    position: relative;
-    padding-right: 100px;
-    #btn-equipo {
-      position: absolute;
-      right: 20%;
-      bottom: -157%;
-      height: 60px;
-      width: 200px;
-      background-color: $color-principal;
-      font-weight: bold;
-      border-radius: 0px;
-      a {
-        height: 60px;
-        width: 60px;
-        background-color: $color-secundario;
-        padding-top: 19px;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-bottom: 19px;
-        margin-right: -45px;
-        margin-left: 0px;
+
+  .article_container {
+    display: flex;
+    height: 70vh;
+    align-content: space-between;
+
+    .el-equipo {
+      width: 40%;
+
+      img {
+        width: 100%;
+        background-position: center;
       }
     }
+
+    .frase-estudio {
+      align-self: center;
+      width: 40%;
+      margin-left: 10%;
+      font-size: 20px;
+    }
   }
+
+  // .frase-estudio {
+  //   position: relative;
+  //   padding-right: 100px;
+
+  //   #btn-equipo {
+  //     position: absolute;
+  //     right: 20%;
+  //     bottom: -157%;
+  //     height: 60px;
+  //     width: 200px;
+  //     background-color: $color-principal;
+  //     font-weight: bold;
+  //     border-radius: 0px;
+
+  //     a {
+  //       height: 60px;
+  //       width: 60px;
+  //       background-color: $color-secundario;
+  //       padding-top: 19px;
+  //       padding-left: 30px;
+  //       padding-right: 30px;
+  //       padding-bottom: 19px;
+  //       margin-right: -45px;
+  //       margin-left: 0px;
+  //     }
+  //   }
+  // }
 }
 
 //Seccion equipo
 .el-equipo {
-  background-image: url= "(../images/equipo.jpg)";
+  background-image: url="(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -278,25 +303,21 @@ main {
 #premios {
   .content {
     display: flex;
-    height: 100vh;
+    height: 80vh;
     width: 100%;
 
     .miembro {
       display: flex;
       justify-content: space-between;
-      height: 250px;
-      width: 250px;
-      border: 0.5px solid $color-secundario;
+      height: 30%;
+      width: 30%;
+      border: 0.3px solid $color-bordes;
       margin: 10px 5px 0px 0px;
 
       .texto {
         text-align: center;
         padding: 5%;
         margin-top: 10%;
-      }
-
-      .texto:hover {
-        font-weight: 600;
       }
     }
 
@@ -305,8 +326,9 @@ main {
     }
 
     .more {
-      position: absolute;
-      bottom: 0;
+      // position: absolute;
+      // bottom: 0;
+
       padding: 5px;
       text-align: center;
       color: #fff;
@@ -316,6 +338,7 @@ main {
       width: 40px;
       background-color: $color-secundario;
     }
+
     .close-modal-btn {
       text-align: center;
       color: #fff;
@@ -326,18 +349,24 @@ main {
       background-color: $color-secundario;
     }
   }
+
   #modal-dialog {
     max-width: 70% !important;
   }
+
   .img-modal {
     width: 100%;
   }
+
   .modal-header {
     border-bottom: none;
   }
+
   .modal-body {
     padding: 0.5rem;
+    margin: 0.5rem;
   }
+
   .close-modal {
     padding: 5px;
     text-align: center;
@@ -346,6 +375,7 @@ main {
     width: 25px;
     background-color: $color-secundario;
   }
+
   .close {
     font-size: 1rem;
     text-shadow: none;
@@ -497,6 +527,7 @@ main {
     }
   }
 }
+
 // Fin footer
 
 // Media Queries
@@ -510,6 +541,7 @@ main {
   body {
     padding-left: 35px;
   }
+
   .menu {
     width: 45px;
 
@@ -533,8 +565,10 @@ main {
 
       cursor: pointer;
 
-      opacity: 0; /* hide this */
-      z-index: 2; /* and place it over the hamburger */
+      opacity: 0;
+      /* hide this */
+      z-index: 2;
+      /* and place it over the hamburger */
 
       -webkit-touch-callout: none;
     }
@@ -568,17 +602,17 @@ main {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked ~ span {
+    .hamburguer-menu-trigger input:checked~span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -618,6 +652,7 @@ main {
           &:hover {
             background-color: rgba(0, 0, 0, 0.1);
           }
+
           ul {
             li {
               padding: 0;
@@ -630,6 +665,7 @@ main {
         }
       }
     }
+
     .hamburguer-menu-social {
       background: #000;
       color: #fff;
@@ -637,20 +673,25 @@ main {
       font-size: 1rem;
       padding: 5% 5% 0% 5%;
       height: 100vh;
+
       ul {
         list-style: none;
+
         li {
           height: auto;
           padding: 0.5em 1em 0em 1.5em;
+
           a {
             color: #fff;
           }
         }
       }
+
       .social-text {
         padding-left: 5px;
         display: inline;
       }
+
       .social-icon {
         width: 15px;
         height: 15px;
@@ -659,7 +700,7 @@ main {
     }
   }
 
-  .hamburguer-menu-trigger input:checked ~ ul {
+  .hamburguer-menu-trigger input:checked~ul {
     transform: scale(1, 1);
     opacity: 1;
   }

@@ -6,8 +6,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
-  <link rel="stylesheet" href="./styles/owl.carousel.min.css" />
-  <link rel="stylesheet" href="./styles/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!-- <link rel="stylesheet" href="./owl.carousel.min.css"> -->
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/docs/assets/css/owl.carousel.css">
+
+  <!-- <link rel="stylesheet"
+    href="./OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min"> -->
+
+  <!-- <link rel="stylesheet" href="./owl.theme.default.min.css"> -->
   <link rel="stylesheet" href="./styles/master.min.css" />
   <title>Estudio DomoArq</title>
 </head>
@@ -143,34 +149,22 @@
   <section id="estudio" class="secciones container-fluid">
     <span class="logo-domo"><img src="./images/domoarq.png" alt="" /></span>
     <h2 class="titulo-seccion"><b>El estudio</b></h2>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <p class="el-equipo">
-            <img src="./images/equipo.jpg" alt="imagen del equipo" />
-          </p>
-        </div>
-        <div class="col">
-          <p class="frase-estudio">
-            El estudio DOMO se crea en el año 2004 por los Arquitectos Pablo
-            Phatouros, Guillermo Villamarin y Adrian Cecileo. La palabra DOMO
-            proviene del castellano antiguo y su significado es “CASA”. <br /><br />
-
-            El objeto del Estudio en esos años estaba enfocado exclusivamente a
-            proyectos y dirección de obra, empezando como muchos por reformas
-            pequeñas y ampliaciones.
-
-            <button class="boton-equipo btn" id="btn-equipo">
-              Conoce al equipo<a href="./equipo.html"></a>
-            </button>
-          </p>
-        </div>
-      </div>
-    </div>
+    <article class="article_container d-flex">
+      <p class="el-equipo d-flex">
+        <img src="./images/equipo2.png" alt="imagen del equipo" />
+      </p>
+      <p class="frase-estudio d-flex">
+        El estudio DOMO se crea en el año 2004 por los Arquitectos Pablo Phatouros, Guillermo
+        Villamarin y Adrian Cecileo. La palabra DOMO proviene del castellano antiguo y su
+        significado es “CASA”. <br /><br />
+        El objeto del Estudio en esos años estaba enfocado exclusivamente a proyectos y
+        dirección de obra, empezando como muchos por reformas pequeñas y ampliaciones.
+      </p>
+    </article>
   </section>
 
   <section id="proyectos" class="secciones container-fluid">
-    <h2 class="titulo-seccion"><b>Proyectos destacados</b></h2>
+    <h2 class="titulo-seccion"><b>Proyectos <i class="fas fa-arrow-right"></i> destacados</b></h2>
 
     <div class="project-content">
       <div class="project-text">
@@ -183,7 +177,7 @@
           impedit error non, nostrum quis?
         </p>
         <button class="boton-equipo btn" id="btn-proyecto">
-          Mas proyectos<a href="./equipo.html">t</a>
+          Mas proyectos<a href="./equipo.html"><i class="fas fa-arrow-right"></i></a>
         </button>
       </div>
       <div class="project_carrusel flex-column d-flex col-lg-8 col-md-8 col-sm-12">
@@ -217,108 +211,108 @@
 
   <section id="premios" class="secciones container-fluid">
     <h2 class="titulo-seccion"><b>Premios y menciones</b></h2>
-    <article class="content">
+    <article class="content d-flex">
       <!-- TODO: Completar con los textos correspondientes y el diseño final del modal -->
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="miembro">
-              <div class="container">
-                <div class="row">
-                  <div class="texto">
-                    REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                    PREMIOS ARQ-FADEA Buenos Aires <br />
-                    OBRA PRIVADA – ESCALA MEDIA <br />
-                  </div>
+      <div class="container flex-wrap  d-flex">
+        <div class="row d-flex flex-wrap">
+          <!-- <div class="col-lg-4"> -->
+          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+            <div class="container flex-wrap">
+              <div class="row">
+                <div class="texto text-center">
+                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                  PREMIOS ARQ-FADEA Buenos Aires <br />
+                  OBRA PRIVADA – ESCALA MEDIA <br />
                 </div>
-                <div class="row">
-                  <a data-toggle="modal" type="button" class="more" data-target="#ModalPremioClarin">+</a>
+              </div>
+              <!-- <div class="row"> -->
+              <a data-toggle="modal" type="button" class="more" data-target="#ModalPremioClarin">+</a>
+              <!-- </div> -->
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
+          <div class="miembro  d-flex col-lg-4 col-md-4 col-sm-6">
+            <div class="container">
+              <div class="row">
+                <div class="texto">
+                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                  PREMIOS ARQ-FADEA Buenos Aires <br />
+                  OBRA PRIVADA – ESCALA MEDIA <br />
                 </div>
+              </div>
+              <div class="row">
+                <div class="more">+</div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="miembro">
-              <div class="container">
-                <div class="row">
-                  <div class="texto">
-                    REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                    PREMIOS ARQ-FADEA Buenos Aires <br />
-                    OBRA PRIVADA – ESCALA MEDIA <br />
-                  </div>
+          <!-- </div> -->
+          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
+          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+            <div class="container">
+              <div class="row">
+                <div class="texto">
+                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                  PREMIOS ARQ-FADEA Buenos Aires <br />
+                  OBRA PRIVADA – ESCALA MEDIA <br />
                 </div>
-                <div class="row">
-                  <div class="more">+</div>
-                </div>
+              </div>
+              <div class="row">
+                <div class="more">+</div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="miembro">
-              <div class="container">
-                <div class="row">
-                  <div class="texto">
-                    REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                    PREMIOS ARQ-FADEA Buenos Aires <br />
-                    OBRA PRIVADA – ESCALA MEDIA <br />
-                  </div>
+          <!-- </div> -->
+          <!-- </div> -->
+          <!-- <div class="row"> -->
+          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
+          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+            <div class="container">
+              <div class="row">
+                <div class="texto">
+                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                  PREMIOS ARQ-FADEA Buenos Aires <br />
+                  OBRA PRIVADA – ESCALA MEDIA <br />
                 </div>
-                <div class="row">
-                  <div class="more">+</div>
-                </div>
+              </div>
+              <div class="row">
+                <div class="more">+</div>
               </div>
             </div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <div class="miembro">
-              <div class="container">
-                <div class="row">
-                  <div class="texto">
-                    REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                    PREMIOS ARQ-FADEA Buenos Aires <br />
-                    OBRA PRIVADA – ESCALA MEDIA <br />
-                  </div>
+          <!-- </div> -->
+          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
+          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+            <div class="container">
+              <div class="row">
+                <div class="texto">
+                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                  PREMIOS ARQ-FADEA Buenos Aires <br />
+                  OBRA PRIVADA – ESCALA MEDIA <br />
                 </div>
-                <div class="row">
-                  <div class="more">+</div>
-                </div>
+              </div>
+              <div class="row">
+                <div class="more">+</div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="miembro">
-              <div class="container">
-                <div class="row">
-                  <div class="texto">
-                    REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                    PREMIOS ARQ-FADEA Buenos Aires <br />
-                    OBRA PRIVADA – ESCALA MEDIA <br />
-                  </div>
+          <!-- </div> -->
+          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
+          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+            <div class="container">
+              <div class="row">
+                <div class="texto">
+                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                  PREMIOS ARQ-FADEA Buenos Aires <br />
+                  OBRA PRIVADA – ESCALA MEDIA <br />
                 </div>
-                <div class="row">
-                  <div class="more">+</div>
-                </div>
+              </div>
+              <div class="row">
+                <div class="more">+</div>
               </div>
             </div>
           </div>
-          <div class="col">
-            <div class="miembro">
-              <div class="container">
-                <div class="row">
-                  <div class="texto">
-                    REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                    PREMIOS ARQ-FADEA Buenos Aires <br />
-                    OBRA PRIVADA – ESCALA MEDIA <br />
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="more">+</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          <!-- </div> -->
         </div>
       </div>
     </article>
@@ -459,23 +453,32 @@
 
 <!-- Facebook Pixel Code -->
 <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
+  ! function (f, b, e, v, n, t, s) {
+    if (f.fbq) return;
+    n = f.fbq = function () {
+      n.callMethod ?
+        n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+    };
+    if (!f._fbq) f._fbq = n;
+    n.push = n;
+    n.loaded = !0;
+    n.version = '2.0';
+    n.queue = [];
+    t = b.createElement(e);
+    t.async = !0;
+    t.src = v;
+    s = b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t, s)
+  }(window, document, 'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '886038155126572');
-    fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=886038155126572&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Facebook Pixel Code -->
+  fbq('init', '886038155126572');
+  fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=886038155126572&ev=PageView&noscript=1" /></noscript>
+<!-- End Facebook Pixel Code -->
 
-  <!-- TODO: Agregar Google search console -->
+<!-- TODO: Agregar Google search console -->
 <script src="./scripts/index.js"></script>
 
 </html>

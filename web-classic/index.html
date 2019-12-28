@@ -7,12 +7,10 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
-  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/docs/assets/css/owl.carousel.css">
+  <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
 
-  <!-- <link rel="stylesheet" href="./OwlCarousel2-2.3.4\docs\assets\owlcarousel\assets\owl.carousel.min"> -->
-
-  <!-- <link rel="stylesheet" href="./owl.theme.default.min.css"> -->
   <link rel="stylesheet" href="./styles/master.min.css" />
+
   <title>Estudio DomoArq</title>
 </head>
 
@@ -157,7 +155,13 @@
         significado es “CASA”. <br /><br />
         El objeto del Estudio en esos años estaba enfocado exclusivamente a proyectos y
         dirección de obra, empezando como muchos por reformas pequeñas y ampliaciones.
+        <br />
+          <div class="btn-group d-flex " role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-secondary">Conoce al equipo</button>
+            <button type="button" class="btn btn-secondary">=></button>
+          </div>
       </p>
+
     </article>
   </section>
 
@@ -212,9 +216,8 @@
     <article class="content d-flex">
       <!-- TODO: Completar con los textos correspondientes y el diseño final del modal -->
       <div class="container flex-wrap  d-flex">
-        <div class="row d-flex flex-wrap">
-          <!-- <div class="col-lg-4"> -->
-          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+        <div class="row d-flex flex-wrap justify-content-between">
+          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
             <div class="container flex-wrap">
               <div class="row">
                 <div class="texto text-center">
@@ -228,9 +231,8 @@
               <!-- </div> -->
             </div>
           </div>
-          <!-- </div> -->
-          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
-          <div class="miembro  d-flex col-lg-4 col-md-4 col-sm-6">
+          
+          <div class="miembro  d-flex col-lg-3 col-md-3 col-sm-6">
             <div class="container">
               <div class="row">
                 <div class="texto">
@@ -244,9 +246,8 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
-          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+        
+          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
             <div class="container">
               <div class="row">
                 <div class="texto">
@@ -260,11 +261,8 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- </div> -->
-          <!-- <div class="row"> -->
-          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
-          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+      
+          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
             <div class="container">
               <div class="row">
                 <div class="texto">
@@ -278,9 +276,8 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
-          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+        
+          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
             <div class="container">
               <div class="row">
                 <div class="texto">
@@ -294,9 +291,8 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
-          <!-- <div class= d-flex"col-lg-4 col-md-4"> -->
-          <div class="miembro d-flex col-lg-4 col-md-4 col-sm-6">
+          
+          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
             <div class="container">
               <div class="row">
                 <div class="texto">
@@ -310,7 +306,6 @@
               </div>
             </div>
           </div>
-          <!-- </div> -->
         </div>
       </div>
     </article>
@@ -335,13 +330,12 @@
   </section>
 
   <section id="contacto" class="secciones container-fluid">
-    <h2 class="titulo-seccion">
-      <b>Contanos</b> <br />
-      TU PROYECTO
-    </h2>
-    <section class="section">
-      <div class="row">
-        <div class="col-md-8 col-xl-8">
+    <h2 class="titulo-seccion"><b>Contanos</b> <br />TU PROYECTO</h2>
+      
+    <div class="container">
+      <div class="row w-100">
+
+        <div class="col-md-7 col-sm-12">
           <form id="contact-form" name="contact-form" action="" method="POST">
             <div class="row">
               <div class="col-md-10">
@@ -383,9 +377,13 @@
               </div>
             </div>
           </form>
+          <div class="send-button mt-5">
+            <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Enviar</a>
+            <!-- TODO: manejar este evento cuando el formulario este online -->
+          </div>
         </div>
 
-        <div class="col-md-5 col-xl-5">
+        <div class="col-md-5 col-sm-12">
           <ul class="contact">
             <li>
               <p>
@@ -401,12 +399,9 @@
           </ul>
         </div>
 
-        <div class="send-button">
-          <a class="btn btn-dark" onclick="document.getElementById('contact-form').submit();">Enviar</a>
-          <!-- TODO: manejar este evento cuando el formulario este online -->
-        </div>
       </div>
-    </section>
+    </div>
+
   </section>
   <footer>
     <div class="col-xs-12 col-md-12 col-lg-12" style="background-color:#000029">

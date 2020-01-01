@@ -230,10 +230,6 @@ main .sections-content {
   margin: 10px 5px 0px 0px;
 }
 
-#premios .content .miembro .texto {
-  text-align: center;
-}
-
 #premios .content .miembro:hover {
   background-color: rgba(0, 0, 0, 0.5);
 }

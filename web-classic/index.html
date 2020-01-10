@@ -158,9 +158,9 @@
         El objeto del Estudio en esos años estaba enfocado exclusivamente a proyectos y
         dirección de obra, empezando como muchos por reformas pequeñas y ampliaciones.
         <br />
-        <div class="btn-group d-flex " role="group" aria-label="Basic example">
-          <button type="button" class="btn btn-secondary">Conoce al equipo</button>
-          <button type="button" class="btn btn-secondary">=></button>
+        <div class="btn-group btn-domo d-flex" role="group" aria-label="Basic example">
+          <button type="button" class="btn btn-secondary btn1">Conoce al equipo</button>
+          <button type="button" class="btn btn-secondary btn2"><i class="fas fa-arrow-right"></i></button>
         </div>
       </p>
 
@@ -168,10 +168,10 @@
   </section>
 
   <section id="proyectos" class="secciones container-fluid">
-    <h2 class="titulo-seccion"><b>Proyectos <i class="fas fa-arrow-right"></i> destacados</b></h2>
+    <h2 class="titulo-seccion"><b>Proyectos destacados</b></h2>
 
-    <div class="project-content">
-      <div class="project-text">
+    <div class="row project-content d-flex">
+      <div class="project-text d-flex flex-column justify-content-around col-lg-4 col-md-4 col-sm-12">
         <p>
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus
           odit, architecto magnam inventore ducimus ad id harum quo ut
@@ -180,9 +180,13 @@
           Laboriosam maxime sunt reiciendis quae vero nobis soluta recusandae
           impedit error non, nostrum quis?
         </p>
-        <button class="boton-equipo btn" id="btn-proyecto">
-          Mas proyectos<a href="./equipo.html"><i class="fas fa-arrow-right"></i></a>
-        </button>
+
+        <div class="btn-group btn-domo d-flex align-self-center" role=" group" aria-label="Basic example">
+          <button type="button" class="btn btn-secondary btn1">Todos los proyectos</button>
+          <button type="button" class="btn btn-secondary btn2" style="width: 40px;"><a href="./equipo.html"><i
+                class="fas fa-arrow-right"></i></a>
+          </button>
+        </div>
       </div>
       <div class="project_carrusel flex-column d-flex col-lg-8 col-md-8 col-sm-12">
         <div id="owl-demo" class="owl-carousel owl-theme">
@@ -217,106 +221,93 @@
     <h2 class="titulo-seccion"><b>Premios y menciones</b></h2>
     <article class="content d-flex">
       <!-- TODO: Completar con los textos correspondientes y el diseño final del modal -->
-      <div class="container flex-wrap  d-flex">
-        <div class="row d-flex flex-wrap justify-content-between align-items-baseline">
+      <div class="container flex-wrap d-flex">
+        <div class="row d-flex align-items-baseline mb-4">
 
-          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
-            <div class="container d-flex ">
-              <div class="row">
-                <div class="texto align-self-center ">
-                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                  PREMIOS ARQ-FADEA Buenos Aires <br />
-                  OBRA PRIVADA – ESCALA MEDIA <br />
-                </div>
+          <div class="miembro col-lg-4 col-md-4 col-sm-6">
+            <div class="container p-0 d-flex ">
+              <div class="texto align-self-center">
+                REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                PREMIOS ARQ-FADEA Buenos Aires <br />
+                OBRA PRIVADA – ESCALA MEDIA <br />
               </div>
-              <div class="row align-items-end justify-content-end ">
-                <div class="more"><a data-toggle="modal" type="button" class="" data-target="#ModalPremioClarin">+</a>
-                </div>
+              <div class="more align-self-end justify-content-end"><a data-toggle="modal" type="button" class=""
+                  data-target="#ModalPremioClarin">+</a>
               </div>
             </div>
           </div>
 
-          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
-            <div class="container d-flex ">
-              <div class="row">
-                <div class="texto align-self-center">
-                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                  PREMIOS ARQ-FADEA Buenos Aires <br />
-                  OBRA PRIVADA – ESCALA MEDIA <br />
-                </div>
+          <div class="miembro col-lg-4 col-md-4 col-sm-6">
+            <div class="container p-0 d-flex ">
+              <div class="texto align-self-center">
+                REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                PREMIOS ARQ-FADEA Buenos Aires <br />
+                OBRA PRIVADA – ESCALA MEDIA <br />
               </div>
-              <div class="row align-items-end justify-content-end ">
-                <div class="more"><a data-toggle="modal" type="button" class="" data-target="#ModalPremioClarin">+</a>
-                </div>
+              <div class="more align-self-end justify-content-end"><a data-toggle="modal" type="button" class=""
+                  data-target="#ModalPremioClarin">+</a>
               </div>
             </div>
           </div>
 
-          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
-            <div class="container d-flex ">
-              <div class="row">
-                <div class="texto align-self-center">
-                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                  PREMIOS ARQ-FADEA Buenos Aires <br />
-                  OBRA PRIVADA – ESCALA MEDIA <br />
-                </div>
+          <div class="miembro col-lg-4 col-md-4 col-sm-6">
+            <div class="container p-0 d-flex ">
+              <div class="texto align-self-center">
+                REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                PREMIOS ARQ-FADEA Buenos Aires <br />
+                OBRA PRIVADA – ESCALA MEDIA <br />
               </div>
-              <div class="row align-items-end justify-content-end ">
-                <div class="more"><a data-toggle="modal" type="button" class="" data-target="#ModalPremioClarin">+</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
-            <div class="container d-flex ">
-              <div class="row">
-                <div class="texto align-self-center">
-                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                  PREMIOS ARQ-FADEA Buenos Aires <br />
-                  OBRA PRIVADA – ESCALA MEDIA <br />
-                </div>
-              </div>
-              <div class="row align-items-end justify-content-end ">
-                <div class="more"><a data-toggle="modal" type="button" class="" data-target="#ModalPremioClarin">+</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
-            <div class="container d-flex ">
-              <div class="row">
-                <div class="texto align-self-center">
-                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                  PREMIOS ARQ-FADEA Buenos Aires <br />
-                  OBRA PRIVADA – ESCALA MEDIA <br />
-                </div>
-              </div>
-              <div class="row align-items-end justify-content-end ">
-                <div class="more"><a data-toggle="modal" type="button" class="" data-target="#ModalPremioClarin">+</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="miembro d-flex col-lg-3 col-md-3 col-sm-6">
-            <div class="container d-flex ">
-              <div class="row">
-                <div class="texto align-self-center">
-                  REVISTA ARQ CLARÍN – 13.11.2018 <br />
-                  PREMIOS ARQ-FADEA Buenos Aires <br />
-                  OBRA PRIVADA – ESCALA MEDIA <br />
-                </div>
-              </div>
-              <div class="row align-items-end justify-content-end ">
-                <div class="more"><a data-toggle="modal" type="button" class="" data-target="#ModalPremioClarin">+</a>
-                </div>
+              <div class="more align-self-end justify-content-end"><a data-toggle="modal" type="button" class=""
+                  data-target="#ModalPremioClarin">+</a>
               </div>
             </div>
           </div>
 
         </div>
+
+        <div class="row d-flex align-items-baseline mb-4">
+
+          <div class="miembro col-lg-4 col-md-4 col-sm-6">
+            <div class="container p-0 d-flex ">
+              <div class="texto align-self-center">
+                REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                PREMIOS ARQ-FADEA Buenos Aires <br />
+                OBRA PRIVADA – ESCALA MEDIA <br />
+              </div>
+              <div class="more align-self-end justify-content-end"><a data-toggle="modal" type="button" class=""
+                  data-target="#ModalPremioClarin">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="miembro col-lg-4 col-md-4 col-sm-6">
+            <div class="container p-0 d-flex ">
+              <div class="texto align-self-center">
+                REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                PREMIOS ARQ-FADEA Buenos Aires <br />
+                OBRA PRIVADA – ESCALA MEDIA <br />
+              </div>
+              <div class="more align-self-end justify-content-end"><a data-toggle="modal" type="button" class=""
+                  data-target="#ModalPremioClarin">+</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="miembro col-lg-4 col-md-4 col-sm-6">
+            <div class="container p-0 d-flex ">
+              <div class="texto align-self-center">
+                REVISTA ARQ CLARÍN – 13.11.2018 <br />
+                PREMIOS ARQ-FADEA Buenos Aires <br />
+                OBRA PRIVADA – ESCALA MEDIA <br />
+              </div>
+              <div class="more align-self-end justify-content-end"><a data-toggle="modal" type="button" class=""
+                  data-target="#ModalPremioClarin">+</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
       </div>
     </article>
 
@@ -339,7 +330,9 @@
   </section>
 
   <section id="contacto" class="secciones container-fluid">
-    <h2 class="titulo-seccion"><b>Contanos</b> <br />TU PROYECTO</h2>
+    <h2 class="titulo-seccion"><b>Contanos</b> <br />
+      <div id="tu">TU PROYECTO</div>
+    </h2>
 
     <div class="container">
       <div class="row w-100">
@@ -424,6 +417,10 @@
 <script src="./scripts/owl.carousel.min.js"></script>
 
 <script>
+  // function myFunction() {
+  //   document.getElementById("tu").focus();
+  // }
+
   $(document).ready(function () {
     $("#owl-demo").owlCarousel({
       loop: true,
@@ -436,10 +433,10 @@
           items: 1,
         },
         600: {
-          items: 4,
+          items: 2,
         },
         1000: {
-          items: 4,
+          items: 2,
         },
       },
     });

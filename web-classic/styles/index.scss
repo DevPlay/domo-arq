@@ -122,7 +122,6 @@ main {
 
   .titulo-seccion {
     padding-top: 5vh;
-    // margin-top: 5vh;
     margin-bottom: 5vh;
     z-index: 99;
   }
@@ -192,20 +191,23 @@ main {
     height: 70vh;
     align-content: space-between;
 
-    .el-equipo {
-      width: 40%;
+    .equipo-img {
+      width: 35%;
+      padding: 0;
 
       img {
-        width: 100%;
+        width: 80%;
+
         background-position: center;
       }
     }
 
     .frase-estudio {
-      align-self: center;
-      width: 40%;
-      margin-left: 10%;
+      padding: 5% 10% 5% 0%;
+      // align-self: center;
+      // width: 40%;
       font-size: 20px;
+      height: 70vh;
     }
   }
 }
@@ -231,25 +233,75 @@ main {
       }
     }
 
-
-    #owl-demo .item {
-      margin: 3px;
-    }
-
-    #owl-demo .item img {
-      display: block;
-      width: 100%;
-      height: auto;
-    }
-
     .owl-image {
-      height: 70vh;
+      height: 75vh;
     }
 
     .owl-image:hover {
       background-color: rgba(0, 0, 0, 0.5);
+      color: #000;
+      // display: none;
     }
   }
+
+  #owl-domo {
+    .owl-nav {
+      display: flex;
+      justify-content: flex-end;
+
+      .owl-next {
+        height: 40px;
+        width: 40px;
+        color: white;
+        background-color: #000000;
+      }
+
+      .owl-prev {
+        height: 40px;
+        width: 40px;
+        color: #000000;
+        background-color: #ff0a7e;
+      }
+    }
+  }
+
+  .hoverfx {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  .hoverfx:before {
+    display: inline-block;
+    padding-top: 60%;
+    content: '';
+    vertical-align: middle;
+  }
+
+
+
+  .hoverfx,
+  .overlay {
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    padding: 50%;
+    background: rgba(0, 0, 0, .7);
+    opacity: 0;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition-property: all .3s ease;
+  }
+
+  .item:hover {
+    opacity: 0.8;
+  }
+
+
+
+
 }
 
 //seccion premios

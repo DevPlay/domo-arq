@@ -210,6 +210,46 @@ main .sections-content {
   width: 480px;
 }
 
+.container-equipo {
+  position: relative;
+  width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.container-equipo:hover .image {
+  opacity: 0.3;
+}
+
+.container-equipo:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
 #proyectos .project-content .project-text p {
   font-size: 20px;
 }
@@ -252,7 +292,7 @@ main .sections-content {
 #proyectos .hoverfx:before {
   display: inline-block;
   padding-top: 60%;
-  content: '';
+  content: "";
   vertical-align: middle;
 }
 
@@ -264,10 +304,10 @@ main .sections-content {
   padding: 50%;
   background: rgba(0, 0, 0, 0.7);
   opacity: 0;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition-property: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition-property: all 0.3s ease;
 }
 
 #proyectos .item:hover {
@@ -283,7 +323,8 @@ main .sections-content {
 #premios .content .miembro {
   display: flex;
   justify-content: space-around;
-  height: 100%;
+  height: 300px;
+  width: 300px;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
   padding: 0;
 }

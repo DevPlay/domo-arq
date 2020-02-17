@@ -122,6 +122,23 @@ main .sections-content {
   z-index: 99;
 }
 
+.btn-domo .btn1 {
+  border: transparent;
+  border-radius: 0px;
+  background-color: #ff0a7e;
+}
+
+.btn-domo .btn2 {
+  border: transparent;
+  border-radius: 0px;
+  background-color: #000;
+  width: 40px;
+}
+
+.btn-domo .btn2 a {
+  color: #fff;
+}
+
 .container-portada {
   padding-left: 0px;
   padding-right: 0px;
@@ -167,20 +184,20 @@ main .sections-content {
   align-content: space-between;
 }
 
-#estudio .article_container .el-equipo {
-  width: 40%;
+#estudio .article_container .equipo-img {
+  width: 35%;
+  padding: 0;
 }
 
-#estudio .article_container .el-equipo img {
-  width: 100%;
+#estudio .article_container .equipo-img img {
+  width: 80%;
   background-position: center;
 }
 
 #estudio .article_container .frase-estudio {
-  align-self: center;
-  width: 40%;
-  margin-left: 10%;
+  padding: 5% 10% 5% 0%;
   font-size: 20px;
+  height: 70vh;
 }
 
 .el-equipo {
@@ -193,26 +210,108 @@ main .sections-content {
   width: 480px;
 }
 
-#proyectos .project_content {
-  height: 80vh;
+.container-equipo {
+  position: relative;
+  width: 50%;
 }
 
-#proyectos .project_content #proyectos #owl-demo .item {
-  margin: 3px;
-}
-
-#proyectos .project_content #proyectos #owl-demo .item img {
+.image {
+  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
 }
 
-#proyectos .project_content #proyectos .owl-image {
-  height: 70vh;
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
 }
 
-#proyectos .project_content #proyectos .owl-image:hover {
+.container-equipo:hover .image {
+  opacity: 0.3;
+}
+
+.container-equipo:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+#proyectos .project-content .project-text p {
+  font-size: 20px;
+}
+
+#proyectos .project-content .owl-image {
+  height: 75vh;
+}
+
+#proyectos .project-content .owl-image:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  color: #000;
+}
+
+#proyectos #owl-domo .owl-nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+#proyectos #owl-domo .owl-nav .owl-next {
+  height: 40px;
+  width: 40px;
+  color: white;
+  background-color: #000000;
+}
+
+#proyectos #owl-domo .owl-nav .owl-prev {
+  height: 40px;
+  width: 40px;
+  color: #000000;
+  background-color: #ff0a7e;
+}
+
+#proyectos .hoverfx {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+
+#proyectos .hoverfx:before {
+  display: inline-block;
+  padding-top: 60%;
+  content: "";
+  vertical-align: middle;
+}
+
+#proyectos .hoverfx,
+#proyectos .overlay {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  padding: 50%;
+  background: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition-property: all 0.3s ease;
+}
+
+#proyectos .item:hover {
+  opacity: 0.8;
 }
 
 #premios .content {
@@ -223,15 +322,20 @@ main .sections-content {
 
 #premios .content .miembro {
   display: flex;
-  justify-content: space-between;
-  height: 30%;
-  width: 30%;
+  justify-content: space-around;
+  height: 300px;
+  width: 300px;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
-  margin: 10px 5px 0px 0px;
+  padding: 0;
+}
+
+#premios .content .miembro .container .texto {
+  padding-left: 9%;
 }
 
 #premios .content .miembro:hover {
   background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 
 #premios .content .more {
@@ -287,6 +391,109 @@ main .sections-content {
   opacity: 1;
 }
 
+#contacto .mat-label {
+  display: block;
+  font-size: 16px;
+  transform: translateY(25px);
+  color: #e2e2e2;
+  transition: all 0.5s;
+}
+
+#contacto .radio-label {
+  font-size: 16px;
+  color: #474747;
+  margin-left: 2%;
+}
+
+#contacto .mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 8px 0;
+  font-size: 16px;
+}
+
+#contacto .mat-div {
+  position: relative;
+}
+
+#contacto .novedades {
+  padding: 30px 0 0 0;
+}
+
+#contacto .mat-div:after,
+#contacto .mat-div:before {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #e2e2e2;
+  bottom: 0;
+  left: 0;
+  transition: all 0.5s;
+}
+
+#contacto .mat-div::after {
+  transform: scaleX(0);
+}
+
+#contacto .is-active::after {
+  transform: scaleX(1);
+}
+
+#contacto .is-active .mat-label {
+  color: #ff0a7e;
+}
+
+#contacto .is-completed .mat-label {
+  font-size: 12px;
+  transform: translateY(0);
+}
+
+#contacto .dropdown .btn {
+  padding-left: 0px;
+  padding-bottom: 16px;
+  color: #e2e2e2;
+}
+
+#contacto .dropdown.show .btn {
+  color: #ff0a7e;
+}
+
+#contacto .dropdown-menu .dropdown-item {
+  color: #ff0a7e;
+}
+
+#contacto ul {
+  list-style: none;
+}
+
+#contacto ul a {
+  color: #000;
+}
+
+#contacto ul a:hover {
+  color: #ff0a7e;
+}
+
+#contacto ul li p {
+  margin-bottom: 0px;
+}
+
+#contacto .contact {
+  font-weight: bolder;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
+#contacto .contact a:hover,
+#contacto .contact a:visited {
+  color: #ff0a7e;
+}
+
 .designedBy p {
   margin-bottom: 0px;
   color: white;
@@ -305,9 +512,18 @@ main .sections-content {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .secciones {
+    padding-left: 4vh;
+  }
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding-left: 35px;
+  }
+  body .secciones {
+    padding-left: 2vh;
   }
   .menu {
     width: 45px;

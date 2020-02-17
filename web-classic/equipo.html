@@ -1,111 +1,333 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
+    />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <!-- <link rel="stylesheet" href="../seccion_equipo.scss"> -->
-  <!-- <link rel="stylesheet" href="../master.scss"> -->
-  <link rel="stylesheet" href="./styles/master.min.css" />
-  <title>Estudio Domo Arq</title>
-</head>
+    <!-- <link rel="stylesheet" href="./styles/master.min.css" /> -->
+    <link rel="stylesheet" href="./styles/index.min.css" />
+    <title>Estudio Domo Arq</title>
+  </head>
 
-<body>
-  <nav class="menu" tabindex="0">
-    <div class="hamburguer-menu-trigger">
-      <input type="checkbox" />
-      <span></span>
-      <span></span>
-      <span></span>
-      <ul class="hamburguer-menu">
-        <ul class="hamburguer-menu-items">
-          <li><a href="#inicio" class="active">_Inicio</a></li>
-          <li><a href="#estudio">_Estudio</a></li>
-          <li><a href="#proyectos">_Proyectos</a></li>
-          <li><a href="#premios">_Premios</a></li>
-          <li><a href="#testimonio">_Testimonios</a></li>
-          <li><a href="#contacto">_Contacto</a></li>
-        </ul>
-        <div class="hamburguer-menu-social">
-          <ul>
-            <li>
-              <a href="https://www.facebook.com/domoestudioarq"><img class="social-icon"
-                  src="./images/facebook-square-w.svg" alt="Facebook logo" />
-                <p class="social-text">Facebook</p>
-              </a>
-            </li>
-            <li>
-              <a href="https://www.instagram.com/domoestudioarq"><img class="social-icon" src="./images/instagram-w.svg"
-                  alt="Instagram logo" />
-                <p class="social-text">Instagram</p>
-              </a>
-            </li>
-            <li>
-              <a href="mailto: info@domoarq.com"><img class="social-icon" src="./images/envelope-open-w.svg"
-                  alt="Email logo" />
-                <p class="social-text">info@domoarq.com</p>
-              </a>
-            </li>
+  <body>
+    <nav class="menu" tabindex="0">
+      <div class="hamburguer-menu-trigger">
+        <input type="checkbox" />
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="hamburguer-menu">
+          <ul class="hamburguer-menu-items">
+            <li><a href="#inicio" class="active">_Inicio</a></li>
+            <li><a href="#estudio">_Estudio</a></li>
+            <li><a href="#proyectos">_Proyectos</a></li>
+            <li><a href="#premios">_Premios</a></li>
+            <li><a href="#testimonio">_Testimonios</a></li>
+            <li><a href="#contacto">_Contacto</a></li>
           </ul>
+          <div class="hamburguer-menu-social">
+            <ul>
+              <li>
+                <a href="https://www.facebook.com/domoestudioarq"
+                  ><img
+                    class="social-icon"
+                    src="./images/facebook-square-w.svg"
+                    alt="Facebook logo"
+                  />
+                  <p class="social-text">Facebook</p>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/domoestudioarq"
+                  ><img
+                    class="social-icon"
+                    src="./images/instagram-w.svg"
+                    alt="Instagram logo"
+                  />
+                  <p class="social-text">Instagram</p>
+                </a>
+              </li>
+              <li>
+                <a href="mailto: info@domoarq.com"
+                  ><img
+                    class="social-icon"
+                    src="./images/envelope-open-w.svg"
+                    alt="Email logo"
+                  />
+                  <p class="social-text">info@domoarq.com</p>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </ul>
+      </div>
+      <ul class="menu-items">
+        <li><a href="#inicio" class="active">_Inicio</a></li>
+        <li><a href="#estudio">_Estudio</a></li>
+        <li><a href="#proyectos">_Proyectos</a></li>
+        <li><a href="#premios">_Premios</a></li>
+        <li><a href="#testimonio">_Testimonio</a></li>
+        <li><a href="#contacto">_Contacto</a></li>
+      </ul>
+      <div class="menu-social">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/domoestudioarq"
+              ><img
+                class="social-icon"
+                src="./images/facebook-square-w.svg"
+                alt="Facebook logo"
+              /><span class="social-text">Facebook</span></a
+            >
+          </li>
+          <li>
+            <a href="https://www.instagram.com/domoestudioarq"
+              ><img
+                class="social-icon"
+                src="./images/instagram-w.svg"
+                alt="Instagram logo"
+              /><span class="social-text">Instagram</span></a
+            >
+          </li>
+          <li>
+            <a href="mailto: info@domoarq.com"
+              ><img
+                class="social-icon"
+                src="./images/envelope-open-w.svg"
+                alt="Email logo"
+              /><span class="social-text">info@domoarq.com</span></a
+            >
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <section id="premios" class="secciones container-fluid">
+      <h2 class="titulo-seccion"><b>Equipo de trabajo</b></h2>
+
+      <article class="content d-flex">
+        <!-- TODO: Completar con los textos  correspondientes y el diseño final del modal -->
+
+        <div class="container flex-wrap d-flex">
+          <div class="row d-flexcontainer-equipo align-items-baseline mb-4">
+            <div class="miembro image-team-hover col mx-4">
+              <div class="container  p-0 d-flex ">
+                <img
+                  class="img-thumbnail"
+                  src="./images/domoarq.png"
+                  alt=""
+                  srcset=""
+                  data-toggle="modal"
+                  data-target="#ModalPremioClarin"
+                />
+                <div class="middle">
+                  <div class="text">John Doe</div>
+                </div>
+              </div>
+            </div>
+
+            <div class="miembro col mx-4">
+              <div class="container p-0 d-flex ">
+                <img
+                  class="img-thumbnail"
+                  src="./images/domoarq.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <div class="miembro col mx-4">
+              <div class="container p-0 d-flex ">
+                <img
+                  class="img-thumbnail"
+                  src="./images/domoarq.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="row d-flex align-items-baseline mb-4">
+            <div class="miembro col mx-4">
+              <div class="container p-0 d-flex ">
+                <img
+                  class="img-thumbnail"
+                  src="./images/domoarq.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <div class="miembro col mx-4">
+              <div class="container p-0 d-flex ">
+                <img
+                  class="img-thumbnail"
+                  src="./images/domoarq.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <div class="miembro col mx-4">
+              <div class="container p-0 d-flex ">
+                <img
+                  class="img-thumbnail"
+                  src="./images/domoarq.png"
+                  alt=""
+                  srcset=""
+                />
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="row">
+                <div class="col align-self-end ml-5">
+                  <div
+                    class="btn-group btn-domo d-flex align-self-center"
+                    role=" group"
+                    aria-label="Basic example"
+                  >
+                    <button type="button" class="btn btn-secondary btn1">
+                      Volver
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-secondary btn2"
+                      style="width: 40px;"
+                    >
+                      <a href="./index.html"
+                        ><i class="fas fa-arrow-left"></i
+                      ></a>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </ul>
-    </div>
-    <ul class="menu-items">
-      <li><a href="#inicio" class="active">_Inicio</a></li>
-      <li><a href="#estudio">_Estudio</a></li>
-      <li><a href="#proyectos">_Proyectos</a></li>
-      <li><a href="#premios">_Premios</a></li>
-      <li><a href="#testimonio">_Testimonio</a></li>
-      <li><a href="#contacto">_Contacto</a></li>
-    </ul>
-    <div class="menu-social">
-      <ul>
-        <li>
-          <a href="https://www.facebook.com/domoestudioarq"><img class="social-icon"
-              src="./images/facebook-square-w.svg" alt="Facebook logo" /><span class="social-text">Facebook</span></a>
-        </li>
-        <li>
-          <a href="https://www.instagram.com/domoestudioarq"><img class="social-icon" src="./images/instagram-w.svg"
-              alt="Instagram logo" /><span class="social-text">Instagram</span></a>
-        </li>
-        <li>
-          <a href="mailto: info@domoarq.com"><img class="social-icon" src="./images/envelope-open-w.svg"
-              alt="Email logo" /><span class="social-text">info@domoarq.com</span></a>
-        </li>
-      </ul>
-    </div>
-  </nav>
+      </article>
 
-  <section id="equipo" class="secciones container-fluid">
-    <span class="logo-domo"><img src="./images/logoDomo.png" alt="" /></span>
-    <h2 class="titulo-seccion"><b>El equipo</b></h2>
-    <article class="content ">
-      <div class="miembro">
-        <div class="more">+</div>
+      <div
+        class="modal fade"
+        id="ModalPremioClarin"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="ModalPremioClarin"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" id="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button
+                type="button"
+                class="close close-modal"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <img class="img-modal" src="./images/recorte-diario.png" alt="" />
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="miembro">
-        <div class="more">+</div>
-      </div>
+      <!-- TODO: Agregar los demas modales cuando esten definidos -->
+    </section>
 
-      <div class="miembro">
-        <div class="more">+</div>
-      </div>
+    <script src="./scripts/jquery-3.4.1.min.js"></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./scripts/owl.carousel.min.js"></script>
 
-      <div class="miembro">
-        <div class="more">+</div>
-      </div>
+    <script>
+      // function myFunction() {
+      //   document.getElementById("tu").focus();
+      // }
 
-      <div class="miembro">
-        <div class="more">+</div>
-      </div>
+      $(document).ready(function() {
+        $("#owl-domo").owlCarousel({
+          loop: true,
+          navText: [
+            "<i class='fas fa-arrow-left'></i>",
+            "<i class='fas fa-arrow-right'></i>",
+          ],
+          responsiveClass: true,
+          responsive: {
+            0: {
+              items: 1,
+            },
+            600: {
+              items: 2,
+            },
+            1000: {
+              items: 2,
+            },
+          },
+        });
+      });
+    </script>
 
-      <div class="miembro">
-        <div class="more">+</div>
-      </div>
-    </article>
+    <!-- Facebook Pixel Code -->
+    <script>
+      !(function(f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function() {
+          n.callMethod
+            ? n.callMethod.apply(n, arguments)
+            : n.queue.push(arguments);
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = "2.0";
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s);
+      })(
+        window,
+        document,
+        "script",
+        "https://connect.facebook.net/en_US/fbevents.js",
+      );
+      fbq("init", "886038155126572");
+      fbq("track", "PageView");
+    </script>
+    <noscript
+      ><img
+        height="1"
+        width="1"
+        style="display:none"
+        src="https://www.facebook.com/tr?id=886038155126572&ev=PageView&noscript=1"
+    /></noscript>
+    <!-- End Facebook Pixel Code -->
 
-    <button class="boton-equipo"><a href="./index.html">Volver</a></button>
-  </section>
-</body>
-
+    <!-- TODO: Agregar Google search console -->
+    <script src="./scripts/index.js"></script>
+  </body>
 </html>

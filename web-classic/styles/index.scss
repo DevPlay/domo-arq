@@ -214,7 +214,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url="(../images/equipo.jpg)";
+  background-image: url= "(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -226,7 +226,6 @@ main {
 //seccion proyectos
 #proyectos {
   .project-content {
-
     .project-text {
       p {
         font-size: 20px;
@@ -275,11 +274,9 @@ main {
   .hoverfx:before {
     display: inline-block;
     padding-top: 60%;
-    content: '';
+    content: "";
     vertical-align: middle;
   }
-
-
 
   .hoverfx,
   .overlay {
@@ -287,21 +284,17 @@ main {
     top: 0;
     z-index: 1;
     padding: 50%;
-    background: rgba(0, 0, 0, .7);
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
-    -webkit-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    transition-property: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition-property: all 0.3s ease;
   }
 
   .item:hover {
     opacity: 0.8;
   }
-
-
-
-
 }
 
 //seccion premios
@@ -314,17 +307,14 @@ main {
     .miembro {
       display: flex;
       justify-content: space-around;
-      height: 100%;
-      // width: 24%;
+      height: 300px;
+      width: 300px;
       border: 0.3px solid $color-bordes;
-      // margin: 0px 5px 2% 5px;
       padding: 0;
 
       .container {
-
         .texto {
           padding-left: 9%;
-
         }
       }
     }
@@ -389,7 +379,7 @@ main {
   }
 }
 
-// Seccion contacto 
+// Seccion contacto
 #contacto {
   .mat-label {
     display: block;
@@ -493,7 +483,6 @@ main {
   }
 
   .contact {
-
     font-weight: bolder;
     list-style: none;
 
@@ -504,7 +493,6 @@ main {
       color: $color-principal;
     }
   }
-
 }
 
 // Inicio footer
@@ -533,7 +521,6 @@ main {
 }
 
 @media screen and (max-width: 1024px) {
-
   .secciones {
     padding-left: 4vh;
   }
@@ -605,17 +592,17 @@ main {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked~span {
+    .hamburguer-menu-trigger input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -703,7 +690,7 @@ main {
     }
   }
 
-  .hamburguer-menu-trigger input:checked~ul {
+  .hamburguer-menu-trigger input:checked ~ ul {
     transform: scale(1, 1);
     opacity: 1;
   }

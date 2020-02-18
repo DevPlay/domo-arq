@@ -243,35 +243,37 @@ main .sections-content {
 }
 
 #proyectos .hoverfx {
-  position: relative;
   display: block;
   overflow: hidden;
   text-align: center;
 }
 
+#proyectos .hoverfx img {
+  position: absolute;
+}
+
 #proyectos .hoverfx:before {
   display: inline-block;
-  padding-top: 60%;
-  content: '';
-  vertical-align: middle;
 }
 
-#proyectos .hoverfx,
-#proyectos .overlay {
+#proyectos .hoverfx .overlay {
   position: absolute;
+  padding: 100%;
   top: 0;
   z-index: 1;
-  padding: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
-  -webkit-transition: all .3s ease;
-  -moz-transition: all .3s ease;
-  -o-transition: all .3s ease;
-  transition-property: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition-property: all 0.3s ease;
 }
 
-#proyectos .item:hover {
-  opacity: 0.8;
+#proyectos .item:hover,
+#proyectos .item:hover .overlay {
+  opacity: 1;
 }
 
 #premios .content {
@@ -352,7 +354,7 @@ main .sections-content {
 
 #contacto .mat-label {
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   transform: translateY(25px);
   color: #e2e2e2;
   transition: all 0.5s;
@@ -371,7 +373,7 @@ main .sections-content {
   border: none;
   outline: none;
   padding: 8px 0;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 #contacto .mat-div {
@@ -424,6 +426,17 @@ main .sections-content {
 
 #contacto .dropdown-menu .dropdown-item {
   color: #ff0a7e;
+}
+
+#contacto .mat-btn {
+  border-radius: 0px;
+  background-color: #000;
+  color: #fff;
+}
+
+#contacto .mat-btn:hover {
+  background-color: #ff0a7e;
+  border: none;
 }
 
 #contacto ul {

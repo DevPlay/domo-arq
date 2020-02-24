@@ -223,6 +223,93 @@ main {
   }
 }
 
+.captionEffect {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.captionEffect {
+  .captionImage {
+    width: 100%;
+    height: auto;
+    display: block;
+
+    -webkit-transition: 800ms;
+    -o-transition: 800ms;
+    transition: 800ms;
+  }
+}
+
+.captionEffect figcaption {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  position: absolute;
+  -webkit-transition: 800ms;
+  -o-transition: 800ms;
+  transition: 800ms;
+  width: 100%;
+}
+
+.captionEffect[data-effect="fade-in"] figcaption {
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+}
+
+.captionEffect[data-effect="fade-in"]:hover figcaption {
+  opacity: 1;
+}
+
+.captionEffect figcaption h2 {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.captionEffect figcaption p {
+  margin: 0;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.image-social-team {
+  width: 30px;
+  padding-top: 30px;
+  fill: black;
+}
+
+.text-hover {
+  margin-top: 10% !important;
+  text-align: center;
+}
+
+.modal-equipo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.social-icons-team {
+  height: 200px;
+  background-color: black;
+  padding-top: 3rem;
+}
+
+.card-team-text {
+  padding: 30% 10% 0 10%;
+}
+
 //seccion proyectos
 #proyectos {
   .project-content {
@@ -303,50 +390,21 @@ main {
     text-align: center;
   }
 
-  .hoverfx img {
-    position: absolute;
-    // left: 0;
-    // width: 100%;
-  }
-
   .hoverfx:before {
     display: inline-block;
-    // padding-top: 60%;
-    // content: '';
-    // vertical-align: middle;
+    padding-top: 60%;
+    content: "";
+    vertical-align: middle;
   }
 
-  // .hoverfx .figure {
-  //   position: relative;
-  //   z-index: 2;
-  //   display: inline-block;
-  //   padding: 10px 15px;
-  //   max-width: 60%;
-  //   border: 3px solid #e9e9e9;
-  //   color: #ecf0f1;
-  //   vertical-align: middle;
-  //   text-transform: uppercase;
-  //   font-size: 1.2rem;
-  //   opacity: 0;
-  // -webkit-transition: all .3s ease;
-  // -moz-transition: all .3s ease;
-  // -o-transition: all .3s ease;
-  // transition-property: all .3s ease;
-  // }
-
-  // .hoverfx .figure:hover {
-  //   background: #e9e9e9;
-  //   color: #333;
-  // }
-
-  .hoverfx .overlay {
+  .hoverfx,
+  .overlay {
     position: absolute;
     padding: 100%;
     top: 0;
     z-index: 1;
-    height: 100%;
-    width: 100%;
-    background: rgba(0, 0, 0, 0.6);
+    padding: 50%;
+    background: rgba(0, 0, 0, 0.7);
     opacity: 0;
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
@@ -370,10 +428,9 @@ main {
     .miembro {
       display: flex;
       justify-content: space-around;
-      height: 100%;
-      // width: 24%;
+      height: 300px;
+      width: 300px;
       border: 0.3px solid $color-bordes;
-      // margin: 0px 5px 2% 5px;
       padding: 0;
 
       .container {

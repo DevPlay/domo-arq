@@ -8,8 +8,6 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <link rel="stylesheet" href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css">
-
-  <!-- <link rel="stylesheet" href="./styles/master.min.css" /> -->
   <link rel="stylesheet" href="./styles/index.min.css" />
 
 
@@ -25,11 +23,11 @@
       <span></span>
       <ul class="hamburguer-menu">
         <ul class="hamburguer-menu-items">
-          <li><a href="#inicio" class="active">_Inicio</a></li>
-          <li><a href="#estudio">_Estudio</a></li>
-          <li><a href="#proyectos">_Proyectos</a></li>
-          <li><a href="#premios">_Premios</a></li>
-          <li><a href="#contacto">_Contacto</a></li>
+          <li><a href="#inicio" class="active scroll">Inicio</a></li>
+          <li><a href="#estudio" class="scroll">Estudio</a></li>
+          <li><a href="#proyectos" class="scroll">Proyectos</a></li>
+          <li><a href="#premios" class="scroll">Premios</a></li>
+          <li><a href="#contacto" class="scroll">Contacto</a></li>
         </ul>
         <div class="hamburguer-menu-social">
           <ul>
@@ -55,12 +53,12 @@
         </div>
       </ul>
     </div>
-    <ul class="menu-items">
-      <li><a href="#inicio" class="active">Inicio</a></li>
-      <li><a href="#estudio">Estudio</a></li>
-      <li><a href="#proyectos">Proyectos</a></li>
-      <li><a href="#premios">Premios</a></li>
-      <li><a href="#contacto">Contacto</a></li>
+    <ul class="menu-items" id="lala">
+      <li><a href="#inicio" onclick="transition(this)" class="active scroll">Inicio</a></li>
+      <li><a href="#estudio" onclick="transition(this)" class="scroll">Estudio</a></li>
+      <li><a href="#proyectos" onclick="transition(this)" class="scroll">Proyectos</a></li>
+      <li><a href="#premios" onclick="transition(this)" class="scroll">Premios</a></li>
+      <li><a href="#contacto" onclick="transition(this)" class="scroll">Contacto</a></li>
     </ul>
     <div class="menu-social d-flex">
       <ul>
@@ -190,18 +188,18 @@
         </div>
       </div>
       <div class="project_carrusel flex-column d-flex col-lg-8 col-md-8 col-sm-12">
-        
-      
+
+
 
 
         <div id="owl-domo" class="owl-carousel owl-theme">
 
           <div class="item">
             <div class="hoverfx">
-              <div class="overlay"> 
+              <div class="overlay">
                 <h4>Lorem ipsum</h4>
               </div>
-                <img class="owl-image" src="./images/proyecto1.jpg" alt="" />
+              <img class="owl-image" src="./images/proyecto1.jpg" alt="" />
             </div>
 
           </div>
@@ -209,8 +207,8 @@
           <div class="item">
 
             <div class="hoverfx">
-              
-              <div class="overlay">      
+
+              <div class="overlay">
                 <h4>Lorem ipsum</h4>
               </div>
 
@@ -432,16 +430,89 @@
 <script src="./scripts/owl.carousel.min.js"></script>
 
 <script>
-  // function myFunction() {
-  //   document.getElementById("tu").focus();
-  // }
+  function transition(whatever) {
+    clean();
+    whatever.classList.add('menuTransition');
+  }
+
+  function clean() {
+    var tag = document.querySelectorAll("a");
+
+    for (var i = 0; i < tag.length; i++) {
+      tag[i].classList.remove('menuTransition');
+    }
+  }
+
+  ////////////
+  window.onload = function () {
+
+    const easeInCubic = function (t) {
+      return t * t * t
+    }
+    const scrollElems = document.getElementsByClassName('scroll');
+
+
+    //console.log(scrollElems);
+    const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
+      //debugger;
+      const runtime = stamp - start;
+      let progress = runtime / duration;
+      const ease = easeInCubic(progress);
+
+      progress = Math.min(progress, 1);
+      console.log(startScrollOffset, startScrollOffset + (scrollEndElemTop * ease));
+
+      const newScrollOffset = startScrollOffset + (scrollEndElemTop * ease);
+      window.scroll(0.5, startScrollOffset + (scrollEndElemTop * ease));
+
+      if (runtime < duration) {
+        requestAnimationFrame((timestamp) => {
+          const stamp = new Date().getTime();
+          scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        })
+      }
+    }
+
+    for (let i = 0; i < scrollElems.length; i++) {
+      const elem = scrollElems[i];
+      elem.addEventListener('click', function (e) {
+        e.preventDefault();
+        const scrollElemId = e.target.href.split('#')[1];
+        const
+          scrollEndElem = document.getElementById(scrollElemId);
+        const anim = requestAnimationFrame(() => {
+          const stamp = new Date().getTime();
+          const duration = 1000;
+          const start = stamp;
+
+          const startScrollOffset = window.pageYOffset;
+
+          const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top;
+
+          scrollToElem(start, stamp, duration, scrollEndElemTop, startScrollOffset);
+        })
+      })
+    }
+  }
+  //////////////
+
+
+
+
+
+
+
+
+
+
+
 
   $(document).ready(function () {
     $("#owl-domo").owlCarousel({
       loop: true,
       navText: [
-      "<i class='fas fa-arrow-left'></i>",
-      "<i class='fas fa-arrow-right'></i>"
+        "<i class='fas fa-arrow-left'></i>",
+        "<i class='fas fa-arrow-right'></i>"
       ],
       responsiveClass: true,
       responsive: {

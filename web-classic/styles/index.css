@@ -221,6 +221,90 @@ main .sections-content {
   width: 480px;
 }
 
+.captionEffect {
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.captionEffect .captionImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: 800ms;
+  -o-transition: 800ms;
+  transition: 800ms;
+}
+
+.captionEffect figcaption {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0.5rem;
+  position: absolute;
+  -webkit-transition: 800ms;
+  -o-transition: 800ms;
+  transition: 800ms;
+  width: 100%;
+}
+
+.captionEffect[data-effect="fade-in"] figcaption {
+  top: 0;
+  left: 0;
+  height: 100%;
+  opacity: 0;
+}
+
+.captionEffect[data-effect="fade-in"]:hover figcaption {
+  opacity: 1;
+}
+
+.captionEffect figcaption h2 {
+  margin: 0;
+  font-size: 0.875rem;
+}
+
+.captionEffect figcaption p {
+  margin: 0;
+}
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+.image-social-team {
+  width: 30px;
+  padding-top: 30px;
+  fill: black;
+}
+
+.text-hover {
+  margin-top: 10% !important;
+  text-align: center;
+}
+
+.modal-equipo {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.social-icons-team {
+  height: 200px;
+  background-color: black;
+  padding-top: 3rem;
+}
+
+.card-team-text {
+  padding: 30% 10% 0 10%;
+}
+
 #proyectos .project-content .project-text p {
   font-size: 20px;
 }
@@ -296,7 +380,8 @@ main .sections-content {
 #premios .content .miembro {
   display: flex;
   justify-content: space-around;
-  height: 100%;
+  height: 300px;
+  width: 300px;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
   padding: 0;
 }

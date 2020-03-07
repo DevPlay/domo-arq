@@ -135,7 +135,6 @@ main {
     padding-top: 5vh;
     margin-bottom: 5vh;
     z-index: 99;
-
   }
 }
 
@@ -226,7 +225,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url="(../images/equipo.jpg)";
+  background-image: url= "(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -680,17 +679,17 @@ main {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked~span {
+    .hamburguer-menu-trigger input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -778,7 +777,7 @@ main {
     }
   }
 
-  .hamburguer-menu-trigger input:checked~ul {
+  .hamburguer-menu-trigger input:checked ~ ul {
     transform: scale(1, 1);
     opacity: 1;
   }

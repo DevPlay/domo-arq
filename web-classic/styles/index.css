@@ -111,6 +111,17 @@ main .sections-content {
   color: #fff;
 }
 
+.menuTransition {
+  background-color: coral;
+  color: red;
+  font-size: 2em;
+  z-index: 999;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .secciones {
   padding-left: 15vh;
   height: 100vh;
@@ -210,90 +221,6 @@ main .sections-content {
   width: 480px;
 }
 
-.captionEffect {
-  position: relative;
-  overflow: hidden;
-  margin: 0 auto;
-}
-
-.captionEffect .captionImage {
-  width: 100%;
-  height: auto;
-  display: block;
-  -webkit-transition: 800ms;
-  -o-transition: 800ms;
-  transition: 800ms;
-}
-
-.captionEffect figcaption {
-  background: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 0.5rem;
-  position: absolute;
-  -webkit-transition: 800ms;
-  -o-transition: 800ms;
-  transition: 800ms;
-  width: 100%;
-}
-
-.captionEffect[data-effect="fade-in"] figcaption {
-  top: 0;
-  left: 0;
-  height: 100%;
-  opacity: 0;
-}
-
-.captionEffect[data-effect="fade-in"]:hover figcaption {
-  opacity: 1;
-}
-
-.captionEffect figcaption h2 {
-  margin: 0;
-  font-size: 0.875rem;
-}
-
-.captionEffect figcaption p {
-  margin: 0;
-}
-
-ul.social-network {
-  list-style: none;
-  display: inline;
-  margin-left: 0 !important;
-  padding: 0;
-}
-
-ul.social-network li {
-  display: inline;
-  margin: 0 5px;
-}
-
-.image-social-team {
-  width: 30px;
-  padding-top: 30px;
-  fill: black;
-}
-
-.text-hover {
-  margin-top: 10% !important;
-  text-align: center;
-}
-
-.modal-equipo {
-  margin: 0 !important;
-  padding: 0 !important;
-}
-
-.social-icons-team {
-  height: 200px;
-  background-color: black;
-  padding-top: 3rem;
-}
-
-.card-team-text {
-  padding: 30% 10% 0 10%;
-}
-
 #proyectos .project-content .project-text p {
   font-size: 20px;
 }
@@ -332,21 +259,22 @@ ul.social-network li {
   text-align: center;
 }
 
-#proyectos .hoverfx:before {
-  display: inline-block;
-  padding-top: 60%;
-  content: "";
-  vertical-align: middle;
+#proyectos .hoverfx img {
+  position: absolute;
 }
 
-#proyectos .hoverfx,
-#proyectos .overlay {
+#proyectos .hoverfx:before {
+  display: inline-block;
+}
+
+#proyectos .hoverfx .overlay {
   position: absolute;
   padding: 100%;
   top: 0;
   z-index: 1;
-  padding: 50%;
-  background: rgba(0, 0, 0, 0.7);
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
   opacity: 0;
   -webkit-transition: all 0.3s ease;
   -moz-transition: all 0.3s ease;
@@ -368,8 +296,7 @@ ul.social-network li {
 #premios .content .miembro {
   display: flex;
   justify-content: space-around;
-  height: 300px;
-  width: 300px;
+  height: 100%;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
   padding: 0;
 }
@@ -612,8 +539,8 @@ ul.social-network li {
   }
   .menu .hamburguer-menu-trigger span {
     display: block;
-    width: 33px;
-    height: 4px;
+    width: 30px;
+    height: 2px;
     margin-bottom: 5px;
     position: relative;
     background: #fff;

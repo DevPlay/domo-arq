@@ -1,5 +1,9 @@
 @import "./_variables.scss";
 
+.menuTransition {
+  color: red($color: #000000);
+}
+
 //Generales
 body {
   color: $color-secundario;

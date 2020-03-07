@@ -33,7 +33,15 @@
         <span></span>
         <ul class="hamburguer-menu">
           <ul class="hamburguer-menu-items">
-            <li><a href="#inicio" class="active">_Inicio</a></li>
+            <li>
+              <a
+                href="#inicio"
+                id="inicio-button"
+                class="active"
+                onclick="transition()"
+                >_Inicio</a
+              >
+            </li>
             <li><a href="#estudio">_Estudio</a></li>
             <li><a href="#proyectos">_Proyectos</a></li>
             <li><a href="#premios">_Premios</a></li>
@@ -76,7 +84,15 @@
         </ul>
       </div>
       <ul class="menu-items">
-        <li><a href="#inicio" class="active">Inicio</a></li>
+        <li>
+          <a
+            href="#inicio"
+            class="active"
+            id="inicio-button"
+            onclick="transition()"
+            >Inicio</a
+          >
+        </li>
         <li><a href="#estudio">Estudio</a></li>
         <li><a href="#proyectos">Proyectos</a></li>
         <li><a href="#premios">Premios</a></li>
@@ -598,6 +614,16 @@
       </div>
     </footer>
   </body>
+
+  <script>
+    function transition() {
+      const lista = document.getElementById("inicio-button");
+      debugger;
+      lista.classList.add("menuTransition");
+      console.log(lista);
+      console.log("hola");
+    }
+  </script>
 
   <script src="./scripts/jquery-3.4.1.min.js"></script>
   <script

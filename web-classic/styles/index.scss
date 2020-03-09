@@ -225,7 +225,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url= "(../images/equipo.jpg)";
+  background-image: url="(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -239,6 +239,7 @@ main {
   overflow: hidden;
   margin: 0 auto;
 }
+
 .captionEffect {
   .captionImage {
     width: 100%;
@@ -250,6 +251,7 @@ main {
     transition: 800ms;
   }
 }
+
 .captionEffect figcaption {
   background: rgba(0, 0, 0, 0.8);
   color: white;
@@ -260,19 +262,23 @@ main {
   transition: 800ms;
   width: 100%;
 }
+
 .captionEffect[data-effect="fade-in"] figcaption {
   top: 0;
   left: 0;
   height: 100%;
   opacity: 0;
 }
+
 .captionEffect[data-effect="fade-in"]:hover figcaption {
   opacity: 1;
 }
+
 .captionEffect figcaption h2 {
   margin: 0;
   font-size: 0.875rem;
 }
+
 .captionEffect figcaption p {
   margin: 0;
 }
@@ -283,6 +289,7 @@ ul.social-network {
   margin-left: 0 !important;
   padding: 0;
 }
+
 ul.social-network li {
   display: inline;
   margin: 0 5px;
@@ -759,17 +766,17 @@ ul.social-network li {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked ~ span {
+    .hamburguer-menu-trigger input:checked~span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -857,7 +864,7 @@ ul.social-network li {
     }
   }
 
-  .hamburguer-menu-trigger input:checked ~ ul {
+  .hamburguer-menu-trigger input:checked~ul {
     transform: scale(1, 1);
     opacity: 1;
   }

@@ -133,6 +133,10 @@ main .sections-content {
   z-index: 99;
 }
 
+.btn-domo {
+  padding-top: 5%;
+}
+
 .btn-domo .btn1 {
   border: transparent;
   border-radius: 0px;

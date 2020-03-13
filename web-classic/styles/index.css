@@ -225,6 +225,10 @@ main .sections-content {
   width: 480px;
 }
 
+.col-margin {
+  margin-right: 0.5rem;
+}
+
 .captionEffect {
   position: relative;
   overflow: hidden;

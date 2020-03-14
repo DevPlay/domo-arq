@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+
 // Color de fondos
 $color-principal: #ff0a7e;
 $color-secundario: #000;
@@ -8,7 +10,15 @@ $color-secondary-text: #fff;
 $color-bordes: rgba(112, 112, 112, 0.2);
 
 // Fuente general
-$font-domo: "Open Sans", Helvetica Neue, Helvetica, Arial, sans-serif;
+$font-domo: "Open Sans",
+Helvetica Neue,
+Helvetica,
+Arial,
+sans-serif;
+// Fuente dev/play
+$fuenteDevPlay: 'Comfortaa',
+cursive;
+
 
 // Tamanos de fuente
 $font-article-size: 16px;

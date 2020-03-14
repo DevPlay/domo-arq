@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 body {
   color: #000;
   padding-left: 240px;
@@ -854,7 +856,7 @@ ul.social-network li {
 .menuTransition {
   background-color: coral;
   color: red;
-  font-size: 2em;
+  font-size: 1.5em;
   z-index: 999;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -864,7 +866,7 @@ ul.social-network li {
 
 .secciones {
   padding-left: 15vh;
-  height: 100vh;
+  height: 100%;
 }
 
 .secciones .titulo-seccion {
@@ -962,33 +964,48 @@ ul.social-network li {
   width: 100%;
 }
 
-#premios .content .miembro {
+#premios .content .proyecto {
   display: flex;
   justify-content: space-around;
   height: 300px;
   width: 300px;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
   padding: 0;
+  background-image: url("../images/equipo2.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#premios .content .miembro .container .texto {
-  padding-left: 9%;
+#premios .content .proyecto .container_body {
+  justify-content: center;
+  flex-direction: column;
+  flex-grow: 1;
 }
 
-#premios .content .miembro:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: #fff;
+#premios .content .proyecto .container_body .container_title {
+  margin: auto;
+  width: 50%;
 }
 
-#premios .content .more {
+#premios .content .proyecto .container_body .container_text {
+  margin: auto;
+  width: 50%;
+}
+
+#premios .content .proyecto .container_body .more {
   padding: 5px;
-  text-align: center;
   color: #fff;
-  align-items: flex-end;
-  justify-content: flex-start;
+  align-self: flex-end;
   height: 40px;
   width: 40px;
   background-color: #000;
+}
+
+#premios .content .container_body:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: block;
 }
 
 #premios .content .close-modal-btn {
@@ -1034,6 +1051,7 @@ ul.social-network li {
 }
 
 .designedBy p {
+  font-family: "Comfortaa", cursive;
   margin-bottom: 0px;
   color: white;
   text-align: center;

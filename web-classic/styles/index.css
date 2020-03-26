@@ -345,6 +345,11 @@ ul.social-network li {
   background-color: #ff0a7e;
 }
 
+#proyectos .frase-proyectos {
+  padding: 5% 10% 5% 0%;
+  font-size: 20px;
+}
+
 #proyectos .hoverfx {
   display: block;
   overflow: hidden;
@@ -385,10 +390,7 @@ ul.social-network li {
 
 .descripcion-inversion {
   margin-top: 15vh;
-}
-
-#modal-dialog {
-  max-width: 70% !important;
+  margin-bottom: 15vh;
 }
 
 .img-modal {
@@ -404,7 +406,15 @@ ul.social-network li {
   margin: 0.5rem;
 }
 
-.close-modal {
+#proyectos .modal-content {
+  background-color: #ff0a7e;
+}
+
+#proyectos .botones-compartir {
+  color: #000;
+}
+
+#proyectos .close-modal {
   padding: 5px;
   text-align: center;
   color: #fff;
@@ -413,7 +423,7 @@ ul.social-network li {
   background-color: #000;
 }
 
-.close {
+#proyectos .close {
   font-size: 1rem;
   text-shadow: none;
   opacity: 1;

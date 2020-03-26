@@ -379,6 +379,14 @@ ul.social-network li {
   opacity: 1;
 }
 
+.datos-proyectos {
+  margin-bottom: 8em;
+}
+
+.descripcion-inversion {
+  margin-top: 8em;
+}
+
 #premios .content {
   display: flex;
   height: 80vh;

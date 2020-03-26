@@ -175,6 +175,8 @@
                 type="button"
                 class="btn btn-secondary btn2"
                 style="width: 40px;"
+                data-toggle="modal"
+                data-target="#compartir-modal"
               >
                 <a href="./.."> <i class="fas fa-share-alt"></i></a>
               </button>
@@ -218,22 +220,11 @@
         >
           <div id="owl-domo" class="owl-carousel owl-theme">
             <div class="item">
-              <div class="hoverfx">
-                <div class="overlay">
-                  <h4>Lorem ipsum</h4>
-                </div>
-                <img class="owl-image" src="./images/proyecto1.jpg" alt="" />
-              </div>
+              <img class="owl-image" src="./images/proyecto1.jpg" alt="" />
             </div>
 
             <div class="item">
-              <div class="hoverfx">
-                <div class="overlay">
-                  <h4>Lorem ipsum</h4>
-                </div>
-
-                <img class="owl-image" src="./images/proyecto2.jpg" alt="" />
-              </div>
+              <img class="owl-image" src="./images/proyecto2.jpg" alt="" />
             </div>
 
             <div class="item">
@@ -241,6 +232,33 @@
             </div>
             <div class="item">
               <img class="owl-image" src="./images/b.png" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="modal fade"
+          id="compartir-modal"
+          tabindex="-1"
+          role="dialog"
+          aria-labelledby="modal"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog" id="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button
+                  type="button"
+                  class="close close-modal"
+                  data-dismiss="modal"
+                  aria-label="Close"
+                >
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <input type="text" name="" id="" />
+              </div>
             </div>
           </div>
         </div>
@@ -256,10 +274,6 @@
     <script src="./scripts/owl.carousel.min.js"></script>
 
     <script>
-      // function myFunction() {
-      //   document.getElementById("tu").focus();
-      // }
-
       $(document).ready(function() {
         $("#owl-domo").owlCarousel({
           loop: true,
@@ -273,10 +287,10 @@
               items: 1
             },
             600: {
-              items: 2
+              items: 1
             },
             1000: {
-              items: 2
+              items: 1
             }
           }
         });

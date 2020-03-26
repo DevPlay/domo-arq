@@ -506,6 +506,47 @@ ul.social-network li {
     opacity: 1;
   }
 }
+
+.hover-proyectos {
+  color: white;
+}
+
+.hover-proyectos .overlay {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition-property: all 0.3s ease;
+}
+
+.item:hover,
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.hover-proyectos img {
+  position: absolute;
+}
+
+.proyectos-button {
+  width: 70%;
+  border: solid 5px;
+  color: white;
+  background-color: transparent;
+  a {
+    color: white;
+  }
+}
+
+.proyectos-texto {
+  text-align: center;
+}
 //seccion premios
 #premios {
   .content {

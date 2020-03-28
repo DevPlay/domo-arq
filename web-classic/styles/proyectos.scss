@@ -122,6 +122,8 @@
 #premios {
     .content {
         display: flex;
+        height: 100%;
+        margin-bottom: 5%;
 
         .card_row {
             height: 300px;
@@ -150,9 +152,11 @@
                     }
 
                     .container_text {
+                        display: flex;
+                        align-self: center;
                         color: #fff;
-                        margin: auto;
-                        width: 70%;
+                        padding: 20%;
+                        height: 70%;
                         visibility: hidden;
 
                     }
@@ -178,12 +182,13 @@
 
     // interior de cada tarjeta en hover
     .container_body:hover {
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: $color-principal;
         color: $color-secondary-text;
         display: block;
 
         .container_text p {
             visibility: visible;
+
         }
 
         .more {

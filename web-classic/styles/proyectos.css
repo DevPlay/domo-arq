@@ -883,6 +883,8 @@ ul.social-network li {
 
 #premios .content {
   display: flex;
+  height: 100%;
+  margin-bottom: 5%;
 }
 
 #premios .content .card_row {
@@ -914,9 +916,11 @@ ul.social-network li {
 }
 
 #premios .content .card_row .proyecto .container_body .container_text {
+  display: flex;
+  align-self: center;
   color: #fff;
-  margin: auto;
-  width: 70%;
+  padding: 20%;
+  height: 70%;
   visibility: hidden;
 }
 
@@ -935,7 +939,7 @@ ul.social-network li {
 }
 
 #premios .container_body:hover {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #ff0a7e;
   color: #fff;
   display: block;
 }

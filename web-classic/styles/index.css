@@ -133,6 +133,10 @@ main .sections-content {
   z-index: 99;
 }
 
+.btn-domo {
+  padding-top: 5%;
+}
+
 .btn-domo .btn1 {
   border: transparent;
   border-radius: 0px;
@@ -219,6 +223,10 @@ main .sections-content {
 
 .el-equipo img {
   width: 480px;
+}
+
+.col-margin {
+  margin-right: 0.5rem;
 }
 
 .captionEffect {
@@ -337,6 +345,11 @@ ul.social-network li {
   background-color: #ff0a7e;
 }
 
+#proyectos .frase-proyectos {
+  padding: 5% 10% 5% 0%;
+  font-size: 20px;
+}
+
 #proyectos .hoverfx {
   display: block;
   overflow: hidden;
@@ -369,6 +382,93 @@ ul.social-network li {
 #proyectos .item:hover,
 #proyectos .item:hover .overlay {
   opacity: 1;
+}
+
+.datos-proyectos {
+  margin-bottom: 15vh;
+}
+
+.descripcion-inversion {
+  margin-top: 15vh;
+  margin-bottom: 15vh;
+}
+
+.img-modal {
+  width: 100%;
+}
+
+.modal-header {
+  border-bottom: none;
+}
+
+.modal-body {
+  padding: 0.5rem;
+  margin: 0.5rem;
+}
+
+#proyectos .modal-content {
+  background-color: #ff0a7e;
+}
+
+#proyectos .botones-compartir {
+  color: #000;
+}
+
+#proyectos .close-modal {
+  padding: 5px;
+  text-align: center;
+  color: #fff;
+  height: 25px;
+  width: 25px;
+  background-color: #000;
+}
+
+#proyectos .close {
+  font-size: 1rem;
+  text-shadow: none;
+  opacity: 1;
+}
+
+.hover-proyectos {
+  color: white;
+}
+
+.hover-proyectos .overlay {
+  position: absolute;
+  top: 0;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition-property: all 0.3s ease;
+}
+
+.item:hover,
+.item:hover .overlay {
+  opacity: 1;
+}
+
+.hover-proyectos img {
+  position: absolute;
+}
+
+.proyectos-button {
+  width: 70%;
+  border: solid 5px;
+  color: white;
+  background-color: transparent;
+}
+
+.proyectos-button a {
+  color: white;
+}
+
+.proyectos-texto {
+  text-align: center;
 }
 
 #premios .content {

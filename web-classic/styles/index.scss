@@ -140,6 +140,7 @@ main {
 
 .btn-domo {
   padding-top: 5%;
+
   .btn1 {
     border: transparent;
     border-radius: 0px;
@@ -329,7 +330,11 @@ ul.social-network li {
 //seccion proyectos
 #proyectos {
   .project-content {
+
     .project-text {
+      overflow-y: scroll;
+      height: 80vh;
+
       p {
         font-size: 20px;
       }
@@ -489,6 +494,7 @@ ul.social-network li {
   padding: 0.5rem;
   margin: 0.5rem;
 }
+
 #proyectos {
   .modal-content {
     background-color: $color-principal;
@@ -546,6 +552,7 @@ ul.social-network li {
   border: solid 5px;
   color: white;
   background-color: transparent;
+
   a {
     color: white;
   }
@@ -554,6 +561,7 @@ ul.social-network li {
 .proyectos-texto {
   text-align: center;
 }
+
 //seccion premios
 #premios {
   .content {

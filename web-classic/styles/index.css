@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Comfortaa");
 body {
   color: #000;
   padding-left: 240px;
@@ -311,6 +312,11 @@ ul.social-network li {
 
 .card-team-text {
   padding: 30% 10% 0 10%;
+}
+
+#proyectos .project-content .project-text {
+  overflow-y: scroll;
+  height: 80vh;
 }
 
 #proyectos .project-content .project-text p {

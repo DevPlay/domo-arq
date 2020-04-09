@@ -113,9 +113,7 @@ main .sections-content {
 }
 
 .menuTransition {
-  background-color: coral;
-  color: red;
-  font-size: 2em;
+  font-size: 1.6em;
   z-index: 999;
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
@@ -124,7 +122,7 @@ main .sections-content {
 }
 
 .secciones {
-  padding-left: 15vh;
+  padding-left: 10vh;
   height: 100vh;
 }
 
@@ -512,46 +510,39 @@ ul.social-network li {
   background-color: #000;
 }
 
-#premios .content .close-modal-btn {
-  text-align: center;
-  color: #fff;
-  align-items: flex-end;
-  justify-content: flex-start;
-  height: 10px;
-  width: 10px;
-  background-color: #000;
-}
-
 #premios #modal-dialog {
+  margin-top: 10%;
   max-width: 70% !important;
 }
 
-#premios .img-modal {
-  width: 100%;
+#premios #modal-dialog .modal-content {
+  border-radius: 0;
 }
 
-#premios .modal-header {
+#premios #modal-dialog .modal-content .modal-header {
   border-bottom: none;
+  height: 30px;
 }
 
-#premios .modal-body {
-  padding: 0.5rem;
-  margin: 0.5rem;
-}
-
-#premios .close-modal {
+#premios #modal-dialog .modal-content .modal-header .close-modal {
   padding: 5px;
   text-align: center;
   color: #fff;
   height: 25px;
   width: 25px;
   background-color: #000;
-}
-
-#premios .close {
   font-size: 1rem;
   text-shadow: none;
   opacity: 1;
+}
+
+#premios #modal-dialog .modal-content .modal-body {
+  padding: 0 32px 32px 32px;
+  margin: 0;
+}
+
+#premios #modal-dialog .modal-content .modal-body .img-modal {
+  width: 100%;
 }
 
 #contacto .mat-label {
@@ -573,7 +564,6 @@ ul.social-network li {
   background: transparent;
   width: 100%;
   border: none;
-  outline: none;
   padding: 8px 0;
   font-size: 14px;
 }
@@ -583,7 +573,7 @@ ul.social-network li {
 }
 
 #contacto .novedades {
-  padding: 30px 0 0 0;
+  padding-top: 30px;
 }
 
 #contacto .mat-div:after,
@@ -616,10 +606,11 @@ ul.social-network li {
   transform: translateY(0);
 }
 
-#contacto .dropdown .btn {
+#contacto .dropdown .dropdown-toggle {
   padding-left: 0px;
   padding-bottom: 16px;
   color: #e2e2e2;
+  font-size: 14px;
 }
 
 #contacto .dropdown.show .btn {

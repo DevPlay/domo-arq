@@ -660,6 +660,29 @@ ul.social-network li {
     }
   }
 
+  .mat-text-area {
+    position: relative;
+    width: 95%;
+
+    .mat-label {
+      display: block;
+      font-size: 14px;
+      transform: translateY(30px);
+      color: #e2e2e2;
+      transition: all 0.5s;
+      margin-top: 5px;
+    }
+
+    .mat-input {
+      position: relative;
+      background: transparent;
+      width: 100%;
+      border: none;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+  }
+
   .novedades {
     padding-top: 30px;
 

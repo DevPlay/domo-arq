@@ -127,7 +127,6 @@ main {
 
 .secciones {
   padding-left: 10vh;
-  height: 100vh;
 
   .titulo-seccion {
     padding-top: 5vh;
@@ -225,7 +224,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url="(../images/equipo.jpg)";
+  background-image: url= "(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -327,7 +326,6 @@ ul.social-network li {
 //seccion proyectos
 #proyectos {
   .project-content {
-
     .project-text {
       overflow-y: scroll;
       height: 80vh;
@@ -563,7 +561,6 @@ ul.social-network li {
 #premios {
   .content {
     display: flex;
-    height: 80vh;
     width: 100%;
 
     .miembro {
@@ -641,7 +638,7 @@ ul.social-network li {
     height: 55px;
 
     label {
-      margin-bottom: .4rem;
+      margin-bottom: 0.4rem;
     }
 
     .mat-label {
@@ -661,7 +658,6 @@ ul.social-network li {
       padding: 8px 0;
       font-size: 14px;
     }
-
   }
 
   .mat-text-area {
@@ -748,7 +744,6 @@ ul.social-network li {
       }
     }
   }
-
 
   .mat-btn {
     border-radius: 0px;
@@ -887,17 +882,17 @@ ul.social-network li {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked~span {
+    .hamburguer-menu-trigger input:checked ~ span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -985,7 +980,7 @@ ul.social-network li {
     }
   }
 
-  .hamburguer-menu-trigger input:checked~ul {
+  .hamburguer-menu-trigger input:checked ~ ul {
     transform: scale(1, 1);
     opacity: 1;
   }

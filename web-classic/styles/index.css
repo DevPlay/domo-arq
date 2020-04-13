@@ -123,7 +123,6 @@ main .sections-content {
 
 .secciones {
   padding-left: 10vh;
-  height: 100vh;
 }
 
 .secciones .titulo-seccion {
@@ -477,7 +476,6 @@ ul.social-network li {
 
 #premios .content {
   display: flex;
-  height: 80vh;
   width: 100%;
 }
 
@@ -551,7 +549,7 @@ ul.social-network li {
 }
 
 #contacto .mat-div label {
-  margin-bottom: .4rem;
+  margin-bottom: 0.4rem;
 }
 
 #contacto .mat-div .mat-label {

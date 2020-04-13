@@ -572,6 +572,29 @@ ul.social-network li {
   font-size: 14px;
 }
 
+#contacto .mat-text-area {
+  position: relative;
+  width: 95%;
+}
+
+#contacto .mat-text-area .mat-label {
+  display: block;
+  font-size: 14px;
+  transform: translateY(30px);
+  color: #e2e2e2;
+  transition: all 0.5s;
+  margin-top: 5px;
+}
+
+#contacto .mat-text-area .mat-input {
+  position: relative;
+  background: transparent;
+  width: 100%;
+  border: none;
+  padding: 8px 0;
+  font-size: 14px;
+}
+
 #contacto .novedades {
   padding-top: 30px;
 }

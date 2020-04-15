@@ -486,7 +486,6 @@
         aria-hidden="true"
       >
         <div class="modal-dialog" id="modal-dialog" role="document">
-
           <div class="modal-content">
             <div class="modal-header">
               <button
@@ -548,7 +547,6 @@
                           aria-expanded="false"
                         >
                           PROYECTO DE INTERÉS (opcional)
-
                         </button>
                         <div
                           class="dropdown-menu"
@@ -653,74 +651,51 @@
     }
 
     ////////////
-    window.onload = function () {
-      const easeInCubic = function (t) {
-        return t * t * t;
-      };
-      const scrollElems = document.getElementsByClassName("scroll");
+    // Menu scroll
+    var section_padding = -40;
 
-      //console.log(scrollElems);
-      const scrollToElem = (
-        start,
-        stamp,
-        duration,
-        scrollEndElemTop,
-        startScrollOffset
-      ) => {
-        //debugger;
-        const runtime = stamp - start;
-        let progress = runtime / duration;
-        const ease = easeInCubic(progress);
+    const scrollElems = document.getElementsByClassName("scroll");
+    $(scrollElems).on("click", function (event) {
+      event.preventDefault();
 
-        progress = Math.min(progress, 1);
-        console.log(
-          startScrollOffset,
-          startScrollOffset + scrollEndElemTop * ease
-        );
+      $("#menu ul li a.active").removeClass("active");
+      $(this).addClass("active");
 
-        const newScrollOffset = startScrollOffset + scrollEndElemTop * ease;
-        window.scroll(0.5, startScrollOffset + scrollEndElemTop * ease);
+      var target = this.hash;
+      var menu = target;
+      var cache_target = $(target);
+      var buffer = cache_target.offset().top - section_padding;
 
-        if (runtime < duration) {
-          requestAnimationFrame((timestamp) => {
-            const stamp = new Date().getTime();
-            scrollToElem(
-              start,
-              stamp,
-              duration,
-              scrollEndElemTop,
-              startScrollOffset
-            );
-          });
+      $("html, body").stop().animate(
+        {
+          scrollTop: buffer,
+        },
+        400,
+        "swing"
+      );
+    });
+
+    function scroll(event) {
+      var scroll_pos = $(document).scrollTop();
+      $("#menu ul li a").each(function () {
+        var cur_link = $(this);
+        var ref_el = $(cur_link.attr("href"));
+
+        if (
+          ref_el.position().top <= scroll_pos &&
+          ref_el.position().top + ref_el.height() + section_padding * 2 >
+            scroll_pos
+        ) {
+          $("#menu ul li a").removeClass("active");
+          cur_link.addClass("active");
+        } else {
+          cur_link.removeClass("active");
         }
-      };
+      });
+    }
 
-      for (let i = 0; i < scrollElems.length; i++) {
-        const elem = scrollElems[i];
-        elem.addEventListener("click", function (e) {
-          e.preventDefault();
-          const scrollElemId = e.target.href.split("#")[1];
-          const scrollEndElem = document.getElementById(scrollElemId);
-          const anim = requestAnimationFrame(() => {
-            const stamp = new Date().getTime();
-            const duration = 1000;
-            const start = stamp;
+    $(document).on("scroll", scroll);
 
-            const startScrollOffset = window.pageYOffset;
-
-            const scrollEndElemTop = scrollEndElem.getBoundingClientRect().top;
-
-            scrollToElem(
-              start,
-              stamp,
-              duration,
-              scrollEndElemTop,
-              startScrollOffset
-            );
-          });
-        });
-      }
-    };
     //////////////
 
     $(document).ready(function () {

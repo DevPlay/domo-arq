@@ -51,11 +51,22 @@ main {
   }
 
   .menu-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    list-style: none;
     height: 70vh;
-    padding: 24px 24px 64px 24px;
+    // padding: 0 2em;
+
+    li {
+      padding: 0.8em 0.5em 0.8em 0.5em;
+
+      &:focus {
+        outline: none;
+      }
+
+      a:hover {
+        text-decoration: none;
+        color: $color-secondary-text;
+      }
+    }
   }
 
   .menu-social {
@@ -63,16 +74,14 @@ main {
     color: $color-secondary-text;
     text-align: left;
     font-size: 1rem;
-    padding: 5% 0% 5% 0%;
     height: 30vh;
-    justify-content: center;
 
     ul {
       list-style: none;
 
       li {
         height: auto;
-        padding: 0.5em 1em 0em 1.5em;
+        padding: 0.5em 1em 0.5em 1em;
 
         a {
           color: $color-secondary-text;
@@ -91,29 +100,6 @@ main {
     }
   }
 
-  ul {
-    list-style: none;
-    padding: 0.5em 0;
-    margin: 40px 0px 0px 0px;
-
-    li {
-      padding: 0.8em 0.5em 0.8em 1.2em;
-      background-repeat: no-repeat;
-      background-position: left 15px center;
-      background-size: auto 20px;
-      transition: all 0.15s linear;
-      cursor: pointer;
-
-      &:focus {
-        outline: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: $color-secondary-text;
-      }
-    }
-  }
 }
 
 .menuTransition {
@@ -127,6 +113,7 @@ main {
 
 .secciones {
   padding-left: 10vh;
+  height: 100vh;
 
   .titulo-seccion {
     padding-top: 5vh;
@@ -138,10 +125,29 @@ main {
 .btn-domo {
   padding-top: 5%;
 
+  .btn-secondary {
+
+    a {
+      text-decoration: none;
+      color: $color-secondary-text;
+    }
+
+  }
+
   .btn1 {
     border: transparent;
     border-radius: 0px;
     background-color: $color-principal;
+    text-decoration: none;
+
+    a {
+      color: $color-primary-text;
+    }
+
+  }
+
+  .btn1:hover a {
+    color: $color-secondary-text;
   }
 
   .btn2 {
@@ -149,10 +155,8 @@ main {
     border-radius: 0px;
     background-color: $color-secundario;
     width: 40px;
+    height: 40px;
 
-    a {
-      color: $color-secondary-text;
-    }
   }
 }
 
@@ -224,7 +228,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url= "(../images/equipo.jpg)";
+  background-image: url="(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -826,7 +830,7 @@ ul.social-network li {
   }
 
   .menu {
-    width: 45px;
+    width: 40px;
 
     .hamburguer-menu-trigger {
       display: block;
@@ -882,17 +886,17 @@ ul.social-network li {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked ~ span {
+    .hamburguer-menu-trigger input:checked~span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -980,7 +984,7 @@ ul.social-network li {
     }
   }
 
-  .hamburguer-menu-trigger input:checked ~ ul {
+  .hamburguer-menu-trigger input:checked~ul {
     transform: scale(1, 1);
     opacity: 1;
   }

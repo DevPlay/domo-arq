@@ -47,20 +47,23 @@ main .sections-content {
   color: #000;
 }
 
-.menu .menu-items {
+.menu a:hover {
+  text-decoration: none;
+}
+
+.menu .menu-items ul {
   list-style: none;
   height: 70vh;
+  margin: auto;
+  width: 100%;
+  padding: 25%;
 }
 
-.menu .menu-items li {
-  padding: 0.8em 0.5em 0.8em 0.5em;
-}
-
-.menu .menu-items li:focus {
+.menu .menu-items ul li:focus, .menu .menu-items ul li:active {
   outline: none;
 }
 
-.menu .menu-items li a:hover {
+.menu .menu-items ul li a:hover {
   text-decoration: none;
   color: #fff;
 }
@@ -75,15 +78,21 @@ main .sections-content {
 
 .menu .menu-social ul {
   list-style: none;
+  margin: auto;
+  width: 100%;
 }
 
 .menu .menu-social ul li {
-  height: auto;
-  padding: 0.5em 1em 0.5em 1em;
+  padding: 0.3em 0;
 }
 
 .menu .menu-social ul li a {
   color: #fff;
+}
+
+.menu .menu-social ul li a :hover {
+  font-weight: bold;
+  outline: none;
 }
 
 .menu .menu-social .social-text {
@@ -308,7 +317,6 @@ ul.social-network li {
 }
 
 #proyectos .project-content .project-text {
-  overflow-y: scroll;
   height: 80vh;
 }
 
@@ -478,8 +486,10 @@ ul.social-network li {
 #premios .content .miembro {
   display: flex;
   justify-content: space-around;
-  height: 300px;
-  width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  max-width: 300px;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
   padding: 0;
 }
@@ -544,10 +554,6 @@ ul.social-network li {
   height: 55px;
 }
 
-#contacto .mat-div label {
-  margin-bottom: 0.4rem;
-}
-
 #contacto .mat-div .mat-label {
   display: block;
   font-size: 14px;
@@ -555,6 +561,7 @@ ul.social-network li {
   color: #e2e2e2;
   transition: all 0.5s;
   margin-top: 5px;
+  margin-bottom: 0.4rem;
 }
 
 #contacto .mat-div .mat-input {
@@ -564,6 +571,22 @@ ul.social-network li {
   border: none;
   padding: 8px 0;
   font-size: 14px;
+}
+
+#contacto .dropdown .dropdown-toggle {
+  height: 55px;
+  padding-left: 0px;
+  padding-top: 24px;
+  color: #e2e2e2;
+  font-size: 14px;
+}
+
+#contacto .dropdown .dropdown .show .btn {
+  color: #ff0a7e;
+}
+
+#contacto .dropdown .dropdown-menu .dropdown-item {
+  color: #ff0a7e;
 }
 
 #contacto .mat-text-area {
@@ -629,47 +652,14 @@ ul.social-network li {
   transform: translateY(0);
 }
 
-#contacto .dropdown .dropdown-toggle {
-  height: 55px;
-  padding-left: 0px;
-  padding-top: 24px;
-  color: #e2e2e2;
-  font-size: 14px;
-}
-
-#contacto .dropdown .dropdown .show .btn {
-  color: #ff0a7e;
-}
-
-#contacto .dropdown .dropdown-menu .dropdown-item {
-  color: #ff0a7e;
-}
-
 #contacto .mat-btn {
   border-radius: 0px;
-  background-color: #000;
-  color: #fff;
-}
-
-#contacto .mat-btn:hover {
   background-color: #ff0a7e;
-  border: none;
-}
-
-#contacto ul {
-  list-style: none;
-}
-
-#contacto ul a {
   color: #000;
 }
 
-#contacto ul a:hover {
-  color: #ff0a7e;
-}
-
-#contacto ul li p {
-  margin-bottom: 0px;
+#contacto .mat-btn:hover {
+  color: #fff;
 }
 
 #contacto .contact {

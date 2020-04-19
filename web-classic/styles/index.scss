@@ -38,6 +38,7 @@ main {
   height: 100vh;
   width: 240px;
   position: fixed;
+
   top: 0;
   left: 0;
   z-index: 5;
@@ -48,23 +49,32 @@ main {
 
   a {
     color: $color-secundario;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .menu-items {
-    list-style: none;
-    height: 70vh;
-    // padding: 0 2em;
 
-    li {
-      padding: 0.8em 0.5em 0.8em 0.5em;
+    ul {
+      list-style: none;
+      height: 70vh;
+      margin: auto;
+      width: 100%;
+      padding: 25%;
 
-      &:focus {
-        outline: none;
-      }
+      li {
 
-      a:hover {
-        text-decoration: none;
-        color: $color-secondary-text;
+        &:focus,
+        &:active {
+          outline: none;
+        }
+
+        a:hover {
+          text-decoration: none;
+          color: $color-secondary-text;
+        }
       }
     }
   }
@@ -78,13 +88,19 @@ main {
 
     ul {
       list-style: none;
+      margin: auto;
+      width: 100%;
 
       li {
-        height: auto;
-        padding: 0.5em 1em 0.5em 1em;
+        padding: 0.3em 0;
 
         a {
           color: $color-secondary-text;
+
+          & :hover {
+            font-weight: bold;
+            outline: none;
+          }
         }
       }
     }
@@ -331,7 +347,6 @@ ul.social-network li {
 #proyectos {
   .project-content {
     .project-text {
-      overflow-y: scroll;
       height: 80vh;
 
       p {
@@ -570,8 +585,10 @@ ul.social-network li {
     .miembro {
       display: flex;
       justify-content: space-around;
-      height: 300px;
-      width: 300px;
+      min-height: 300px;
+      max-height: 300px;
+      min-width: 300px;
+      max-width: 300px;
       border: 0.3px solid $color-bordes;
       padding: 0;
 
@@ -635,15 +652,13 @@ ul.social-network li {
   }
 }
 
+// fin seccion premios
+
 // Seccion contacto
 #contacto {
   .mat-div {
     position: relative;
     height: 55px;
-
-    label {
-      margin-bottom: 0.4rem;
-    }
 
     .mat-label {
       display: block;
@@ -652,6 +667,8 @@ ul.social-network li {
       color: #e2e2e2;
       transition: all 0.5s;
       margin-top: 5px;
+      margin-bottom: 0.4rem;
+
     }
 
     .mat-input {
@@ -661,6 +678,28 @@ ul.social-network li {
       border: none;
       padding: 8px 0;
       font-size: 14px;
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      height: 55px;
+      padding-left: 0px;
+      padding-top: 24px;
+      color: #e2e2e2;
+      font-size: 14px;
+    }
+
+    .dropdown .show {
+      .btn {
+        color: $color-principal;
+      }
+    }
+
+    .dropdown-menu {
+      .dropdown-item {
+        color: $color-principal;
+      }
     }
   }
 
@@ -727,55 +766,14 @@ ul.social-network li {
     transform: translateY(0);
   }
 
-  .dropdown {
-    .dropdown-toggle {
-      height: 55px;
-      padding-left: 0px;
-      padding-top: 24px;
-      color: #e2e2e2;
-      font-size: 14px;
-    }
-
-    .dropdown .show {
-      .btn {
-        color: $color-principal;
-      }
-    }
-
-    .dropdown-menu {
-      .dropdown-item {
-        color: $color-principal;
-      }
-    }
-  }
-
   .mat-btn {
     border-radius: 0px;
-    background-color: $color-secundario;
-    color: $color-secondary-text;
+    background-color: $color-principal;
+    color: $color-secundario;
   }
 
   .mat-btn:hover {
-    background-color: $color-principal;
-    border: none;
-  }
-
-  ul {
-    list-style: none;
-
-    a {
-      color: #000;
-    }
-
-    a:hover {
-      color: $color-principal;
-    }
-
-    li {
-      p {
-        margin-bottom: 0px;
-      }
-    }
+    color: $color-secondary-text;
   }
 
   .contact {
@@ -788,6 +786,8 @@ ul.social-network li {
     }
   }
 }
+
+// fin seccion contacto
 
 // Inicio footer
 .designedBy {

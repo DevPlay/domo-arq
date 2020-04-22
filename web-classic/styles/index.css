@@ -47,12 +47,25 @@ main .sections-content {
   color: #000;
 }
 
-.menu .menu-items {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.menu a:hover {
+  text-decoration: none;
+}
+
+.menu .menu-items ul {
+  list-style: none;
   height: 70vh;
-  padding: 24px 24px 64px 24px;
+  margin: auto;
+  width: 100%;
+  padding: 25%;
+}
+
+.menu .menu-items ul li:focus, .menu .menu-items ul li:active {
+  outline: none;
+}
+
+.menu .menu-items ul li a:hover {
+  text-decoration: none;
+  color: #fff;
 }
 
 .menu .menu-social {
@@ -60,22 +73,26 @@ main .sections-content {
   color: #fff;
   text-align: left;
   font-size: 1rem;
-  padding: 5% 0% 5% 0%;
   height: 30vh;
-  justify-content: center;
 }
 
 .menu .menu-social ul {
   list-style: none;
+  margin: auto;
+  width: 100%;
 }
 
 .menu .menu-social ul li {
-  height: auto;
-  padding: 0.5em 1em 0em 1.5em;
+  padding: 0.3em 0;
 }
 
 .menu .menu-social ul li a {
   color: #fff;
+}
+
+.menu .menu-social ul li a :hover {
+  font-weight: bold;
+  outline: none;
 }
 
 .menu .menu-social .social-text {
@@ -86,30 +103,6 @@ main .sections-content {
 .menu .menu-social .social-icon {
   width: 15px;
   margin-bottom: 3px;
-}
-
-.menu ul {
-  list-style: none;
-  padding: 0.5em 0;
-  margin: 40px 0px 0px 0px;
-}
-
-.menu ul li {
-  padding: 0.8em 0.5em 0.8em 1.2em;
-  background-repeat: no-repeat;
-  background-position: left 15px center;
-  background-size: auto 20px;
-  transition: all 0.15s linear;
-  cursor: pointer;
-}
-
-.menu ul li:focus {
-  outline: none;
-}
-
-.menu ul li a:hover {
-  text-decoration: none;
-  color: #fff;
 }
 
 .menuTransition {
@@ -123,6 +116,7 @@ main .sections-content {
 
 .secciones {
   padding-left: 10vh;
+  height: 100vh;
 }
 
 .secciones .titulo-seccion {
@@ -135,10 +129,24 @@ main .sections-content {
   padding-top: 5%;
 }
 
+.btn-domo .btn-secondary a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .btn-domo .btn1 {
   border: transparent;
   border-radius: 0px;
   background-color: #ff0a7e;
+  text-decoration: none;
+}
+
+.btn-domo .btn1 a {
+  color: #000;
+}
+
+.btn-domo .btn1:hover a {
+  color: #fff;
 }
 
 .btn-domo .btn2 {
@@ -146,10 +154,7 @@ main .sections-content {
   border-radius: 0px;
   background-color: #000;
   width: 40px;
-}
-
-.btn-domo .btn2 a {
-  color: #fff;
+  height: 40px;
 }
 
 .container-portada {
@@ -312,7 +317,6 @@ ul.social-network li {
 }
 
 #proyectos .project-content .project-text {
-  overflow-y: scroll;
   height: 80vh;
 }
 
@@ -482,8 +486,10 @@ ul.social-network li {
 #premios .content .miembro {
   display: flex;
   justify-content: space-around;
-  height: 300px;
-  width: 300px;
+  min-height: 300px;
+  max-height: 300px;
+  min-width: 300px;
+  max-width: 300px;
   border: 0.3px solid rgba(112, 112, 112, 0.2);
   padding: 0;
 }
@@ -548,10 +554,6 @@ ul.social-network li {
   height: 55px;
 }
 
-#contacto .mat-div label {
-  margin-bottom: 0.4rem;
-}
-
 #contacto .mat-div .mat-label {
   display: block;
   font-size: 14px;
@@ -559,6 +561,7 @@ ul.social-network li {
   color: #e2e2e2;
   transition: all 0.5s;
   margin-top: 5px;
+  margin-bottom: 0.4rem;
 }
 
 #contacto .mat-div .mat-input {
@@ -568,6 +571,22 @@ ul.social-network li {
   border: none;
   padding: 8px 0;
   font-size: 14px;
+}
+
+#contacto .dropdown .dropdown-toggle {
+  height: 55px;
+  padding-left: 0px;
+  padding-top: 24px;
+  color: #e2e2e2;
+  font-size: 14px;
+}
+
+#contacto .dropdown .dropdown .show .btn {
+  color: #ff0a7e;
+}
+
+#contacto .dropdown .dropdown-menu .dropdown-item {
+  color: #ff0a7e;
 }
 
 #contacto .mat-text-area {
@@ -633,47 +652,14 @@ ul.social-network li {
   transform: translateY(0);
 }
 
-#contacto .dropdown .dropdown-toggle {
-  height: 55px;
-  padding-left: 0px;
-  padding-top: 24px;
-  color: #e2e2e2;
-  font-size: 14px;
-}
-
-#contacto .dropdown .dropdown .show .btn {
-  color: #ff0a7e;
-}
-
-#contacto .dropdown .dropdown-menu .dropdown-item {
-  color: #ff0a7e;
-}
-
 #contacto .mat-btn {
   border-radius: 0px;
-  background-color: #000;
-  color: #fff;
-}
-
-#contacto .mat-btn:hover {
   background-color: #ff0a7e;
-  border: none;
-}
-
-#contacto ul {
-  list-style: none;
-}
-
-#contacto ul a {
   color: #000;
 }
 
-#contacto ul a:hover {
-  color: #ff0a7e;
-}
-
-#contacto ul li p {
-  margin-bottom: 0px;
+#contacto .mat-btn:hover {
+  color: #fff;
 }
 
 #contacto .contact {
@@ -718,7 +704,7 @@ ul.social-network li {
     padding-left: 2vh;
   }
   .menu {
-    width: 45px;
+    width: 40px;
     /*
      * Just a quick hamburger
      */

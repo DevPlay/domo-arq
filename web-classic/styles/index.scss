@@ -38,6 +38,7 @@ main {
   height: 100vh;
   width: 240px;
   position: fixed;
+
   top: 0;
   left: 0;
   z-index: 5;
@@ -48,14 +49,34 @@ main {
 
   a {
     color: $color-secundario;
+
+    &:hover {
+      text-decoration: none;
+    }
   }
 
   .menu-items {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 70vh;
-    padding: 24px 24px 64px 24px;
+
+    ul {
+      list-style: none;
+      height: 70vh;
+      margin: auto;
+      width: 100%;
+      padding: 25%;
+
+      li {
+
+        &:focus,
+        &:active {
+          outline: none;
+        }
+
+        a:hover {
+          text-decoration: none;
+          color: $color-secondary-text;
+        }
+      }
+    }
   }
 
   .menu-social {
@@ -63,19 +84,23 @@ main {
     color: $color-secondary-text;
     text-align: left;
     font-size: 1rem;
-    padding: 5% 0% 5% 0%;
     height: 30vh;
-    justify-content: center;
 
     ul {
       list-style: none;
+      margin: auto;
+      width: 100%;
 
       li {
-        height: auto;
-        padding: 0.5em 1em 0em 1.5em;
+        padding: 0.3em 0;
 
         a {
           color: $color-secondary-text;
+
+          & :hover {
+            font-weight: bold;
+            outline: none;
+          }
         }
       }
     }
@@ -91,29 +116,6 @@ main {
     }
   }
 
-  ul {
-    list-style: none;
-    padding: 0.5em 0;
-    margin: 40px 0px 0px 0px;
-
-    li {
-      padding: 0.8em 0.5em 0.8em 1.2em;
-      background-repeat: no-repeat;
-      background-position: left 15px center;
-      background-size: auto 20px;
-      transition: all 0.15s linear;
-      cursor: pointer;
-
-      &:focus {
-        outline: none;
-      }
-
-      a:hover {
-        text-decoration: none;
-        color: $color-secondary-text;
-      }
-    }
-  }
 }
 
 .menuTransition {
@@ -127,6 +129,7 @@ main {
 
 .secciones {
   padding-left: 10vh;
+  height: 100vh;
 
   .titulo-seccion {
     padding-top: 5vh;
@@ -138,10 +141,29 @@ main {
 .btn-domo {
   padding-top: 5%;
 
+  .btn-secondary {
+
+    a {
+      text-decoration: none;
+      color: $color-secondary-text;
+    }
+
+  }
+
   .btn1 {
     border: transparent;
     border-radius: 0px;
     background-color: $color-principal;
+    text-decoration: none;
+
+    a {
+      color: $color-primary-text;
+    }
+
+  }
+
+  .btn1:hover a {
+    color: $color-secondary-text;
   }
 
   .btn2 {
@@ -149,10 +171,8 @@ main {
     border-radius: 0px;
     background-color: $color-secundario;
     width: 40px;
+    height: 40px;
 
-    a {
-      color: $color-secondary-text;
-    }
   }
 }
 
@@ -224,7 +244,7 @@ main {
 
 //Seccion equipo
 .el-equipo {
-  background-image: url= "(../images/equipo.jpg)";
+  background-image: url="(../images/equipo.jpg)";
   float: left;
   height: 70vh;
 
@@ -327,7 +347,6 @@ ul.social-network li {
 #proyectos {
   .project-content {
     .project-text {
-      overflow-y: scroll;
       height: 80vh;
 
       p {
@@ -566,8 +585,10 @@ ul.social-network li {
     .miembro {
       display: flex;
       justify-content: space-around;
-      height: 300px;
-      width: 300px;
+      min-height: 300px;
+      max-height: 300px;
+      min-width: 300px;
+      max-width: 300px;
       border: 0.3px solid $color-bordes;
       padding: 0;
 
@@ -631,15 +652,13 @@ ul.social-network li {
   }
 }
 
+// fin seccion premios
+
 // Seccion contacto
 #contacto {
   .mat-div {
     position: relative;
     height: 55px;
-
-    label {
-      margin-bottom: 0.4rem;
-    }
 
     .mat-label {
       display: block;
@@ -648,6 +667,8 @@ ul.social-network li {
       color: #e2e2e2;
       transition: all 0.5s;
       margin-top: 5px;
+      margin-bottom: 0.4rem;
+
     }
 
     .mat-input {
@@ -657,6 +678,28 @@ ul.social-network li {
       border: none;
       padding: 8px 0;
       font-size: 14px;
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      height: 55px;
+      padding-left: 0px;
+      padding-top: 24px;
+      color: #e2e2e2;
+      font-size: 14px;
+    }
+
+    .dropdown .show {
+      .btn {
+        color: $color-principal;
+      }
+    }
+
+    .dropdown-menu {
+      .dropdown-item {
+        color: $color-principal;
+      }
     }
   }
 
@@ -723,55 +766,14 @@ ul.social-network li {
     transform: translateY(0);
   }
 
-  .dropdown {
-    .dropdown-toggle {
-      height: 55px;
-      padding-left: 0px;
-      padding-top: 24px;
-      color: #e2e2e2;
-      font-size: 14px;
-    }
-
-    .dropdown .show {
-      .btn {
-        color: $color-principal;
-      }
-    }
-
-    .dropdown-menu {
-      .dropdown-item {
-        color: $color-principal;
-      }
-    }
-  }
-
   .mat-btn {
     border-radius: 0px;
-    background-color: $color-secundario;
-    color: $color-secondary-text;
+    background-color: $color-principal;
+    color: $color-secundario;
   }
 
   .mat-btn:hover {
-    background-color: $color-principal;
-    border: none;
-  }
-
-  ul {
-    list-style: none;
-
-    a {
-      color: #000;
-    }
-
-    a:hover {
-      color: $color-principal;
-    }
-
-    li {
-      p {
-        margin-bottom: 0px;
-      }
-    }
+    color: $color-secondary-text;
   }
 
   .contact {
@@ -784,6 +786,8 @@ ul.social-network li {
     }
   }
 }
+
+// fin seccion contacto
 
 // Inicio footer
 .designedBy {
@@ -826,7 +830,7 @@ ul.social-network li {
   }
 
   .menu {
-    width: 45px;
+    width: 40px;
 
     .hamburguer-menu-trigger {
       display: block;
@@ -882,17 +886,17 @@ ul.social-network li {
       transform-origin: 0% 100%;
     }
 
-    .hamburguer-menu-trigger input:checked ~ span {
+    .hamburguer-menu-trigger input:checked~span {
       opacity: 1;
       transform: rotate(45deg) translate(-2px, -1px);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(3) {
       opacity: 0;
       transform: rotate(0deg) scale(0.2, 0.2);
     }
 
-    .hamburguer-menu-trigger input:checked ~ span:nth-last-child(2) {
+    .hamburguer-menu-trigger input:checked~span:nth-last-child(2) {
       opacity: 1;
       transform: rotate(-45deg) translate(0, -1px);
     }
@@ -980,7 +984,7 @@ ul.social-network li {
     }
   }
 
-  .hamburguer-menu-trigger input:checked ~ ul {
+  .hamburguer-menu-trigger input:checked~ul {
     transform: scale(1, 1);
     opacity: 1;
   }

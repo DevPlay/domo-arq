@@ -13,8 +13,10 @@
 @import 'base/mixins';
 
 /* Vendor */
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
 /* Components */
-@import 'components/index';
 @import 'components/proyectoBase';
 @import 'components/proyectos';
+@import 'components/index';

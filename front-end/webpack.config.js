@@ -1,7 +1,3 @@
-/**
- * Assets Config file
- */
-
 const serverConfiguration = {
   internal: {
     server: {
@@ -23,6 +19,7 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const CopyWebpackPlugin = require('copy-webpack-plugin');
 const ImageMinPlugin = require('imagemin-webpack-plugin').default;
+const webpack = require('webpack');
 
 let targetServerConfiguration = serverConfiguration.internal;
 
@@ -42,7 +39,7 @@ const config = function (env, args) {
     module: {
       rules: [
         {
-          test: /\.scss$/,
+          test: /\.(css|scss)$/,
           use: [
             'style-loader',
             MiniCssExtractPlugin.loader,
@@ -62,7 +59,7 @@ const config = function (env, args) {
             {
               loader: 'url-loader',
               options: {
-                name: 'images/design/[name].[hash:6].[ext]',
+                name: 'images/[name].[hash:6].[ext]',
                 publicPath: '../',
                 limit: 8192,
               },
@@ -120,6 +117,20 @@ const config = function (env, args) {
         template: path.resolve(__dirname, 'src', 'index.html'),
         favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
       }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: 'equipo.html',
+        template: path.resolve(__dirname, 'src', 'equipo.html'),
+        favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: 'proyectos.html',
+        template: path.resolve(__dirname, 'src', 'proyectos.html'),
+        favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
+      }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].css',
       }),
@@ -139,6 +150,11 @@ const config = function (env, args) {
           toType: 'dir',
         },
       ]),
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery',
+      }),
     ],
   };
 };

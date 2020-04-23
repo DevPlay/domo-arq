@@ -3,23 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link
-      rel="stylesheet"
-      href="./OwlCarousel2-2.3.4/dist/assets/owl.carousel.css"
-    />
-
-    <!-- <link rel="stylesheet" href="./styles/master.min.css" /> -->
-    <link rel="stylesheet" href="./styles/index.min.css" />
     <title>Estudio Domo Arq</title>
   </head>
 
@@ -123,9 +106,9 @@
         <!-- TODO: Completar con los textos  correspondientes y el diseño final del modal -->
 
         <div class="container flex-wrap d-flex">
-          <div class="row d-flex  align-items-baseline mb-4">
+          <div class="row d-flex align-items-baseline mb-4">
             <div class="miembro col-sm mx-4 my-1">
-              <div class="container p-0 d-flex ">
+              <div class="container p-0 d-flex">
                 <figure class="captionEffect" data-effect="fade-in">
                   <img class="captionImage" src="./images/domoarq.png" alt="" />
                   <figcaption
@@ -181,7 +164,7 @@
             </div>
 
             <div class="miembro col-sm mx-4 my-1">
-              <div class="container p-0 d-flex ">
+              <div class="container p-0 d-flex">
                 <figure class="captionEffect" data-effect="fade-in">
                   <img class="captionImage" src="./images/domoarq.png" alt="" />
                   <figcaption
@@ -237,7 +220,7 @@
             </div>
 
             <div class="miembro col-sm mx-4 my-1">
-              <div class="container p-0 d-flex ">
+              <div class="container p-0 d-flex">
                 <figure class="captionEffect" data-effect="fade-in">
                   <img class="captionImage" src="./images/domoarq.png" alt="" />
                   <figcaption
@@ -295,7 +278,7 @@
 
           <div class="row d-flex align-items-baseline mb-4">
             <div class="miembro col-sm mx-4 my-1">
-              <div class="container p-0 d-flex ">
+              <div class="container p-0 d-flex">
                 <figure class="captionEffect" data-effect="fade-in">
                   <img class="captionImage" src="./images/domoarq.png" alt="" />
                   <figcaption
@@ -351,7 +334,7 @@
             </div>
 
             <div class="miembro col-sm mx-4 my-1">
-              <div class="container p-0 d-flex ">
+              <div class="container p-0 d-flex">
                 <figure class="captionEffect" data-effect="fade-in">
                   <img class="captionImage" src="./images/domoarq.png" alt="" />
                   <figcaption
@@ -407,7 +390,7 @@
             </div>
 
             <div class="miembro col-sm mx-4 my-1">
-              <div class="container p-0 d-flex ">
+              <div class="container p-0 d-flex">
                 <figure class="captionEffect" data-effect="fade-in">
                   <img class="captionImage" src="./images/domoarq.png" alt="" />
                   <figcaption
@@ -630,21 +613,13 @@
       <!-- TODO: Agregar los demas modales cuando esten definidos -->
     </section>
 
-    <script src="./scripts/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="./scripts/owl.carousel.min.js"></script>
-
     <script>
       // function myFunction() {
       //   document.getElementById("tu").focus();
       // }
 
-      $(document).ready(function() {
-        $("#owl-domo").owlCarousel({
+      $(document).ready(function () {
+        $('#owl-domo').owlCarousel({
           loop: true,
           navText: [
             "<i class='fas fa-arrow-left'></i>",
@@ -668,9 +643,9 @@
 
     <!-- Facebook Pixel Code -->
     <script>
-      !(function(f, b, e, v, n, t, s) {
+      !(function (f, b, e, v, n, t, s) {
         if (f.fbq) return;
-        n = f.fbq = function() {
+        n = f.fbq = function () {
           n.callMethod
             ? n.callMethod.apply(n, arguments)
             : n.queue.push(arguments);
@@ -678,7 +653,7 @@
         if (!f._fbq) f._fbq = n;
         n.push = n;
         n.loaded = !0;
-        n.version = "2.0";
+        n.version = '2.0';
         n.queue = [];
         t = b.createElement(e);
         t.async = !0;
@@ -688,17 +663,17 @@
       })(
         window,
         document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js",
+        'script',
+        'https://connect.facebook.net/en_US/fbevents.js'
       );
-      fbq("init", "886038155126572");
-      fbq("track", "PageView");
+      fbq('init', '886038155126572');
+      fbq('track', 'PageView');
     </script>
     <noscript
       ><img
         height="1"
         width="1"
-        style="display:none"
+        style="display: none;"
         src="https://www.facebook.com/tr?id=886038155126572&ev=PageView&noscript=1"
     /></noscript>
     <!-- End Facebook Pixel Code -->

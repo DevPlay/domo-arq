@@ -17,6 +17,13 @@
 @import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
 
 /* Components */
-@import 'components/proyectoBase';
+@import 'components/generales';
+@import 'components/sidebar';
+@import 'components/portada';
+@import 'components/estudio';
+@import 'components/equipo';
 @import 'components/proyectos';
-@import 'components/index';
+@import 'components/premios';
+@import 'components/contacto';
+@import 'components/footer';
+@import 'components/responsive';

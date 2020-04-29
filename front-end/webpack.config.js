@@ -131,6 +131,13 @@ const config = function (env, args) {
         template: path.resolve(__dirname, 'src', 'proyectos.html'),
         favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
       }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: 'detalleProyecto.html',
+        template: path.resolve(__dirname, 'src', 'detalleProyecto.html'),
+        favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
+      }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].css',
       }),

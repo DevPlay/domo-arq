@@ -4,15 +4,24 @@
 $color-principal: #ff0a7e;
 $color-secundario: #000;
 
+// Color de aleaotorios
+$color-negro-500: rgba(0, 0, 0, .5);
+$color-negro-600: rgba(0, 0, 0, .6);
+
+$color-blanco: #fff;
+$color-blanco-500: rgba(255, 255, 255, .5);
+$color-blanco-600: rgba(255, 255, 255, .6);
+
+
 // Color de textos
 $color-primary-text: #000;
 $color-secondary-text: #fff;
-$color-bordes: rgba(112, 112, 112, 0.2);
+$color-bordes: rgba(112, 112, 112, .2);
 
 // Fuente general
 $font-domo: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 // Fuente dev/play
-$fuenteDevPlay: 'Comfortaa', cursive;
+$fuente-devplay: 'Comfortaa', cursive;
 
 // Tamanos de fuente
 $font-article-size: 16px;

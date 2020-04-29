@@ -51,7 +51,7 @@ main {
 
   .btn1 {
     border: transparent;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: $color-principal;
     text-decoration: none;
 
@@ -66,7 +66,7 @@ main {
 
   .btn2 {
     border: transparent;
-    border-radius: 0px;
+    border-radius: 0;
     background-color: $color-secundario;
     width: 40px;
     height: 40px;

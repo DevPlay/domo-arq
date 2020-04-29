@@ -25,6 +25,7 @@
   }
 
   .menu-items {
+
     ul {
       list-style: none;
       height: 70vh;
@@ -33,6 +34,7 @@
       padding: 25%;
 
       li {
+
         &:focus,
         &:active {
           outline: none;
@@ -56,10 +58,10 @@
     ul {
       list-style: none;
       margin: auto;
-      width: 100%;
+      // width: 100%;
 
       li {
-        padding: 0.3em 0;
+        padding: .3em 0;
 
         a {
           color: $color-secondary-text;
@@ -78,17 +80,20 @@
     }
 
     .social-icon {
+      display: inline;
       width: 15px;
       margin-bottom: 3px;
+
     }
   }
+
 }
 
-.menuTransition {
+.menu-transition {
   font-size: 1.6em;
   z-index: 999;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  --webkit-transition: all .5s ease-in-out;
+  --moz-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
 }

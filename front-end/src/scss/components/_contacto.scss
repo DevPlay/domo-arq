@@ -1,0 +1,133 @@
+// Seccion contacto
+#contacto {
+  .mat-div {
+    position: relative;
+    height: 55px;
+
+    .mat-label {
+      display: block;
+      font-size: 14px;
+      transform: translateY(30px);
+      color: #e2e2e2;
+      transition: all 0.5s;
+      margin-top: 5px;
+      margin-bottom: 0.4rem;
+    }
+
+    .mat-input {
+      position: relative;
+      background: transparent;
+      width: 100%;
+      border: none;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+  }
+
+  .dropdown {
+    .dropdown-toggle {
+      height: 55px;
+      padding-left: 0px;
+      padding-top: 24px;
+      color: #e2e2e2;
+      font-size: 14px;
+    }
+
+    .dropdown .show {
+      .btn {
+        color: $color-principal;
+      }
+    }
+
+    .dropdown-menu {
+      .dropdown-item {
+        color: $color-principal;
+      }
+    }
+  }
+
+  .mat-text-area {
+    position: relative;
+    width: 95%;
+
+    .mat-label {
+      display: block;
+      font-size: 14px;
+      transform: translateY(30px);
+      color: #e2e2e2;
+      transition: all 0.5s;
+      margin-top: 5px;
+    }
+
+    .mat-input {
+      position: relative;
+      background: transparent;
+      width: 100%;
+      border: none;
+      padding: 8px 0;
+      font-size: 14px;
+    }
+  }
+
+  .novedades {
+    padding-top: 30px;
+
+    .radio-label {
+      font-size: 16px;
+      color: #474747;
+      margin-left: 2%;
+    }
+  }
+
+  .mat-div:after,
+  .mat-div:before {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 95%;
+    height: 1px;
+    background-color: #e2e2e2;
+    bottom: 0;
+    left: 0;
+    transition: all 0.5s;
+  }
+
+  .mat-div::after {
+    transform: scaleX(0);
+  }
+
+  .is-active::after {
+    transform: scaleX(1);
+  }
+
+  .is-active .mat-label {
+    color: $color-principal;
+  }
+
+  .is-completed .mat-label {
+    font-size: 14px;
+    transform: translateY(0);
+  }
+
+  .mat-btn {
+    border-radius: 0px;
+    background-color: $color-principal;
+    color: $color-secundario;
+  }
+
+  .mat-btn:hover {
+    color: $color-secondary-text;
+  }
+
+  .contact {
+    font-weight: bolder;
+    font-size: 1.5rem;
+
+    a:hover,
+    a:visited {
+      color: $color-principal;
+    }
+  }
+}
+
+// fin seccion contacto

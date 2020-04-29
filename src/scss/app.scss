@@ -1,0 +1,27 @@
+/* Core variables */
+@import 'base/vars';
+
+/* CSS Reset */
+@import 'base/reset';
+
+/* Fonts */
+@import 'base/fonts';
+
+/* Mixins, helpers and functions */
+@import 'base/mixins';
+
+/* Vendor */
+@import 'node_modules/bootstrap/scss/bootstrap.scss';
+@import '@fortawesome/fontawesome-free/scss/fontawesome.scss';
+
+/* Components */
+@import 'components/generales';
+@import 'components/sidebar';
+@import 'components/portada';
+@import 'components/estudio';
+@import 'components/equipo';
+@import 'components/proyectos';
+@import 'components/premios';
+@import 'components/contacto';
+@import 'components/footer';
+@import 'components/responsive';

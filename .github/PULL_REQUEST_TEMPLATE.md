@@ -5,17 +5,7 @@
 
 ## New Feature Submissions:
 
-- [Jira: TCB-#](https://ricloud.atlassian.net/browse/TCB-#) Add an explanation of what your changes do and why you'd like us to include them. Also include the Jira ticket number instead of "#", please.
-
-### Changes to Core Features:
-
-- A quick description if your changes were applied to core feature.
-
-<!--
-## Bug Fix Description:
-
-- [Jira: TCB-#](https://ricloud.atlassian.net/browse/TCB-#) Add an explanation of what your fix do and why you'd like us to include them. Also include the Jira ticket number instead of "#", please.
- -->
+- [Asana: ](https://app.asana.com/0/1128517637744668/1134621143339862/f) Add an explanation of what your changes do and why you'd like us to include them.
 
 ## Screenshots
 

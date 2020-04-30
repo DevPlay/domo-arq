@@ -5,7 +5,7 @@
 
 ## New Feature Submissions:
 
-- [Asana: ](https://app.asana.com/0/1128517637744668/1134621143339862/f) Add an explanation of what your changes do and why you'd like us to include them.
+- [Asana: ](https://app.asana.com/x) Add an explanation of what your changes do and why you'd like us to include them.
 
 ## Screenshots
 

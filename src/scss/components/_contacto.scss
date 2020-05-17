@@ -71,10 +71,17 @@
 
   .novedades {
     padding-top: 30px;
+    color: $color-secundario;
+
+    input {
+      -webkit-appearance: radio;
+      -moz-appearance: radio;
+      appearance: radio;
+    }
 
     .radio-label {
       font-size: 16px;
-      color: #474747;
+      color: $color-secundario;
       margin-left: 2%;
     }
   }

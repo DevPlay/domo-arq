@@ -8,10 +8,9 @@
       display: block;
       font-size: 14px;
       transform: translateY(30px);
-      color: #e2e2e2;
-      transition: all 0.5s;
+      color: $color-placeholder;
       margin-top: 5px;
-      margin-bottom: 0.4rem;
+      margin-bottom: .4rem;
     }
 
     .mat-input {
@@ -27,9 +26,9 @@
   .dropdown {
     .dropdown-toggle {
       height: 55px;
-      padding-left: 0px;
+      padding-left: 0;
       padding-top: 24px;
-      color: #e2e2e2;
+      color: $color-placeholder;
       font-size: 14px;
     }
 
@@ -54,8 +53,8 @@
       display: block;
       font-size: 14px;
       transform: translateY(30px);
-      color: #e2e2e2;
-      transition: all 0.5s;
+      color: $color-placeholder;
+      transition: all .5s;
       margin-top: 5px;
     }
 
@@ -74,22 +73,22 @@
 
     .radio-label {
       font-size: 16px;
-      color: #474747;
+      color: $color-placeholder;
       margin-left: 2%;
     }
   }
 
-  .mat-div:after,
-  .mat-div:before {
+  .mat-div::after,
+  .mat-div::before {
     content: '';
     position: absolute;
     display: block;
     width: 95%;
     height: 1px;
-    background-color: #e2e2e2;
+    background-color: $color-placeholder;
     bottom: 0;
     left: 0;
-    transition: all 0.5s;
+    transition: all .5s;
   }
 
   .mat-div::after {
@@ -110,7 +109,7 @@
   }
 
   .mat-btn {
-    border-radius: 0px;
+    border-radius: 0;
     background-color: $color-principal;
     color: $color-secundario;
   }
@@ -123,10 +122,15 @@
     font-weight: bolder;
     font-size: 1.5rem;
 
+    a  {
+      color: $color-secundario;
+    }
+
     a:hover,
     a:visited {
       color: $color-principal;
     }
+
   }
 }
 

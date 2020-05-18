@@ -11,7 +11,7 @@
       max-height: 300px;
       min-width: 300px;
       max-width: 300px;
-      border: 0.3px solid $color-bordes;
+      border: .3px solid $color-bordes;
       padding: 0;
 
       .container {
@@ -22,14 +22,14 @@
     }
 
     .miembro:hover {
-      background-color: rgba(0, 0, 0, 0.5);
+      background-color: rgba(0, 0, 0, .5);
       color: $color-secondary-text;
     }
 
     .more {
       padding: 5px;
       text-align: center;
-      color: #fff;
+      color: $color-blanco;
       align-items: flex-end;
       justify-content: flex-start;
       height: 40px;
@@ -44,6 +44,7 @@
 
     .modal-content {
       border-radius: 0;
+      background-color: $color-blanco;
 
       .modal-header {
         border-bottom: none;
@@ -52,11 +53,12 @@
         .close-modal {
           padding: 5px;
           text-align: center;
-          color: #fff;
+          color: $color-blanco;
           height: 25px;
           width: 25px;
           background-color: $color-secundario;
           font-size: 1rem;
+          font-weight: 300;
           text-shadow: none;
           opacity: 1;
         }

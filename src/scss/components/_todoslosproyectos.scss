@@ -1,4 +1,6 @@
 #todos-proyectos {
+  height: 100%;
+
 
   .project-content {
     padding: 0 24px;
@@ -18,10 +20,37 @@
       max-width: 300px;
       border: .3px solid $color-bordes;
       padding: 0;
+      margin: 1%;
 
-      .container {
-        .texto {
-          padding-left: 9%;
+      .container_body {
+        justify-content: space-between;
+        flex-direction: column;
+        align-items: baseline;
+
+        .container_title {
+          align-self: center;
+          padding-top: 5%;
+        }
+
+        .container_text {
+          padding: 10%;
+        }
+
+        .container_more {
+          display: flex;
+          justify-content: flex-end;
+          width: 100%;
+
+          .more {
+            padding: 5px;
+            text-align: center;
+            color: $color-blanco;
+            align-items: flex-end;
+            justify-content: flex-start;
+            height: 40px;
+            width: 40px;
+            background-color: $color-secundario;
+          }
         }
       }
     }
@@ -31,16 +60,6 @@
       color: $color-secondary-text;
     }
 
-    .more {
-      padding: 5px;
-      text-align: center;
-      color: $color-blanco;
-      align-items: flex-end;
-      justify-content: flex-start;
-      height: 40px;
-      width: 40px;
-      background-color: $color-secundario;
-    }
+
   }
 }
-

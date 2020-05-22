@@ -11,8 +11,9 @@
       max-height: 300px;
       min-width: 300px;
       max-width: 300px;
-      border: .3px solid $color-bordes;
+      border: 0.3px solid $color-bordes;
       padding: 0;
+      margin: 1%;
 
       .container {
         .texto {
@@ -22,7 +23,7 @@
     }
 
     .miembro:hover {
-      background-color: rgba(0, 0, 0, .5);
+      background-color: rgba(0, 0, 0, 0.5);
       color: $color-secondary-text;
     }
 

@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-param-reassign */
- import '../scss/app.scss';
+import '../scss/app.scss';
 import 'bootstrap/dist/js/bootstrap.bundle';
 import '@fortawesome/fontawesome-free/js/all';
 import 'owl.carousel/dist/assets/owl.carousel.css';
@@ -21,3 +21,23 @@ $('.mat-input').focusout(function () {
   if ($(this).val() === '') $(this).parent().removeClass('is-completed');
   $(this).parent().removeClass('is-active');
 });
+
+  $(document).ready(function () {
+    $('#owl-domo').owlCarousel({
+      loop: true,
+      navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+      responsiveClass: true,
+      responsive: {
+        0: {
+          items: 1,
+        },
+        600: {
+          items: 2,
+        },
+        1000: {
+          items: 2,
+        },
+      },
+    });
+  });
+

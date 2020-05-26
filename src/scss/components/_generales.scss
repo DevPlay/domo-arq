@@ -53,7 +53,6 @@ main {
     border-radius: 0;
     background-color: $color-principal;
     text-decoration: none;
-    width: 134px;
 
     a {
       color: $color-primary-text;
@@ -70,5 +69,9 @@ main {
     background-color: $color-secundario;
     width: 40px;
     height: 40px;
+  }
+
+  .btn-volver {
+    width: 134px;
   }
 }

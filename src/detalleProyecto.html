@@ -3,22 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-    />
-    <link rel="stylesheet" href="../OwlCarousel2-2.3.4/dist/assets/owl.carousel.css" />
-
-    <!-- <link rel="stylesheet" href="./styles/master.min.css" /> -->
-    <link rel="stylesheet" href="../styles/index.min.css" />
-    <link rel="stylesheet" href="./proyectoBase.min.css" />
-    <!-- TODO revisar estos links -->
     <title>Estudio Domo Arq</title>
   </head>
 
@@ -40,7 +24,7 @@
           <div class="hamburguer-menu-social">
             <ul>
               <li>
-                <a href="https://www.facebook.com/domoestudioarq" target="_blank"
+                <a href="https://www.facebook.com/domoestudioarq"
                   ><img
                     class="social-icon"
                     src="./images/facebook-square-w.svg"
@@ -50,7 +34,7 @@
                 </a>
               </li>
               <li>
-                <a href="https://www.instagram.com/domoestudioarq" target="_blank"
+                <a href="https://www.instagram.com/domoestudioarq"
                   ><img class="social-icon" src="./images/instagram-w.svg" alt="Instagram logo" />
                   <p class="social-text">Instagram</p>
                 </a>
@@ -88,7 +72,7 @@
       <div class="d-flex menu-social">
         <ul>
           <li>
-            <a href="https://www.facebook.com/domoestudioarq" target="_blank"
+            <a href="https://www.facebook.com/domoestudioarq"
               ><img
                 class="social-icon"
                 src="./images/facebook-square-w.svg"
@@ -97,7 +81,7 @@
             >
           </li>
           <li>
-            <a href="https://www.instagram.com/domoestudioarq" target="_blank"
+            <a href="https://www.instagram.com/domoestudioarq"
               ><img class="social-icon" src="./images/instagram-w.svg" alt="Instagram logo" /><span
                 class="social-text"
                 >Instagram</span
@@ -116,41 +100,24 @@
       </div>
     </nav>
 
-    <section id="proyectos" class="secciones container-fluid">
-      <h3 class="titulo-seccion"><b>CASA TUSNALGAS</b></h3>
-      <article class="row project-content d-flex">
+    <section id="detalle-proyectos" class="secciones container-fluid">
+      <span class="logo-domo"><img src="./images/domoarq.png" alt="" /></span>
+      <h2 class="titulo-seccion"><b>CASA TUSNALGAS</b></h2>
+
+      <article class="row detail-content d-flex">
         <div
-          class="project-text d-flex flex-column justify-content-around col-lg-4 col-md-4 col-sm-12"
+          class="d-flex flex-column justify-content-around col-lg-4 col-md-4 col-sm-12 detail-text"
         >
           <div class="datos-proyectos">
-            <p>
-              Año: 2009 – 2011
-            </p>
-
-            <p>
-              PROGRAMA: vivienda unifamiliar
-            </p>
-
-            <p>
-              ESTADO: Obra terminada
-            </p>
-
-            <p>
-              ETAPAS REALIZADAS: Proyecto , Dirección, Construcción y Administración
-            </p>
-
-            <p>
-              SUPERFICIE TOTAL: 200 m2
-            </p>
-
-            <p>
-              LOCALIZACION: Buenos Aires
-            </p>
+            <p>Año: 2009 – 2011</p>
+            <p>PROGRAMA: vivienda unifamiliar</p>
+            <p>ESTADO: Obra terminada</p>
+            <p>ETAPAS REALIZADAS: Proyecto , Dirección, Construcción y Administración</p>
+            <p>SUPERFICIE TOTAL: 200 m2</p>
+            <p>LOCALIZACION: Buenos Aires</p>
           </div>
           <div class="descripcion-proyecto">
-            <h5>
-              EL ESTUDIO
-            </h5>
+            <h5>EL ESTUDIO</h5>
             <p>
               El estudio DOMO se crea en el año 2004 por los Arquitectos Pablo Phatouros, Guillermo
               Villamarin y Adrian Cecileo estableciéndose en un ph al fondo reformado para la
@@ -165,17 +132,11 @@
               role=" group"
               aria-label="Basic example"
             >
-              <button type="button" class="btn btn-secondary btn1 btn-volver">
-                Compartir
+              <button type="button" class="btn btn-secondary btn2" style="width: 40px;">
+                <a href="./proyectos.html"><i class="fas fa-share-alt"></i></a>
               </button>
-              <button
-                type="button"
-                class="btn btn-secondary btn2"
-                style="width: 40px;"
-                data-toggle="modal"
-                data-target="#compartir-modal"
-              >
-                <a href="./.."> <i class="fas fa-share-alt"></i></a>
+              <button type="button" class="btn btn-secondary btn1">
+                <a href="./proyectos.html">compartir </a>
               </button>
             </div>
           </div>
@@ -198,12 +159,12 @@
               role=" group"
               aria-label="Basic example"
             >
-              <button type="button" class="btn btn-secondary btn1 btn-volver">
+              <button type="button" class="btn btn-secondary btn1">
                 Quiero invertir
               </button>
               <button type="button" class="btn btn-secondary btn2" style="width: 40px;">
                 <!-- TODO: Definir donde va esto -->
-                <a href="./.."> <i class="fas fa-key"></i></a>
+                <a href="mailto: info@domoarq.com"> <i class="fas fa-key"></i></a>
               </button>
             </div>
           </div>
@@ -214,150 +175,189 @@
               role=" group"
               aria-label="Basic example"
             >
-              <button type="button" class="btn btn-secondary btn1 btn-volver">
-                Volver
-              </button>
               <button type="button" class="btn btn-secondary btn2" style="width: 40px;">
                 <a href="../proyectos.html"><i class="fas fa-arrow-left"></i></a>
               </button>
+              <button type="button" class="btn btn-secondary btn1">
+                Volver
+              </button>
             </div>
           </div>
         </div>
+
         <div class="project_carrusel flex-column d-flex col-lg-8 col-md-8 col-sm-12">
           <div id="owl-domo" class="owl-carousel owl-theme">
             <div class="item">
-              <img class="owl-image" src="../images/a.png" alt="" />
+              <div class="custom_overlay_wrapper">
+                <img class="owl-image" src="./images/proyecto1.jpg" />
+              </div>
             </div>
 
             <div class="item">
-              <img class="owl-image" src="../images/proyecto2.jpg" alt="" />
+              <div class="custom_overlay_wrapper">
+                <img class="owl-image" src="./images/proyecto2.jpg" />
+              </div>
             </div>
 
             <div class="item">
-              <img class="owl-image" src="../images/a.png" alt="" />
+              <div class="custom_overlay_wrapper">
+                <img class="owl-image" src="./images/proyecto2.jpg" />
+              </div>
             </div>
+
             <div class="item">
-              <img class="owl-image" src="../images/b.png" alt="" />
+              <div class="custom_overlay_wrapper">
+                <img class="owl-image" src="./images/proyecto1.jpg" />
+              </div>
             </div>
           </div>
         </div>
-
-        <div
-          class="modal fade"
-          id="compartir-modal"
-          tabindex="-1"
-          role="dialog"
-          aria-labelledby="modal"
-          aria-hidden="true"
-        >
-          <div class="modal-dialog modal-dialog-centered" id="modal-dialog" role="document">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button
-                  type="button"
-                  class="close close-modal"
-                  data-dismiss="modal"
-                  aria-label="Close"
-                >
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <div class="modal-body">
-                <div class="container">
-                  <div class="row align-items-center justify-content-center">
-                    <div class="col-md-auto">
-                      <a class="botones-compartir mx-3" href="#"
-                        ><i class="fab fa-facebook-f fa-3x"></i
-                      ></a>
-                      <a class="botones-compartir mx-3" href="#"
-                        ><i class="fab fa-instagram fa-3x"></i
-                      ></a>
-                      <a class="botones-compartir mx-3" href="#"
-                        ><i class="fas fa-envelope fa-3x"></i
-                      ></a>
-                      <a class="botones-compartir mx-3" href="#"
-                        ><i class="fab fa-twitter fa-3x"></i
-                      ></a>
-                      <a class="botones-compartir mx-3" href="#"
-                        ><i class="fab fa-whatsapp fa-3x"></i
-                      ></a>
-                    </div>
+        <!--
+      <div class="modal fade" id="compartir-modal" tabindex="-1" role="dialog"
+        aria-labelledby="modal" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" id="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close close-modal" data-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-md-auto">
+                    <a class="botones-compartir mx-3" href="#"><i
+                        class="fab fa-facebook-f fa-3x"></i></a>
+                    <a class="botones-compartir mx-3" href="#"><i
+                        class="fab fa-instagram fa-3x"></i></a>
+                    <a class="botones-compartir mx-3" href="#"><i
+                        class="fas fa-envelope fa-3x"></i></a>
+                    <a class="botones-compartir mx-3" href="#"><i
+                        class="fab fa-twitter fa-3x"></i></a>
+                    <a class="botones-compartir mx-3" href="#"><i
+                        class="fab fa-whatsapp fa-3x"></i></a>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
+      </div> -->
       </article>
     </section>
 
-    <script src="../scripts/jquery-3.4.1.min.js"></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-      integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-      crossorigin="anonymous"
-    ></script>
-    <script src="../scripts/owl.carousel.min.js"></script>
+    <!-- <script>
+    function transition(whatever) {
+      clean();
+      whatever.classList.add('menu-transition');
+    }
 
-    <script>
-      $(document).ready(function () {
-        $('#owl-domo').owlCarousel({
-          loop: true,
-          navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
-          responsiveClass: true,
-          responsive: {
-            0: {
-              items: 1,
-            },
-            600: {
-              items: 1,
-            },
-            1000: {
-              items: 1,
-            },
-          },
-        });
+    function clean() {
+      var tag = document.querySelectorAll('a');
+
+      for (var i = 0; i < tag.length; i++) {
+        tag[i].classList.remove('menu-transition');
+      }
+    } //////////// // Menu scroll var section_padding=0; const
+    scrollElems = document.getElementsByClassName('scroll');
+    $(scrollElems).on('click', function (event) {
+      event.preventDefault();
+      $('#menu ul li a.active').removeClass('active');
+      $(this).addClass('active');
+      var target = this.hash;
+      var menu = target;
+      var cache_target = $(target);
+      var buffer = cache_target.offset().top - section_padding;
+      $('html, body').stop().animate({
+        scrollTop: buffer,
+      }, 1000, 'swing', );
+    });
+
+    function scroll(event) {
+      var
+        scroll_pos = $(document).scrollTop();
+      $('#menu ul li a').each(function () {
+        var cur_link = $(this);
+        var ref_el = $(cur_link.attr('href'));
+        if (ref_el.position().top <= scroll_pos &&
+          ref_el.position().top + ref_el.height() + section_padding * 2 > scroll_pos
+        ) {
+          $('#menu ul li a').removeClass('active');
+          cur_link.addClass('active');
+        } else {
+          cur_link.removeClass('active');
+        }
       });
-    </script>
+    }
+
+    $(document).on('scroll', scroll);
+
+    ////////////
+
+    $(document).ready(function () {
+      $('#owl-domo').owlCarousel({
+        loop: true,
+        navText: ["<i class='fas fa-arrow-left'></i>",
+          "<i class='fas fa-arrow-right'></i>"],
+        responsiveClass: true,
+        responsive: {
+          0: {
+            items: 1,
+          },
+          600: {
+            items: 2,
+          },
+          1000: {
+            items: 2,
+          },
+        },
+      });
+    });
+
+  </script> -->
 
     <!-- Facebook Pixel Code -->
     <!-- <script>
-      !(function(f, b, e, v, n, t, s) {
-        if (f.fbq) return;
-        n = f.fbq = function() {
-          n.callMethod
-            ? n.callMethod.apply(n, arguments)
-            : n.queue.push(arguments);
-        };
-        if (!f._fbq) f._fbq = n;
-        n.push = n;
-        n.loaded = !0;
-        n.version = "2.0";
-        n.queue = [];
-        t = b.createElement(e);
-        t.async = !0;
-        t.src = v;
-        s = b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t, s);
-      })(
-        window,
-        document,
-        "script",
-        "https://connect.facebook.net/en_US/fbevents.js"
-      );
-      fbq("init", "886038155126572");
-      fbq("track", "PageView");
-    </script>
+    !(function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) :
+          n.queue.push(arguments);
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = "2.0";
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s);
+    })(
+      window,
+      document,
+      "script",
+      "https://connect.facebook.net/en_US/fbevents.js"
+    );
+    fbq("init", "886038155126572");
+    fbq("track", "PageView");
+
+  </script> -->
+
     <noscript
       ><img
         height="1"
         width="1"
-        style="display:none"
+        style="display: none;"
         src="https://www.facebook.com/tr?id=886038155126572&ev=PageView&noscript=1"
-    /></noscript> -->
+    /></noscript>
     <!-- End Facebook Pixel Code -->
 
     <!-- TODO: Agregar Google search console -->
-    <script src="../scripts/index.js"></script>
+    <!-- <script src="../scripts/index.js"></script> -->
   </body>
 </html>

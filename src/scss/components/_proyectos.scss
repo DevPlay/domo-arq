@@ -45,40 +45,7 @@
     font-size: 20px;
   }
 
-  // .hoverfx {
-  //   position: relative;
-  //   display: block;
-  //   overflow: hidden;
-  //   text-align: center;
-  // }
-
-  // .hoverfx:before {
-  //   display: inline-block;
-  //   padding-top: 60%;
-  //   content: '';
-  //   vertical-align: middle;
-  // }
-
-  // .hoverfx,
-  // .overlay:hover {
-  // position: absolute;
-  // top: 0;
-  // z-index: 1;
-  // padding: 50%;
-  // background: rgba(0, 0, 0, .7);
-  // opacity: .8;
-  // -webkit-transition: all .3s ease;
-  // -moz-transition: all .3s ease;
-  // -o-transition: all .3s ease;
-  // transition-property: all .3s ease;
-  // }
-
-  // .item {
-  // position: relative;
-  // opacity: .8;
-  // }
   .hoverfx {
-    // position: relative;
     display: block;
     overflow: hidden;
     text-align: center;
@@ -86,39 +53,11 @@
 
   .hoverfx img {
     position: absolute;
-    // left: 0;
-    // width: 100%;
   }
 
   .hoverfx::before {
     display: inline-block;
-    // padding-top: 60%;
-    // content: '';
-    // vertical-align: middle;
   }
-
-  // .hoverfx .figure {
-  //   position: relative;
-  //   z-index: 2;
-  //   display: inline-block;
-  //   padding: 10px 15px;
-  //   max-width: 60%;
-  //   border: 3px solid #e9e9e9;
-  //   color: #ecf0f1;
-  //   vertical-align: middle;
-  //   text-transform: uppercase;
-  //   font-size: 1.2rem;
-  //   opacity: 0;
-  // -webkit-transition: all .3s ease;
-  // -moz-transition: all .3s ease;
-  // -o-transition: all .3s ease;
-  // transition-property: all .3s ease;
-  // }
-
-  // .hoverfx .figure:hover {
-  //   background: #e9e9e9;
-  //   color: #333;
-  // }
 
   .hoverfx .overlay {
     position: absolute;
@@ -129,9 +68,9 @@
     width: 100%;
     background-color: $color-negro-600;
     opacity: 0;
-    // -webkit-transition: all .3s ease;
-    // -moz-transition: all .3s ease;
-    // -o-transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
     transition-property: all 0.3s ease;
   }
 
@@ -139,15 +78,6 @@
   .item:hover .overlay {
     opacity: 1;
   }
-}
-
-.datos-proyectos {
-  margin-bottom: 15vh;
-}
-
-.descripcion-inversion {
-  margin-top: 15vh;
-  margin-bottom: 15vh;
 }
 
 .img-modal {
@@ -200,9 +130,9 @@
   width: 100%;
   background-color: $color-negro-600;
   opacity: 0;
-  // -webkit-transition: all .3s ease;
-  // -moz-transition: all .3s ease;
-  // -o-transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
   transition-property: all 0.3s ease;
 }
 

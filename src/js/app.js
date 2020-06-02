@@ -22,22 +22,42 @@ $('.mat-input').focusout(function () {
   $(this).parent().removeClass('is-active');
 });
 
-  $(document).ready(function () {
-    $('#owl-domo').owlCarousel({
-      loop: true,
-      navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
-      responsiveClass: true,
-      responsive: {
-        0: {
-          items: 1,
-        },
-        600: {
-          items: 2,
-        },
-        1000: {
-          items: 2,
-        },
+$(document).ready(function () {
+  $('#owl-domo').owlCarousel({
+    loop: true,
+    navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
       },
-    });
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
   });
+});
 
+class Footer extends HTMLElement {
+  constructor() {
+    super();
+    this.innerHTML = `
+      <footer>
+        <div class="col-xs-12 col-md-12 col-lg-12" style="background-color: #000029;">
+          <div class="designed-by">
+            <p>
+              Copyright © 2019 - Buenos Aires - designed by
+              <a href="https://www.devplay.com.ar">
+                <img src="./images/Recurso 2.svg" alt="Logo DevPlay"
+              /></a>
+            </p>
+          </div>
+        </div>
+      </footer>
+        `;
+  }
+}
+customElements.define('footer-custom', Footer);

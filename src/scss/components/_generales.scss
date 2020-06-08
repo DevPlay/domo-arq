@@ -38,7 +38,6 @@ main {
 }
 
 .btn-domo {
-  padding-top: 5%;
 
   .btn-secondary {
     a {
@@ -52,6 +51,7 @@ main {
     border-radius: 0;
     background-color: $color-principal;
     text-decoration: none;
+    width: 180px;
 
     a {
       color: $color-primary-text;
@@ -70,7 +70,4 @@ main {
     height: 40px;
   }
 
-  .btn-volver {
-    width: 134px;
-  }
 }

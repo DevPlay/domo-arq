@@ -1,21 +1,41 @@
 //seccion detalle de proyectos
 
 #detalle-proyectos {
-  // height: 100%;
 
   .detail-content {
+    height: 75vh;
+
+    .descripciones {
+      margin-bottom: 15%;
+    }
+
     .detail-text {
-      height: 80vh;
-      overflow: scroll;
+      height: 75vh;
+      overflow-x: hidden;
+      border-bottom: 8px solid rgba(255, 255, 255, 0);
 
       p {
-        font-size: 20px;
+        font-size: 16px;
       }
     }
 
     .owl-image {
       height: 75vh;
     }
+
+    .owl-image:hover {
+      background-color: $color-negro-600;
+      color: $color-primary-text;
+    }
+  }
+
+  .detail-text::-webkit-scrollbar {
+    width: 8px;
+    /* Tamaño del scroll en vertical */
+    height: 8px;
+    /* Tamaño del scroll en horizontal */
+    display: none;
+    /* Ocultar scroll */
   }
 
   //botones para el carrousel de proyectos
@@ -39,15 +59,6 @@
       }
     }
   }
-
-  .datos-proyectos {
-    margin-bottom: 1%h;
-  }
-
-  // .descripcion-inversion {
-  //   margin-top: 15vh;
-  //   margin-bottom: 15vh;
-  // }
 
   .img-modal {
     width: 100%;
@@ -130,18 +141,6 @@
         color: $color-secondary-text;
         line-height: 1.4em;
       }
-    }
-  }
-
-
-  .proyectos-button {
-    width: 70%;
-    border: solid 5px;
-    color: $color-secondary-text;
-    background-color: transparent;
-
-    a {
-      color: $color-secondary-text;
     }
   }
 }

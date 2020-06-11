@@ -39,6 +39,19 @@ $(document).ready(function () {
       },
     },
   });
+  $(window).scroll(function () {
+    console.log();
+    if ($(this).scrollTop() > 400 && this.innerWidth < 992) {
+      $('.top-scroller').fadeIn();
+    } else {
+      $('.top-scroller').fadeOut();
+    }
+  });
+  // Click event to scroll to top
+  $('.top-scroller').click(function () {
+    $('html, body').animate({ scrollTop: 0 }, 1000);
+    return false;
+  });
 });
 
 class Footer extends HTMLElement {

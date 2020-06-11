@@ -51,20 +51,20 @@
       </div>
       <div class="d-flex menu-items">
         <ul class="d-flex flex-column align-items-start justify-content-around" id="side-menu">
-          <li id="menu-inicio" onclick="transition(this)" class="active scroll">
-            <a href="#inicio">Inicio</a>
+          <li>
+            <a href="#inicio" class="active scroll">Inicio</a>
           </li>
-          <li id="menu-estudio" onclick="transition(this)" class="scroll">
-            <a href="#estudio">Estudio</a>
+          <li>
+            <a href="#estudio" class="scroll">Estudio</a>
           </li>
-          <li id="menu-proyectos" onclick="transition(this)" class="scroll">
-            <a href="#proyectos">Proyectos</a>
+          <li>
+            <a href="#proyectos" class="scroll">Proyectos</a>
           </li>
-          <li id="menu-premios" onclick="transition(this)" class="scroll">
-            <a href="#premios">Premios</a>
+          <li>
+            <a href="#premios" class="scroll">Premios</a>
           </li>
-          <li id="menu-contacto" onclick="transition(this)" class="scroll">
-            <a href="#contacto">Contacto</a>
+          <li>
+            <a href="#contacto" class="scroll">Contacto</a>
           </li>
         </ul>
       </div>
@@ -236,10 +236,9 @@
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Accusamus odit, architecto
               magnam inventore ducimus ad id harum quo ut sapiente laudantium.<br />
-              <br />
-              At inventore quo pariatur officiis explicabo quas, est corrupti corporis omnis
+              > At inventore quo pariatur officiis explicabo quas, est corrupti corporis omnis
               temporibus facilis modi sapiente? Laboriosam maxime sunt reiciendis quae vero nobis
-              soluta recusandae impedit error non, nostrum quis?<br /><br />
+              soluta recusandae impedit error non, nostrum quis?<br />
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt ullam
               sed corporis voluptates eligendi, fugiat explicabo hic? Laudantium molestiae totam
               labore,<br />
@@ -563,62 +562,6 @@
     <footer-custom></footer-custom>
   </body>
   <script>
-    function transition(whatever) {
-      clean();
-      whatever.classList.add('menu-transition');
-    }
-
-    function clean() {
-      var tag = document.querySelectorAll('a');
-
-      for (var i = 0; i < tag.length; i++) {
-        tag[i].classList.remove('menu-transition');
-      }
-    }
-
-    ////////////
-    // Menu scroll
-    var section_padding = 0;
-
-    const scrollElems = document.getElementsByClassName('scroll');
-    $(scrollElems).on('click', function (event) {
-      event.preventDefault();
-      debugger;
-      $('#menu ul li.active').removeClass('active');
-      $(this).addClass('active');
-
-      var target = this.id;
-      var menu = target;
-      var cache_target = $(target);
-      var buffer = cache_target.offset().top - section_padding;
-
-      $('html, body').stop().animate(
-        {
-          scrollTop: buffer,
-        },
-        1000,
-        'swing',
-      );
-    });
-
-    function scroll(event) {
-      var scroll_pos = $(document).scrollTop();
-      $('#menu ul li a').each(function () {
-        var cur_link = $(this);
-        var ref_el = $(cur_link.attr('href'));
-
-        if (
-          ref_el.position().top <= scroll_pos &&
-          ref_el.position().top + ref_el.height() + section_padding * 2 > scroll_pos
-        ) {
-          $('#menu ul li a').removeClass('active');
-          cur_link.addClass('active');
-        } else {
-          cur_link.removeClass('active');
-        }
-      });
-    }
-
     $(document).on('scroll', scroll);
 
     //////////////

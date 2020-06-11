@@ -44,46 +44,41 @@ $(document).ready(function () {
   let lastId;
   const topMenu = $('#side-menu');
   const topMenuHeight = topMenu.outerHeight() + 15;
-  // All list items
   const menuItems = topMenu.find('a');
-  // Anchors corresponding to menu items
-  const scrollItems = menuItems.map(function () {
+  const scrollItems = menuItems.map(function mapping() {
     const item = $($(this).attr('href'));
     if (item.length) {
       return item;
     }
+    return null;
   });
 
-  // Bind click handler to menu items
-  // so we can get a fancy scroll animation
-  menuItems.click(function (e) {
+  menuItems.click(function animation(e) {
     const href = $(this).attr('href');
-    const offsetTop = href === '#' ? 0 : $(href).offset().top - topMenuHeight + 1;
+    const offsetTop = href === '#' ? 0 : $(href).offset().top - 0;
     $('html, body').stop().animate(
       {
         scrollTop: offsetTop,
       },
-      300,
+      1000,
+      'swing',
     );
     e.preventDefault();
   });
 
-  // Bind to scroll
-  $(window).scroll(function () {
-    // Get container scroll position
+  $(window).scroll(function scroll() {
     const fromTop = $(this).scrollTop() + topMenuHeight;
-
-    // Get id of current scroll item
-    let cur = scrollItems.map(function () {
+    let cur = scrollItems.map(function top() {
       if ($(this).offset().top < fromTop) return this;
+      return null;
     });
-    // Get the id of the current element
+
     cur = cur[cur.length - 1];
     const id = cur && cur.length ? cur[0].id : '';
 
     if (lastId !== id) {
       lastId = id;
-      // Set/remove active class
+
       menuItems
         .parent()
         .removeClass('menu-transition')

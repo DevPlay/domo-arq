@@ -39,18 +39,54 @@ $(document).ready(function () {
       },
     },
   });
-  $(window).scroll(function () {
-    console.log();
-    if ($(this).scrollTop() > 400 && this.innerWidth < 992) {
-      $('.top-scroller').fadeIn();
-    } else {
-      $('.top-scroller').fadeOut();
+
+  // Cache selectors
+  let lastId;
+  const topMenu = $('#side-menu');
+  const topMenuHeight = topMenu.outerHeight() + 15;
+  const menuItems = topMenu.find('a');
+  const scrollItems = menuItems.map(function mapping() {
+    const item = $($(this).attr('href'));
+    if (item.length) {
+      return item;
     }
+    return null;
   });
-  // Click event to scroll to top
-  $('.top-scroller').click(function () {
-    $('html, body').animate({ scrollTop: 0 }, 1000);
-    return false;
+
+  menuItems.click(function animation(e) {
+    const href = $(this).attr('href');
+    const offsetTop = href === '#' ? 0 : $(href).offset().top - 0;
+    $('html, body').stop().animate(
+      {
+        scrollTop: offsetTop,
+      },
+      1000,
+      'swing',
+    );
+    e.preventDefault();
+  });
+
+  $(window).scroll(function scroll() {
+    const fromTop = $(this).scrollTop() + topMenuHeight;
+    let cur = scrollItems.map(function top() {
+      if ($(this).offset().top < fromTop) return this;
+      return null;
+    });
+
+    cur = cur[cur.length - 1];
+    const id = cur && cur.length ? cur[0].id : '';
+
+    if (lastId !== id) {
+      lastId = id;
+
+      menuItems
+        .parent()
+        .removeClass('menu-transition')
+        .end()
+        .filter(`[href='#${id}']`)
+        .parent()
+        .addClass('menu-transition');
+    }
   });
 });
 

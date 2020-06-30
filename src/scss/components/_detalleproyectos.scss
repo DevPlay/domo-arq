@@ -19,15 +19,46 @@
       }
     }
 
-    .owl-image {
-      height: 75vh;
-    }
+    .item {
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
 
-    .owl-image:hover {
-      background-color: $color-negro-600;
-      color: $color-primary-text;
+      .custom_overlay_wrapper {
+
+        .custom_overlay {
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          text-align: center;
+          background-color: $color-negro-600;
+          opacity: 0;
+          -webkit-transition: all 400ms ease-in-out;
+          -moz-transition: all 400ms ease-in-out;
+          -o-transition: all 400ms ease-in-out;
+          transition: all 400ms ease-in-out;
+        }
+
+        .custom_overlay:hover {
+          opacity: 1;
+          background-color: $color-negro-600;
+          color: $color-primary-text;
+        }
+
+        .owl-image {
+          height: 75vh;
+          -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+        }
+      }
     }
   }
+
+
+
+
 
   .detail-text::-webkit-scrollbar {
     width: 8px;

@@ -4,7 +4,13 @@
 }
 
 .carousel-caption {
+
   right: 5%;
+}
+
+.carousel-image {
+  -webkit-filter: grayscale(1);
+  filter: grayscale(1);
 }
 
 .carousel-text {

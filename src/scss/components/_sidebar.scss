@@ -55,16 +55,12 @@
     ul {
       list-style: none;
       margin: auto;
-      // width: 100%;
 
       li {
-        padding: 0.3em 0;
-
+        padding: 0;
         a {
           color: $color-secondary-text;
-
           & :hover {
-            font-weight: bold;
             outline: none;
           }
         }
@@ -73,7 +69,7 @@
 
     .social-text {
       padding-left: 6px;
-      font-weight: 400;
+      font-weight: bold;
     }
 
     .social-icon {

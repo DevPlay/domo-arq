@@ -12050,7 +12050,6 @@ main {
   overflow: hidden; }
   #estudio .article_container {
     display: flex;
-    height: 70vh;
     align-content: space-between; }
     #estudio .article_container .equipo-img {
       width: 35%;
@@ -12065,8 +12064,7 @@ main {
 
 .el-equipo {
   background-image: url= "(../images/equipo.jpg)";
-  float: left;
-  height: 70vh; }
+  float: left; }
   .el-equipo img {
     width: 480px; }
 
@@ -12139,10 +12137,8 @@ ul.social-network li {
 .card-team-text {
   padding: 30% 10% 0 10%; }
 
-#proyectos .project-content .project-text {
-  height: 80vh; }
-  #proyectos .project-content .project-text p {
-    font-size: 16px; }
+#proyectos .project-content .project-text p {
+  font-size: 16px; }
 
 #proyectos .project-content .owl-image {
   height: 75vh; }
@@ -12479,6 +12475,11 @@ ul.social-network li {
       padding-left: 2vh; }
     body .logo-domo {
       display: none; }
+  #contacto .contact {
+    font-size: 12px;
+    margin: 10px; }
+  #detalle-proyectos .detail-content {
+    height: 100% !important; }
   .menu {
     width: 40px;
     /*

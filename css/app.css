@@ -11995,15 +11995,14 @@ main {
       list-style: none;
       margin: auto; }
       .menu .menu-social ul li {
-        padding: 0.3em 0; }
+        padding: 0; }
         .menu .menu-social ul li a {
           color: #fff; }
           .menu .menu-social ul li a :hover {
-            font-weight: bold;
             outline: none; }
     .menu .menu-social .social-text {
       padding-left: 6px;
-      font-weight: 400; }
+      font-weight: bold; }
     .menu .menu-social .social-icon {
       display: inline;
       width: 15px;

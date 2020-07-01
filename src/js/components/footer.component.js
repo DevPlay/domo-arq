@@ -1,7 +1,8 @@
+// Footer
 class Footer extends HTMLElement {
   constructor() {
     super();
-    this.shadowRoot.innerHTML = `
+    this.innerHTML = `
     <footer>
       <div class="col-xs-12 col-md-12 col-lg-12" style="background-color: #000029;">
         <div class="designed-by">
@@ -17,4 +18,7 @@ class Footer extends HTMLElement {
       `;
   }
 }
+
 customElements.define('footer-custom', Footer);
+
+export default Footer;

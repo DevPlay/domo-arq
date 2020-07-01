@@ -8,99 +8,7 @@
   </head>
 
   <body>
-    <nav class="d-flex flex-column menu" tabindex="0">
-      <div class="hamburguer-menu-trigger">
-        <input type="checkbox" />
-        <span></span>
-        <span></span>
-        <span></span>
-        <ul class="hamburguer-menu">
-          <ul class="hamburguer-menu-items">
-            <li><a href="#inicio" class="active scroll">Inicio</a></li>
-            <li><a href="#estudio" class="scroll">Estudio</a></li>
-            <li><a href="#proyectos" class="scroll">Proyectos</a></li>
-            <li><a href="#premios" class="scroll">Premios</a></li>
-            <li><a href="#contacto" class="scroll">Contacto</a></li>
-          </ul>
-          <div class="hamburguer-menu-social">
-            <ul>
-              <li>
-                <a href="https://www.facebook.com/domoestudioarq"
-                  ><img
-                    class="social-icon"
-                    src="./images/facebook-square-w.svg"
-                    alt="Facebook logo"
-                  />
-                  <p class="social-text">Facebook</p>
-                </a>
-              </li>
-              <li>
-                <a href="https://www.instagram.com/domoestudioarq"
-                  ><img class="social-icon" src="./images/instagram-w.svg" alt="Instagram logo" />
-                  <p class="social-text">Instagram</p>
-                </a>
-              </li>
-              <li>
-                <a href="mailto: info@domoarq.com"
-                  ><img class="social-icon" src="./images/envelope-open-w.svg" alt="Email logo" />
-                  <p class="social-text">info@domoarq.com</p>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </ul>
-      </div>
-      <div class="d-flex menu-items">
-        <ul class="d-flex flex-column align-items-start justify-content-around">
-          <li>
-            <a href="#inicio" onclick="transition(this)" class="active scroll">Inicio</a>
-          </li>
-          <li>
-            <a href="#estudio" onclick="transition(this)" class="scroll">Estudio</a>
-          </li>
-          <li>
-            <a href="#proyectos" onclick="transition(this)" class="scroll">Proyectos</a>
-          </li>
-          <li>
-            <a href="#premios" onclick="transition(this)" class="scroll">Premios</a>
-          </li>
-          <li>
-            <a href="#contacto" onclick="transition(this)" class="scroll">Contacto</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="d-flex menu-social">
-        <ul>
-          <li>
-            <a href="https://www.facebook.com/domoestudioarq"
-              ><img
-                class="social-icon"
-                src="./images/facebook-square-w.svg"
-                alt="Facebook logo"
-              /><span class="social-text">Facebook</span>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.instagram.com/domoestudioarq"
-              ><img class="social-icon" src="./images/instagram-w.svg" alt="Instagram logo" /><span
-                class="social-text"
-                >Instagram</span
-              ></a
-            >
-          </li>
-          <li>
-            <a href="mailto: info@domoarq.com"
-              ><img class="social-icon" src="./images/envelope-open-w.svg" alt="Email logo" /><span
-                class="social-text"
-                >info@domoarq.com</span
-              ></a
-            >
-          </li>
-        </ul>
-      </div>
-    </nav>
-
+    <sidebar-custom></sidebar-custom>
     <section id="todos-proyectos" class="secciones container-fluid">
       <span class="logo-domo"><img src="./images/domoarq.png" alt="" /></span>
       <h2 class="titulo-seccion"><b>Todos los proyectos</b></h2>
@@ -309,7 +217,6 @@
       </div>
     </section>
     <footer-custom></footer-custom>
-
   </body>
 
   <script>

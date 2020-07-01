@@ -1,3 +1,4 @@
+/* eslint-disable func-names */
 /* eslint-disable no-undef */
 /* eslint-disable no-param-reassign */
 import '../scss/app.scss';
@@ -7,6 +8,7 @@ import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
 import './components/footer.component';
 import './components/sidebar.component';
+import './components/sidebarNoIndex.component';
 
 (function (global) {
   global.$ = $;
@@ -53,6 +55,15 @@ $(document).ready(function () {
       return item;
     }
     return null;
+  });
+
+  const topMenuNoIndex = $('#sideMenuNoIndex');
+  const menuItemsNoIndex = topMenuNoIndex.find('a');
+
+  menuItemsNoIndex.click(function urlLocation() {
+    const location = $(this).pathname;
+    const url = window.location.origin;
+    window.location.replace(`${url}/${location}`);
   });
 
   menuItems.click(function animation(e) {

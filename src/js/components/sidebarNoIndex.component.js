@@ -1,9 +1,9 @@
 // Sidebar
-class Sidebar extends HTMLElement {
+class SidebarNoIndex extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-      <nav class="d-flex flex-column menu" tabindex="0">
+      <nav class="d-flex flex-column menu" tabindex="0" id="sideMenuNoIndex">
       <div class="hamburguer-menu-trigger">
         <input type="checkbox" />
         <span></span>
@@ -11,13 +11,11 @@ class Sidebar extends HTMLElement {
         <span></span>
         <ul class="hamburguer-menu">
           <ul class="hamburguer-menu-items">
-            <li><a href="https://www.facebook.com/domoestudioarq" class="active scroll">
-            Inicio
-            </a></li>
-            <li><a href="#estudio" class="scroll">Estudio</a></li>
-            <li><a href="#proyectos" class="scroll">Proyectos</a></li>
-            <li><a href="#premios" class="scroll">Premios</a></li>
-            <li><a href="#contacto" class="scroll">Contacto</a></li>
+            <li><a href="index.html" class="active scroll">Inicio</a></li>
+            <li><a href="equipo.html" class="scroll">Estudio</a></li>
+            <li><a href="proyectos.html" class="scroll">Proyectos</a></li>
+            <li><a href="index.html" class="scroll">Premios</a></li>
+            <li><a href="index.html" class="scroll">Contacto</a></li>
           </ul>
           <div class="hamburguer-menu-social">
             <ul>
@@ -49,21 +47,11 @@ class Sidebar extends HTMLElement {
       </div>
       <div class="d-flex menu-items">
         <ul class="d-flex flex-column align-items-start justify-content-around" id="side-menu">
-          <li>
-            <a href="#inicio" class="active scroll">Inicio</a>
-          </li>
-          <li>
-            <a href="#estudio" class="scroll">Estudio</a>
-          </li>
-          <li>
-            <a href="#proyectos" class="scroll">Proyectos</a>
-          </li>
-          <li>
-            <a href="#premios" class="scroll">Premios</a>
-          </li>
-          <li>
-            <a href="#contacto" class="scroll">Contacto</a>
-          </li>
+        <li><a href="index.html" class="active scroll">Inicio</a></li>
+        <li><a href="equipo.html" class="scroll">Estudio</a></li>
+        <li><a href="proyectos.html" class="scroll">Proyectos</a></li>
+        <li><a href="index.html" class="scroll">Premios</a></li>
+        <li><a href="index.html" class="scroll">Contacto</a></li>
         </ul>
       </div>
       <div class="d-flex menu-social">
@@ -100,6 +88,6 @@ class Sidebar extends HTMLElement {
   }
 }
 
-customElements.define('sidebar-custom', Sidebar);
+customElements.define('sidebar-no-index-custom', SidebarNoIndex);
 
-export default Sidebar;
+export default SidebarNoIndex;

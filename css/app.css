@@ -167,8 +167,8 @@ input {
  * Fonts
 */
 @font-face {
-  font-family: 'coolvetica';
-  src: url(../fonts/coolvetica.5d474f.ttf) format("truetype");
+  font-family: 'DINP-R';
+  src: url(../fonts/DINPro-Regular.fa495e.eot) format("eot"), url(../fonts/DINPro-Regular.62db14.woff) format("woff"), url(../fonts/DINPro-Regular.500703.ttf) format("truetype"), url(../fonts/DINPro-Regular.0f9f28.svg#DINPro-Regular) format("svg");
   font-style: normal; }
 
 /* Mixins, helpers and functions */
@@ -11889,8 +11889,7 @@ readers do not read off random characters that represent icons */
 /* Components */
 body {
   color: #000;
-  padding-left: 240px;
-  font-family: 'coolvetica', Helvetica Neue, Helvetica, Arial, sans-serif; }
+  padding-left: 240px; }
 
 .logo-domo img {
   position: fixed;

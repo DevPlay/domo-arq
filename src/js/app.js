@@ -5,6 +5,8 @@ import 'bootstrap/dist/js/bootstrap.bundle';
 import '@fortawesome/fontawesome-free/js/all';
 import 'owl.carousel/dist/assets/owl.carousel.css';
 import 'owl.carousel';
+import './components/footer.component';
+import './components/sidebar.component';
 
 (function (global) {
   global.$ = $;
@@ -89,24 +91,3 @@ $(document).ready(function () {
     }
   });
 });
-
-class Footer extends HTMLElement {
-  constructor() {
-    super();
-    this.innerHTML = `
-      <footer>
-        <div class="col-xs-12 col-md-12 col-lg-12" style="background-color: #000029;">
-          <div class="designed-by">
-            <p>
-              Copyright © 2019 - Buenos Aires - designed by
-              <a href="https://www.devplay.com.ar">
-                <img src="./images/Recurso 2.svg" alt="Logo DevPlay"
-              /></a>
-            </p>
-          </div>
-        </div>
-      </footer>
-        `;
-  }
-}
-customElements.define('footer-custom', Footer);

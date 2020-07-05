@@ -21,19 +21,26 @@
       border: .3px solid $color-bordes;
       padding: 0;
       margin: 1%;
+      color: $color-secondary-text;
+      background-position: center;
+      background-size: cover;
+      background-color: transparent;
+
 
       .container_body {
         justify-content: space-between;
         flex-direction: column;
-        align-items: baseline;
+
 
         .container_title {
           align-self: center;
-          padding-top: 5%;
+          padding-top: 10%;
         }
 
         .container_text {
           padding: 10%;
+          opacity: 0;
+
         }
 
         .container_more {
@@ -44,20 +51,47 @@
           .more {
             padding: 5px;
             text-align: center;
-            color: $color-blanco;
+            color: white;
             align-items: flex-end;
             justify-content: flex-start;
             height: 40px;
             width: 40px;
             background-color: $color-secundario;
+
+            a {
+              text-decoration: none;
+              color: white;
+            }
           }
         }
       }
     }
 
     .proyecto:hover {
-      background-color: rgba(0, 0, 0, .5);
-      color: $color-secondary-text;
+
+      .container_body {
+        background-color: rgba(0, 0, 0, .6);
+
+      }
+
+      .container_text {
+        opacity: 1;
+        transition: opacity .25s ease-in;
+        -moz-transition: opacity .25s ease-in;
+        -webkit-transition: opacity .25s ease-in;
+      }
+
+      .container_more {
+
+        .more {
+          background-color: $color-principal;
+
+          a {
+            text-decoration: none;
+            color: $color-secundario;
+          }
+        }
+      }
     }
 
 

@@ -3,9 +3,21 @@
   padding-right: 0px !important;
 }
 
-.carousel-caption {
 
+.carousel-caption {
   right: 5%;
+
+  .carousel-text {
+    font-size: 3rem;
+    text-align: left;
+    font-weight: bold;
+    line-height: 1em;
+    margin-left: 40%;
+    padding: 2%;
+    margin-bottom: 10%;
+    color: $color-secundario;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
 }
 
 .carousel-image {
@@ -13,16 +25,6 @@
   filter: grayscale(1);
 }
 
-.carousel-text {
-  font-size: 3rem;
-  text-align: left;
-  font-weight: bold;
-  margin-left: 40%;
-  padding: 2%;
-  margin-bottom: 10%;
-  color: #000;
-  background-color: rgba(255, 255, 255, 0.5);
-}
 
 .carousel-indicators {
   display: flex;

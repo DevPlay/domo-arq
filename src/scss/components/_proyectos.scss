@@ -66,15 +66,15 @@
     width: 100%;
     background-color: $color-negro-600;
     opacity: 0;
-    -webkit-transition: all 0.3s ease;
-    -moz-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition-property: all 0.3s ease;
+
   }
 
   .item:hover,
   .item:hover .overlay {
     opacity: 1;
+    transition: opacity .25s ease-in;
+    -moz-transition: opacity .25s ease-in;
+    -webkit-transition: opacity .25s ease-in;
   }
 }
 
@@ -181,24 +181,23 @@
 
 .custom_overlay:hover {
   opacity: 1;
-}
 
-.item:hover,
-.item:hover .overlay {
-  opacity: 1;
+  .proyectos-button {
+    background-color: $color-principal;
+
+    a {
+      color: $color-secondary-text;
+
+    }
+  }
+
+  .item:hover .overlay {
+    opacity: 1;
+
+
+  }
 }
 
 .hover-proyectos img {
   position: absolute;
-}
-
-.proyectos-button {
-  width: 70%;
-  border: solid 5px;
-  color: $color-secondary-text;
-  background-color: transparent;
-
-  a {
-    color: $color-secondary-text;
-  }
 }

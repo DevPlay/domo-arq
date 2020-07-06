@@ -1,17 +1,18 @@
 body {
   color: $color-secundario;
-  padding-left: 240px;
+  padding-left: 20%;
   // font-family: 'Open Sans', Helvetica Neue, Helvetica, Arial, sans-serif;
 }
 
+// #estudio
 .logo-domo {
+  position: fixed;
   img {
-    position: fixed;
     top: 2vh;
     width: 80px;
     height: 80px;
-    left: 31vh;
-    z-index: 90;
+    left: 35vh;
+    z-index: 2000;
   }
 }
 
@@ -40,6 +41,7 @@ main {
 .btn-domo {
   .btn-secondary {
     a {
+      font-size: 14px;
       text-decoration: none;
       color: $color-secondary-text;
     }
@@ -48,12 +50,12 @@ main {
   .btn1 {
     border: transparent;
     border-radius: 0;
-    background-color: $color-principal;
+    background-color: $color-secundario;
     text-decoration: none;
-    width: 180px;
+    width: 150px;
 
     a {
-      color: $color-primary-text;
+      color: $color-secondary-text;
     }
   }
 

@@ -3,7 +3,6 @@
 
   .article_container {
     display: flex;
-    // height: 70vh;
     align-content: space-between;
 
     .equipo-img {
@@ -12,15 +11,12 @@
 
       img {
         width: 80%;
-
         background-position: center;
       }
     }
 
     .frase-estudio {
       padding: 5% 10% 5% 0%;
-      // align-self: center;
-      // width: 40%;
       font-size: 20px;
       height: 70vh;
     }

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 
     <title>Estudio DomoArq</title>
   </head>
@@ -28,32 +29,15 @@
       <article class="content d-flex">
         <div class="container flex-wrap d-flex justify-content-between">
           <div class="row card_row d-flex mb-4 align-items-baseline">
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6"
-              style="background-image:url('./images/perdriel.png') ;">
-              <div class="container_body p-0 d-flex" >
-                <h5 class="container_title">Domo Perdriel</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="./detalleProyecto.html">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6"
-            style="background-image:url('./images/maux.jpg') ;">
+            <div
+              v-for="(proyecto, id) in proyectos"
+              :key="id"
+              class="proyecto col-lg-4 col-md-4 col-sm-6"
+            >
               <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
+                <h5 class="container_title">{{ proyecto.titulo }}</h5>
                 <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
+                  <p>{{ proyecto.texto}}</p>
                 </div>
                 <div class="container_more">
                   <div
@@ -62,147 +46,16 @@
                     data-toggle="modal"
                     type="button"
                   >
-                    <a class="align-self-center" href="">+</a>
+                    <a class="align-self-center" :href="proyecto.link">+</a>
                   </div>
                 </div>
               </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="proyecto col-lg-4 col-md-4 col-sm-6">
-              <div class="container_body p-0 d-flex">
-                <h5 class="container_title">Casa Concordia</h5>
-                <div class="container_text">
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.</p>
-                </div>
-                <div class="container_more">
-                  <div
-                    class="more align-self-end justify-content-center d-flex"
-                    data-target="#ModalPremioClarin"
-                    data-toggle="modal"
-                    type="button"
-                  >
-                    <a class="align-self-center" href="">+</a>
-                  </div>
-                </div>
-              </div>
+              <img :src="proyecto.preview" alt="portada proyecto" class="img-fluid img-fondo" />
             </div>
           </div>
         </div>
       </article>
+
       <div class="row mb-5 pl-4 d-flex">
         <div
           class="btn-group btn-domo d-flex align-self-center"
@@ -217,6 +70,79 @@
     </section>
     <footer-custom></footer-custom>
   </body>
+
+  <script>
+    var todosProyectos = new Vue({
+      el: '#todos-proyectos',
+      data: () => ({
+        proyectos: [
+          {
+            id: 1,
+            titulo: 'Domo Perdriel',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/perdriel.png',
+          },
+          {
+            id: 2,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 3,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 4,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 5,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 6,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 7,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 8,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+          {
+            id: 9,
+            titulo: 'Domo Maux',
+            texto: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eaque, deleniti.',
+            link: './detalleProyecto.html',
+            preview: './images/maux.jpg',
+          },
+        ],
+      }),
+    });
+  </script>
 
   <script>
     function transition(whatever) {
@@ -239,7 +165,6 @@
       };
       const scrollElems = document.getElementsByClassName('scroll');
 
-      //console.log(scrollElems);
       const scrollToElem = (start, stamp, duration, scrollEndElemTop, startScrollOffset) => {
         //debugger;
         const runtime = stamp - start;
@@ -280,26 +205,6 @@
         });
       }
     };
-    //////////////
-
-    $(document).ready(function () {
-      $('#owl-domo').owlCarousel({
-        loop: true,
-        navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
-        responsiveClass: true,
-        responsive: {
-          0: {
-            items: 1,
-          },
-          600: {
-            items: 2,
-          },
-          1000: {
-            items: 2,
-          },
-        },
-      });
-    });
   </script>
 
   <!-- Facebook Pixel Code -->

@@ -12192,9 +12192,9 @@ ul.social-network li {
 #proyectos .item:hover,
 #proyectos .item:hover .overlay {
   opacity: 1;
-  transition: opacity .25s ease-in;
-  -moz-transition: opacity .25s ease-in;
-  -webkit-transition: opacity .25s ease-in; }
+  transition: opacity 0.25s ease-in;
+  -moz-transition: opacity 0.25s ease-in;
+  -webkit-transition: opacity 0.25s ease-in; }
 
 .img-modal {
   width: 100%; }
@@ -12315,7 +12315,7 @@ ul.social-network li {
     background-color: #000; }
 
 #premios #modal-dialog {
-  margin-top: 10%;
+  margin-top: 5%;
   max-width: 70% !important; }
   #premios #modal-dialog .modal-content {
     border-radius: 0;
@@ -12638,10 +12638,15 @@ ul.social-network li {
       border: 0.3px solid rgba(112, 112, 112, 0.2);
       padding: 0;
       margin: 1%;
-      color: #fff;
-      background-position: center;
-      background-size: cover;
-      background-color: transparent; }
+      color: #fff; }
+      #todos-proyectos .content .proyecto .img-fondo {
+        background-position: center;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        position: absolute;
+        z-index: -90;
+        height: 300px;
+        width: 320px; }
       #todos-proyectos .content .proyecto .container_body {
         justify-content: space-between;
         flex-direction: column; }
@@ -12671,9 +12676,9 @@ ul.social-network li {
       background-color: rgba(0, 0, 0, 0.6); }
     #todos-proyectos .content .proyecto:hover .container_text {
       opacity: 1;
-      transition: opacity .25s ease-in;
-      -moz-transition: opacity .25s ease-in;
-      -webkit-transition: opacity .25s ease-in; }
+      transition: opacity 0.25s ease-in;
+      -moz-transition: opacity 0.25s ease-in;
+      -webkit-transition: opacity 0.25s ease-in; }
     #todos-proyectos .content .proyecto:hover .container_more .more {
       background-color: #ff0a7e; }
       #todos-proyectos .content .proyecto:hover .container_more .more a {
@@ -12690,6 +12695,10 @@ ul.social-network li {
     border-bottom: 8px solid rgba(255, 255, 255, 0); }
     #detalle-proyectos .detail-content .detail-text p {
       font-size: 16px; }
+    #detalle-proyectos .detail-content .detail-text .share-container {
+      font-size: 14px; }
+      #detalle-proyectos .detail-content .detail-text .share-container a {
+        color: #000; }
   #detalle-proyectos .detail-content .item {
     background-repeat: no-repeat;
     background-size: cover;
@@ -12745,24 +12754,31 @@ ul.social-network li {
   padding: 0.5rem;
   margin: 0.5rem; }
 
-#detalle-proyectos .modal-dialog .modal-content {
-  background-color: #ff0a7e; }
-
-#detalle-proyectos .modal-dialog .botones-compartir {
-  color: #000; }
-
-#detalle-proyectos .modal-dialog .close-modal {
-  padding: 5px;
-  text-align: center;
-  color: rgba(0, 0, 0, 0.5);
-  height: 25px;
-  width: 25px;
-  background-color: #000; }
-
-#detalle-proyectos .modal-dialog .close {
-  font-size: 1rem;
-  text-shadow: none;
-  opacity: 1; }
+#detalle-proyectos #modal-dialog {
+  margin-top: 5%;
+  max-width: 70% !important; }
+  #detalle-proyectos #modal-dialog .modal-content {
+    border-radius: 0;
+    background-color: #fff; }
+    #detalle-proyectos #modal-dialog .modal-content .modal-header {
+      border-bottom: none;
+      height: 30px; }
+      #detalle-proyectos #modal-dialog .modal-content .modal-header .close-modal {
+        padding: 5px;
+        text-align: center;
+        color: #fff;
+        height: 25px;
+        width: 25px;
+        background-color: #000;
+        font-size: 1rem;
+        font-weight: 300;
+        text-shadow: none;
+        opacity: 1; }
+    #detalle-proyectos #modal-dialog .modal-content .modal-body {
+      padding: 0 32px 32px 32px;
+      margin: 0; }
+      #detalle-proyectos #modal-dialog .modal-content .modal-body .img-modal {
+        width: 100%; }
 
 #detalle-proyectos .custom_overlay_wrapper {
   position: relative;

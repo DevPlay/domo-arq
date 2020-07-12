@@ -66,15 +66,14 @@
     width: 100%;
     background-color: $color-negro-600;
     opacity: 0;
-
   }
 
   .item:hover,
   .item:hover .overlay {
     opacity: 1;
-    transition: opacity .25s ease-in;
-    -moz-transition: opacity .25s ease-in;
-    -webkit-transition: opacity .25s ease-in;
+    transition: opacity 0.25s ease-in;
+    -moz-transition: opacity 0.25s ease-in;
+    -webkit-transition: opacity 0.25s ease-in;
   }
 }
 
@@ -187,14 +186,11 @@
 
     a {
       color: $color-secondary-text;
-
     }
   }
 
   .item:hover .overlay {
     opacity: 1;
-
-
   }
 }
 

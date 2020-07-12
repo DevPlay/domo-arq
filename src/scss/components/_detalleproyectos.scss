@@ -16,6 +16,13 @@
       p {
         font-size: 16px;
       }
+
+      .share-container {
+        font-size: 14px;
+        a {
+          color: $color-secundario;
+        }
+      }
     }
 
     .item {
@@ -98,28 +105,40 @@
     margin: 0.5rem;
   }
 
-  .modal-dialog {
+  #modal-dialog {
+    margin-top: 5%;
+    max-width: 70% !important;
+
     .modal-content {
-      background-color: $color-principal;
-    }
+      border-radius: 0;
+      background-color: $color-blanco;
 
-    .botones-compartir {
-      color: $color-secundario;
-    }
+      .modal-header {
+        border-bottom: none;
+        height: 30px;
 
-    .close-modal {
-      padding: 5px;
-      text-align: center;
-      color: $color-negro-500;
-      height: 25px;
-      width: 25px;
-      background-color: $color-secundario;
-    }
+        .close-modal {
+          padding: 5px;
+          text-align: center;
+          color: $color-blanco;
+          height: 25px;
+          width: 25px;
+          background-color: $color-secundario;
+          font-size: 1rem;
+          font-weight: 300;
+          text-shadow: none;
+          opacity: 1;
+        }
+      }
 
-    .close {
-      font-size: 1rem;
-      text-shadow: none;
-      opacity: 1;
+      .modal-body {
+        padding: 0 32px 32px 32px;
+        margin: 0;
+
+        .img-modal {
+          width: 100%;
+        }
+      }
     }
   }
 

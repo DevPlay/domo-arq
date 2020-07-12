@@ -261,7 +261,7 @@
           <div class="container flex-wrap d-flex">
             <div class="row w-100 d-flex justify-content-center align-items-baseline mb-4">
               <div
-                v-for="(premio, id) in portfolioJSON"
+                v-for="(premio, id) in premios"
                 :key="id"
                 class="miembro col-lg-4 col-md-4 col-sm-6"
               >
@@ -398,7 +398,7 @@
     var domoArq = new Vue({
       el: '#domo-arq',
       data: () => ({
-        portfolioJSON: [
+        premios: [
           {
             id: 1,
             titulo: '1 REVISTA ARQ CLARÍN – 13.11.2018',

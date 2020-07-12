@@ -38,7 +38,7 @@ class Sidebar extends HTMLElement {
                 </a>
               </li>
               <li>
-                <a href="mailto: info@domoarq.com">
+                <a href = "mailto: info@domoarq.com?subject=Quiero%20hablar%20con%20un%20asesor" >
                   <img class="social-icon" src="./images/envelope-open-w.svg" alt="Email logo" />
                   <p class="social-text">info@domoarq.com</p>
                 </a>
@@ -86,12 +86,10 @@ class Sidebar extends HTMLElement {
             >
           </li>
           <li>
-            <a href="mailto: info@domoarq.com"
-              ><img class="social-icon" src="./images/envelope-open-w.svg" alt="Email logo" /><span
-                class="social-text"
-                >info@domoarq.com</span
-              ></a
-            >
+            <a href = "mailto: info@domoarq.com?Subject=Quiero%20hablar%20con%20un%20asesor">
+              <img class="social-icon" src="./images/envelope-open-w.svg" alt="Email logo" />
+              <span class="social-text">info@domoarq.com</span
+            </a>
           </li>
         </ul>
       </div>

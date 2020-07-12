@@ -1,7 +1,6 @@
 //seccion detalle de proyectos
 
 #detalle-proyectos {
-
   .detail-content {
     height: 75vh;
 
@@ -25,7 +24,6 @@
       background-position: center;
 
       .custom_overlay_wrapper {
-
         .custom_overlay {
           position: absolute;
           top: 0;
@@ -55,10 +53,6 @@
       }
     }
   }
-
-
-
-
 
   .detail-text::-webkit-scrollbar {
     width: 8px;
@@ -128,7 +122,6 @@
       opacity: 1;
     }
   }
-
 
   .custom_overlay_wrapper {
     position: relative;

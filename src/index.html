@@ -136,9 +136,6 @@
                   Conoce al equipo
                 </a>
               </button>
-              <button type="button" class="btn btn-secondary btn2">
-                <a href="./equipo.html"><i class="fas fa-arrow-right"></i></a>
-              </button>
             </div>
           </div>
         </article>
@@ -169,9 +166,6 @@
               <button type="button" class="btn btn-secondary btn1">
                 <a href="./proyectos.html">Todos los proyectos</a>
               </button>
-              <button type="button" class="btn btn-secondary btn2">
-                <a href="./proyectos.html"> <i class="fas fa-arrow-right"></i></a>
-              </button>
             </div>
           </div>
           <div class="project_carrusel flex-column d-flex col-lg-8 col-md-8 col-sm-12">
@@ -193,7 +187,7 @@
                       >
                         <!-- TODO: Agregar los href correctos cuando tengamos definiciones -->
                         <button type="button" class="btn btn-secondary btn1 proyectos-button">
-                          <a href="./proyectos.html">Ver proyecto</a>
+                          <a href="./detalleDeProyectos/domoMaux.html">Ver proyecto</a>
                         </button>
                       </div>
                     </span>
@@ -217,8 +211,12 @@
                         aria-label="Basic example"
                       >
                         <!-- TODO: Agregar los href correctos cuando tengamos definiciones -->
-                        <button type="button" class="btn btn-secondary btn1 proyectos-button">
-                          <a href="./proyectos.html">Ver proyecto</a>
+                        <button
+                          type="button"
+                          class="btn btn-secondary btn1 proyectos-button"
+                          @click="sendTo('/domoPerdriel.html')"
+                        >
+                          <a>Ver proyecto</a>
                         </button>
                       </div>
                     </span>
@@ -306,7 +304,7 @@
                 </button>
               </div>
               <div class="modal-body">
-                <img class="img-modal" src="./images/pub1.jpg" alt="" />
+                <img class="img-modal" src="./images/pub1.png" alt="" />
               </div>
             </div>
           </div>
@@ -401,42 +399,53 @@
         premios: [
           {
             id: 1,
-            titulo: '1 REVISTA ARQ CLARÍN – 13.11.2018',
-            galardon: 'PREMIOS ARQ-FADEA Buenos Aires',
-            tipoDeObra: 'OBRA PRIVADA – ESCALA MEDIA',
+            titulo: 'REV. ARQ CLARÍN – 13/11/2018',
+            galardon: 'PREMIOS ARQ-FADEA Bs As',
+            tipoDeObra: 'OBRA PRIVADA – ESC. MEDIA',
           },
           {
             id: 2,
-            titulo: '2 REVIasdasdSTA ARQ CLARÍN – 13.11.2018',
-            galardon: 'PREMIOS ARQ-FADEA Buenos Aires',
-            tipoDeObra: 'OBRA PRIVADA – ESCALA MEDIA',
+            titulo: 'REV. ARQ CLARÍN – 28/02/2017',
+            galardon: 'BIENAL DE ARQUITECTURA 2015',
+            tipoDeObra: '-',
           },
           {
             id: 3,
-            titulo: '3 qqqqqqq ARQ CLARÍN – 13.11.2018',
-            galardon: 'PREMIOS ARQ-FADEA Buenos Aires',
-            tipoDeObra: 'OBRA PRIVADA – ESCALA MEDIA',
+            titulo: 'REV. CAPBA – AÑO 2016',
+            galardon: 'MENCION ',
+            tipoDeObra: 'EDIF. DE VIVIENDAS DE DENSIDAD ALTA',
           },
           {
             id: 4,
-            titulo: '5 REVISTA ARQ CLARÍN – 13.11.2018',
-            galardon: 'PREMIOS ARQ-FADEA Buenos Aires',
-            tipoDeObra: 'OBRA PRIVADA – ESCALA MEDIA',
+            titulo: 'REV. ARQ CLARÍN – 20/05/2014 ',
+            galardon: 'CONCURSO PQUE. DE LAS CIENCIAS',
+            tipoDeObra: '-',
           },
           {
             id: 5,
-            titulo: 'REVIasdasdSTA ARQ CLARÍN – 13.11.2018',
-            galardon: 'PREMIOS ARQ-FADEA Buenos Aires',
-            tipoDeObra: 'OBRA PRIVADA – ESCALA MEDIA',
+            titulo: 'REV. TODOBRAS – MAYO 2008',
+            galardon: '-',
+            tipoDeObra: '-',
           },
           {
             id: 6,
-            titulo: 'qqqqqqq ARQ CLARÍN – 13.11.2018',
-            galardon: 'PREMIOS ARQ-FADEA Buenos Aires',
-            tipoDeObra: 'OBRA PRIVADA – ESCALA MEDIA',
+            titulo: 'REV. ARQ CLARÍN – 26/05/2008',
+            galardon: 'MENCION',
+            tipoDeObra: '',
           },
         ],
       }),
+
+      methods: {
+        sendTo: function (value) {
+          // const origin = window.location.origin;
+          const newUrl = '';
+          this.newUrl = value;
+
+          // window.location.replace(`${this.origin}/${this.newUrl}`);
+          window.location = this.newUrl;
+        },
+      },
     });
   </script>
   <script>

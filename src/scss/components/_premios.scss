@@ -7,10 +7,10 @@
     .miembro {
       display: flex;
       justify-content: space-around;
-      min-height: 300px;
-      max-height: 300px;
-      min-width: 300px;
-      max-width: 300px;
+      min-height: 250px;
+      max-height: 250px;
+      min-width: 250px;
+      max-width: 250px;
       border: 0.3px solid $color-bordes;
       padding: 0;
       margin: 1%;
@@ -40,8 +40,8 @@
   }
 
   #modal-dialog {
-    margin-top: 5%;
-    max-width: 70% !important;
+    // margin-top: 5%;
+    max-width: 55% !important;
 
     .modal-content {
       border-radius: 0;

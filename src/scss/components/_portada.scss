@@ -4,16 +4,13 @@
 }
 
 .carousel-caption {
-  right: 5%;
-
   .carousel-text {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
     font-weight: bold;
     line-height: 1em;
-    margin-left: 40%;
     padding: 2%;
-    margin-bottom: 10%;
+    width: 52%;
     color: $color-secundario;
     background-color: rgba(255, 255, 255, 0.5);
   }
@@ -22,6 +19,16 @@
 .carousel-image {
   -webkit-filter: grayscale(1);
   filter: grayscale(1);
+}
+
+#caption_1 {
+  left: 56%;
+  bottom: 5%;
+  width: 80% !important;
+}
+
+#caption_2, #caption_3 {
+  margin-left: -10% !important;
 }
 
 .carousel-indicators {

@@ -9,7 +9,7 @@ class Footer extends HTMLElement {
           <p>
             Copyright © 2019 - Buenos Aires - designed by
             <a href="https://www.devplay.com.ar">
-              <img src="./images/Recurso 2.svg" alt="Logo DevPlay"
+              <img src="../images/Recurso 2.svg" alt="Logo DevPlay"
             /></a>
           </p>
         </div>

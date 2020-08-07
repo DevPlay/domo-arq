@@ -47,6 +47,11 @@ class SidebarNoIndex extends HTMLElement {
           </div>
         </ul>
       </div>
+      <div class="d-flex align-items-center menu-logo">
+        <div class="logo">
+          <img src="../images/logo-grande.jpeg" alt="logo Domo" />
+        </div>
+      </div>
       <div class="d-flex menu-items">
         <ul class="d-flex flex-column align-items-start justify-content-around" id="side-menu">
         <li><a href="index.html" class="active scroll">Inicio</a></li>

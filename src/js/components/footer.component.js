@@ -3,7 +3,7 @@ class Footer extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-    <footer>
+    <footer id="footer">
       <div class="col-xs-12 col-md-12 col-lg-12" style="background-color: #000029;">
         <div class="designed-by">
           <p>

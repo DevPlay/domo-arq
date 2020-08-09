@@ -1,9 +1,9 @@
 //seccion premios
 #premios {
-  .titulo-seccion {
-    padding-top: 1vh;
-    margin-bottom: 0;
-  }
+  // .titulo-seccion {
+  //   padding-top: 1vh;
+  //   margin-bottom: 0;
+  // }
   .premios-container {
     justify-content: space-evenly;
   }
@@ -15,9 +15,9 @@
       display: flex;
       justify-content: space-around;
       min-height: 240px;
-      max-height: 240px;
+      max-height: 260px;
       min-width: 240px;
-      max-width: 240px;
+      max-width: 260px;
       border: 0.3px solid $color-bordes;
       padding: 0;
       margin: 1%;

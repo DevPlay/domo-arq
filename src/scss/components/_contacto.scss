@@ -1,6 +1,6 @@
 #contacto {
-    height: 98vh;
-    // height: auto;
+
+    height: auto;
 
   .mat-div {
     position: relative;
@@ -88,7 +88,9 @@
       margin-left: 2%;
     }
   }
-
+  .send-button{
+    margin-top: 5%;
+  }
   .mat-div::after,
   .mat-div::before {
     content: '';

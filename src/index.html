@@ -124,7 +124,7 @@
 
       <section id="estudio" class="secciones container-fluid">
         <h2 class="titulo-seccion"><b>El estudio</b></h2>
-        <article class="article_container">
+        <article class="d-flex article_container">
           <div class="equipo-img flex-column col-lg-6 col-md-6 col-sm-12">
             <img src="./images/equipo2.png" alt="imagen del equipo" />
           </div>
@@ -155,7 +155,7 @@
 
       <section id="proyectos" class="secciones container-fluid">
         <h2 class="titulo-seccion"><b>Proyectos y novedades</b></h2>
-        <article class="row project-content d-flex">
+        <article class="row project-content d-flex ">
           <div
             class="project-text d-flex flex-column justify-content-between col-lg-4 col-md-4 col-sm-12"
           >
@@ -168,7 +168,7 @@
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus deserunt ullam
               sed corporis voluptates eligendi, fugiat explicabo hic? Laudantium molestiae totam
               labore,<br />
-              ipsa ipsam voluptatem quae impedit atque accusantium. Atque?
+              ipsa ipsam voluptatem quae impedit atque accusantium. Atque?<br />
             </p>
             <div
               class="btn-group btn-domo d-flex align-self-start pb-4"
@@ -265,10 +265,10 @@
 
       <section id="premios" class="secciones container-fluid">
         <h2 class="titulo-seccion"><b>Premios y menciones</b></h2>
-        <article class="content d-flex">
+        <article class="content d-flex h-100">
           <!-- TODO: Completar con los textos correspondientes y el diseño final del modal -->
           <div class="container flex-wrap d-flex">
-            <div class="row w-100 d-flex justify-content-center mb-4 premios-container">
+            <div class="row w-100 d-flex mb-4 premios-container">
               <div
                 v-for="(premio, id) in premios"
                 :key="id"
@@ -324,6 +324,7 @@
 
         <!-- TODO: Agregar los demas modales cuando esten definidos -->
       </section>
+
       <section id="contacto" class="secciones container-fluid">
         <h2 class="titulo-seccion">
           <b>Contanos</b> <br />
@@ -382,14 +383,14 @@
                   </div>
                 </div>
               </form>
-              <div class="send-button mt-5">
+              <div class="send-button">
                 <a class="btn mat-btn" onclick="document.getElementById('contact-form').submit();"
                   >Enviar</a
                 >
                 <!-- TODO: manejar este evento cuando el formulario este online -->
               </div>
             </div>
-            <div class="d-flex col-md-6 col-sm-12 justify-content-center d-flex flex-column">
+            <div class="d-flex flex-column col-md-6 col-sm-12 justify-content-center resp-margin">
               <div class="imagen-contacto mb-4">
                 <img src="./images/300x450_contacto.jpeg" alt="">
               </div>

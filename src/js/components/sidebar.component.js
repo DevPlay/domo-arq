@@ -10,10 +10,13 @@ class Sidebar extends HTMLElement {
         <span></span>
         <span></span>
         <ul class="hamburguer-menu">
+        <div class="d-flex align-items-center menu-logo">
+        <div class="logo">
+          <img src="./images/logo-grande.jpeg" alt="logo Domo" />
+        </div>
+      </div>
           <ul class="hamburguer-menu-items">
-            <li><a href="https://www.facebook.com/domoestudioarq" class="active scroll">
-            Inicio
-            </a></li>
+            <li><a href="#inicio" class="active scroll">Inicio</a></li>
             <li><a href="#estudio" class="scroll">Estudio</a></li>
             <li><a href="#proyectos" class="scroll">Proyectos</a></li>
             <li><a href="#premios" class="scroll">Premios</a></li>
@@ -47,6 +50,7 @@ class Sidebar extends HTMLElement {
           </div>
         </ul>
       </div>
+
       <div class="d-flex align-items-center menu-logo">
         <div class="logo">
           <img src="./images/logo-grande.jpeg" alt="logo Domo" />

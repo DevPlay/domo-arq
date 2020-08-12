@@ -135,22 +135,22 @@ const config = function (env, args) {
       new HtmlWebpackPlugin({
         inject: true,
         hash: false,
-        filename: 'detalleDeProyectos/domoPerdriel.html',
-        template: path.resolve(__dirname, 'src', 'detalleDeProyectos/domoPerdriel.html'),
+        filename: 'domoPerdriel.html',
+        template: path.resolve(__dirname, 'src', 'domoPerdriel.html'),
         favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
       }),
       new HtmlWebpackPlugin({
         inject: true,
         hash: false,
-        filename: 'detalleDeProyectos/domoMaux.html',
-        template: path.resolve(__dirname, 'src', 'detalleDeProyectos/domoMaux.html'),
+        filename: 'domoMaux.html',
+        template: path.resolve(__dirname, 'src', 'domoMaux.html'),
         favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
       }),
       new HtmlWebpackPlugin({
         inject: true,
         hash: false,
-        filename: 'detalleDeProyectos/domoPerdrielDos.html',
-        template: path.resolve(__dirname, 'src', 'detalleDeProyectos/domoPerdrielDos.html'),
+        filename: 'domoPerdrielDos.html',
+        template: path.resolve(__dirname, 'src', 'domoPerdrielDos.html'),
         favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
       }),
       new MiniCssExtractPlugin({

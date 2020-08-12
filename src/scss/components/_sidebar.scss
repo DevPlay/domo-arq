@@ -22,12 +22,12 @@
       text-decoration: none;
     }
   }
-  .menu-logo{
+  .menu-logo {
     background-color: $color-blanco;
     height: 15vh;
-      .logo {
-        padding: 25%;
-      }
+    .logo {
+      padding: 25%;
+    }
   }
 
   .menu-items {
@@ -86,11 +86,51 @@
   }
 }
 
+.menu-items {
+  position: relative;
+}
+
+#side-menu li a,
+#side-menu li {
+  position: relative;
+  z-index: 2;
+}
+
+#side-menu li a:before {
+  background: transparent;
+}
+#side-menu li a:hover {
+  color: #000;
+}
+
+#side-menu li a:before {
+  content: '';
+  width: 0%;
+  height: 40px;
+  background: white;
+  color: black;
+  position: absolute;
+  // top: 32px;
+  left: -5px;
+  z-index: -1;
+  transition-timing-function: cubic-bezier(0.8, 0.09, 1, 0.44);
+  transition-delay: 400ms;
+  transition: all 600ms cubic-bezier(1, 0, 0, 1) 0ms;
+}
+
+#side-menu li a:hover:before {
+  content: '';
+  width: 110%;
+  height: 40px;
+  position: absolute;
+  left: -5px;
+  z-index: -1;
+}
 .menu-transition {
-  font-size: 1.6em;
-  z-index: 999;
-  --webkit-transition: all 0.5s ease-in-out;
-  --moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  background-color: white;
+  content: '';
+  width: 110%;
+  height: 40px;
+  position: absolute;
+  z-index: -1;
 }

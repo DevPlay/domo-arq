@@ -16,7 +16,6 @@ import './components/sidebarNoIndex.component';
   global.jQuery = jQuery;
 })(typeof window !== 'undefined' ? window : this);
 
-// Your JS Code goes here
 $('.mat-input').focus(function () {
   $(this).parent().addClass('is-active is-completed');
 });
@@ -44,11 +43,11 @@ $(document).ready(function () {
       },
     },
   });
-// carrousel proyecto domo-detalles-de proyectos
+  // carrousel proyecto domo-detalles-de proyectos
   $('#owl-domo-detalles-de-proyectos').owlCarousel({
-    autoWidth:true,
-    center:true,
-    mergeFit:true,
+    autoWidth: true,
+    center: true,
+    mergeFit: true,
     loop: true,
     navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
     responsiveClass: true,

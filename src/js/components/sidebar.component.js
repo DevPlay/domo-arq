@@ -3,7 +3,7 @@ class Sidebar extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-      <nav class="d-flex flex-column menu" tabindex="0">
+      <nav class="d-flex flex-column menu coolvetica" tabindex="0">
       <div class="hamburguer-menu-trigger">
         <input type="checkbox" />
         <span></span>
@@ -16,11 +16,11 @@ class Sidebar extends HTMLElement {
         </div>
       </div>
           <ul class="hamburguer-menu-items">
-            <li><a href="#inicio" class="active scroll">Inicio</a></li>
-            <li><a href="#estudio" class="scroll">Estudio</a></li>
-            <li><a href="#proyectos" class="scroll">Proyectos</a></li>
-            <li><a href="#premios" class="scroll">Premios</a></li>
-            <li><a href="#contacto" class="scroll">Contacto</a></li>
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#estudio">Estudio</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#premios">Premios</a></li>
+            <li><a href="#contacto">Contacto</a></li>
           </ul>
           <div class="hamburguer-menu-social">
             <ul>
@@ -58,20 +58,20 @@ class Sidebar extends HTMLElement {
       </div>
       <div class="d-flex menu-items">
         <ul class="d-flex flex-column align-items-start justify-content-around" id="side-menu">
-          <li>
-            <a href="#inicio" class="active scroll">Inicio</a>
+          <li class="menu-over">
+            <a href="#inicio">Inicio</a>
           </li>
-          <li>
-            <a href="#estudio" class="scroll">Estudio</a>
+          <li class="menu-over">
+            <a href="#estudio">Estudio</a>
           </li>
-          <li>
-            <a href="#proyectos" class="scroll">Proyectos</a>
+          <li class="menu-over">
+            <a href="#proyectos">Proyectos</a>
           </li>
-          <li>
-            <a href="#premios" class="scroll">Premios</a>
+          <li class="menu-over">
+            <a href="#premios">Premios</a>
           </li>
-          <li>
-            <a href="#contacto" class="scroll">Contacto</a>
+          <li class="menu-over">
+            <a href="#contacto">Contacto</a>
           </li>
         </ul>
       </div>

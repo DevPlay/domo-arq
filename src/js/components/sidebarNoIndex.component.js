@@ -3,7 +3,7 @@ class SidebarNoIndex extends HTMLElement {
   constructor() {
     super();
     this.innerHTML = `
-      <nav class="d-flex flex-column menu" tabindex="0" id="sideMenuNoIndex">
+      <nav class="d-flex flex-column menu coolvetica" tabindex="0" id="sideMenuNoIndex">
       <div class="hamburguer-menu-trigger">
         <input type="checkbox" />
         <span></span>

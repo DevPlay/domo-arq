@@ -1,94 +1,97 @@
 #todos-proyectos {
   height: 100%;
-
+  padding-left: 2vh;
   .project-content {
     padding: 0 24px;
-    margin-bottom: 10%;
+    margin-bottom: 7%;
   }
 
   .content {
     display: flex;
     width: 100%;
+    .card_row {
+      justify-content: space-evenly;
 
-    .proyecto {
-      display: flex;
-      justify-content: space-around;
-      min-height: 300px;
-      max-height: 300px;
-      min-width: 300px;
-      max-width: 300px;
-      border: 0.3px solid $color-bordes;
-      padding: 0;
-      margin: 1%;
-      color: $color-secondary-text;
-      .img-fondo {
-        background-position: center;
-        // background-size: cover;
-        background-color: transparent;
-        background-repeat: no-repeat;
-        position: absolute;
-        z-index: -90;
-        height: 300px;
-        width: 320px;
-      }
-
-      .container_body {
-        justify-content: space-between;
-        flex-direction: column;
-
-        .container_title {
-          align-self: center;
-          padding-top: 10%;
+      .proyecto {
+        display: flex;
+        justify-content: space-around;
+        min-height: 300px;
+        max-height: 300px;
+        min-width: 300px;
+        max-width: 300px;
+        border: 0.3px solid $color-bordes;
+        padding: 0;
+        margin: 1%;
+        color: $color-secondary-text;
+        .img-fondo {
+          background-position: center;
+          // background-size: cover;
+          background-color: transparent;
+          background-repeat: no-repeat;
+          position: absolute;
+          z-index: -90;
+          height: 300px;
+          width: 320px;
         }
 
-        .container_text {
-          padding: 10%;
-          opacity: 0;
-        }
+        .container_body {
+          justify-content: space-between;
+          flex-direction: column;
 
-        .container_more {
-          display: flex;
-          justify-content: flex-end;
-          width: 100%;
+          .container_title {
+            align-self: center;
+            padding-top: 10%;
+          }
 
-          .more {
-            padding: 5px;
-            text-align: center;
-            color: white;
-            align-items: flex-end;
-            justify-content: flex-start;
-            height: 40px;
-            width: 40px;
-            background-color: $color-secundario;
+          .container_text {
+            padding: 10%;
+            opacity: 0;
+          }
 
-            a {
-              text-decoration: none;
+          .container_more {
+            display: flex;
+            justify-content: flex-end;
+            width: 100%;
+
+            .more {
+              padding: 5px;
+              text-align: center;
               color: white;
+              align-items: flex-end;
+              justify-content: flex-start;
+              height: 40px;
+              width: 40px;
+              background-color: $color-secundario;
+
+              a {
+                text-decoration: none;
+                color: white;
+              }
             }
           }
         }
       }
-    }
 
-    .proyecto:hover {
-      .container_body {
-        background-color: rgba(0, 0, 0, 0.6);
-      }
+      .proyecto:hover {
+        .container_body {
+          background-color: rgba(0, 0, 0, 0.6);
+        }
 
-      .container_text {
-        opacity: 1;
-        transition: opacity 0.25s ease-in;
-        -moz-transition: opacity 0.25s ease-in;
-        -webkit-transition: opacity 0.25s ease-in;
-      }
+        .container_text {
+          opacity: 1;
+          transition: opacity 0.25s ease-in;
+          -moz-transition: opacity 0.25s ease-in;
+          -webkit-transition: opacity 0.25s ease-in;
+        }
 
-      .container_more {
-        .more {
-          background-color: $color-principal;
+        .container_more {
+          .more {
+            background-color: $color-principal;
 
-          a {
-            text-decoration: none;
-            color: $color-secundario;
+            a {
+              text-decoration: none;
+              color: $color-secundario;
+            }
           }
         }
       }

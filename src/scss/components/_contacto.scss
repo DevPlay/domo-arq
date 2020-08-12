@@ -1,4 +1,7 @@
 #contacto {
+
+    height: auto;
+
   .mat-div {
     position: relative;
     height: 55px;
@@ -85,7 +88,9 @@
       margin-left: 2%;
     }
   }
-
+  .send-button{
+    margin-top: 5%;
+  }
   .mat-div::after,
   .mat-div::before {
     content: '';
@@ -141,5 +146,3 @@
     }
   }
 }
-
-// fin seccion contacto

@@ -27,6 +27,7 @@ $('.mat-input').focusout(function () {
 });
 
 $(document).ready(function () {
+  // carrousel seccion novedades
   $('#owl-domo').owlCarousel({
     loop: true,
     navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
@@ -43,7 +44,26 @@ $(document).ready(function () {
       },
     },
   });
-
+// carrousel proyecto domo-detalles-de proyectos
+  $('#owl-domo-detalles-de-proyectos').owlCarousel({
+    autoWidth:true,
+    center:true,
+    mergeFit:true,
+    loop: true,
+    navText: ["<i class='fas fa-arrow-left'></i>", "<i class='fas fa-arrow-right'></i>"],
+    responsiveClass: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      1000: {
+        items: 2,
+      },
+    },
+  });
   // Cache selectors
   let lastId;
   const topMenu = $('#side-menu');

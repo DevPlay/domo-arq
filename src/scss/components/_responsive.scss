@@ -17,20 +17,53 @@
 @media screen and (max-width: 768px) {
   body {
     padding-left: 35px;
-
-    .secciones {
-      padding-left: 2vh;
-    }
-
-    .logo-domo {
-      display: none;
+    z-index: 99;
+  }
+  #estudio {
+    .article_container {
+      // flex-direction: row;
+      .equipo-img {
+        width: 100%;
+        img {
+          width: 80%;
+        }
+      }
+      .frase-estudio {
+        font-size: 14px;
+      }
     }
   }
-
+  #premios {
+    .premios-container {
+      justify-content: space-evenly;
+    }
+  }
   #contacto {
-    .contact {
-      font-size: 12px;
-      margin: 10px;
+    .send-button {
+      margin-top: 4%;
+      text-align: center;
+    }
+    .resp-margin {
+      margin-bottom: 10%;
+
+      .imagen-contacto {
+        display: none;
+      }
+      .contact {
+        margin-top: 10%;
+        font-size: 16px;
+      }
+    }
+  }
+  #footer {
+    .designed-by {
+      p {
+        font-size: 14px;
+      }
+
+      img {
+        width: 80px;
+      }
     }
   }
 
@@ -42,6 +75,7 @@
 
   .menu {
     width: 40px;
+    z-index: 99;
 
     .hamburguer-menu-trigger {
       display: block;
@@ -80,13 +114,14 @@
       height: 2px;
       margin-bottom: 5px;
       position: relative;
-      background: #fff;
+      opacity: 0;
+      background: rgb(29, 28, 28);
       border-radius: 3px;
       z-index: 1;
       transform-origin: 4px 0px;
 
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.55s ease;
     }
 
     .hamburguer-menu-trigger span:first-child {
@@ -99,7 +134,8 @@
 
     .hamburguer-menu-trigger input:checked ~ span {
       opacity: 1;
-      transform: rotate(45deg) translate(-2px, -1px);
+      transform: rotate(48deg) translate(-3px, -2px);
+      margin-left: 10px;
     }
 
     .hamburguer-menu-trigger input:checked ~ span:nth-last-child(3) {
@@ -118,7 +154,6 @@
       margin: -100px 0 0 0;
       padding-top: 25px;
       left: -10px;
-
       background: $color-principal;
       list-style-type: none;
       -webkit-font-smoothing: antialiased;
@@ -128,34 +163,29 @@
       transform: translate(-100%, 0);
 
       transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+      .menu-logo {
+        height: 15vh;
+      }
 
       .hamburguer-menu-items {
         list-style: none;
-        padding: 1.5em 0.5em;
         margin: 30px 0px 0px 0px;
-        font-weight: 700;
-
+        height: 55vh;
+        padding: 25%;
         li {
           height: 50px;
-          padding: 0.5em 1em 0.5em 1.5em;
-          background-repeat: no-repeat;
-          background-position: left 15px center;
-          background-size: auto 20px;
           transition: all 0.15s linear;
           cursor: pointer;
 
-          &:hover {
-            background-color: rgba(0, 0, 0, 0.1);
+          a:hover {
+            text-decoration: none;
+            color: $color-secondary-text;
           }
 
           ul {
             li {
               padding: 0;
             }
-          }
-
-          a {
-            color: #fff;
           }
         }
       }
@@ -167,7 +197,7 @@
       text-align: left;
       font-size: 1rem;
       padding: 5% 5% 0% 5%;
-      height: 100vh;
+      height: 30vh;
 
       ul {
         list-style: none;
@@ -208,7 +238,7 @@
 
     &:before,
     &:after {
-      content: '';
+      content: "";
       width: 50%;
       height: 2px;
       background: #fff;
@@ -249,6 +279,32 @@
           display: none;
         }
       }
+    }
+  }
+}
+
+@media screen and (max-width: 576px) {
+  body {
+    padding-left: 35px;
+    z-index: 99;
+  }
+  #estudio {
+    .article_container {
+      flex-direction: column;
+      .equipo-img {
+        width: 100%;
+        img {
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 576px and orientation portrait) {
+  #estudio {
+    .article_container {
+      flex-direction: row;
     }
   }
 }

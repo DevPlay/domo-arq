@@ -23,7 +23,7 @@ class SidebarNoIndex extends HTMLElement {
                 <a href="https://www.facebook.com/domoestudioarq">
                   <img
                     class="social-icon"
-                    src="./images/facebook-square-w.svg"
+                    src="../images/facebook-square-w.svg"
                     alt="Facebook logo"
                   />
                   <p class="social-text">Facebook</p>
@@ -31,7 +31,7 @@ class SidebarNoIndex extends HTMLElement {
               </li>
               <li>
                 <a href="https://www.instagram.com/domoestudioarq">
-                  <img class="social-icon" src="./images/instagram-w.svg" alt="Instagram logo" />
+                  <img class="social-icon" src="../images/instagram-w.svg" alt="Instagram logo" />
                   <p class="social-text">Instagram</p>
                 </a>
               </li>
@@ -39,13 +39,18 @@ class SidebarNoIndex extends HTMLElement {
                 <a href = "mailto: info@domoarq.com?subject=Quiero%20hablar%20con%20un%20asesor" >
                   <img 
                   class = "social-icon"
-                  src = "./images/envelope-open-w.svg"alt = "Email logo" / >
+                  src = "../images/envelope-open-w.svg"alt = "Email logo" / >
                   <span class = "social-text" > info @domoarq.com < /span> 
                 </a>
               </li>
             </ul>
           </div>
         </ul>
+      </div>
+      <div class="d-flex align-items-center menu-logo">
+        <div class="logo">
+          <img src="../images/logo-grande.jpeg" alt="logo Domo" />
+        </div>
       </div>
       <div class="d-flex menu-items">
         <ul class="d-flex flex-column align-items-start justify-content-around" id="side-menu">
@@ -62,14 +67,14 @@ class SidebarNoIndex extends HTMLElement {
             <a href="https://www.facebook.com/domoestudioarq"
               ><img
                 class="social-icon"
-                src="./images/facebook-square-w.svg"
+                src="../images/facebook-square-w.svg"
                 alt="Facebook logo"
               /><span class="social-text">Facebook</span>
             </a>
           </li>
           <li>
             <a href="https://www.instagram.com/domoestudioarq"
-              ><img class="social-icon" src="./images/instagram-w.svg" alt="Instagram logo" /><span
+              ><img class="social-icon" src="../images/instagram-w.svg" alt="Instagram logo" /><span
                 class="social-text"
                 >Instagram</span
               ></a
@@ -77,7 +82,7 @@ class SidebarNoIndex extends HTMLElement {
           </li>
           <li>
             <a href= "mailto: info@domoarq.com?subject=Quiero%20hablar%20con%20un%20asesor">
-              <img class="social-icon" src="./images/envelope-open-w.svg" alt="Email logo" />
+              <img class="social-icon" src="../images/envelope-open-w.svg" alt="Email logo" />
               <span class="social-text">info@domoarq.com</span>
             </a>
           </li>

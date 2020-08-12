@@ -1,5 +1,12 @@
 //seccion premios
 #premios {
+  // .titulo-seccion {
+  //   padding-top: 1vh;
+  //   margin-bottom: 0;
+  // }
+  .premios-container {
+    justify-content: space-evenly;
+  }
   .content {
     display: flex;
     width: 100%;
@@ -7,15 +14,16 @@
     .miembro {
       display: flex;
       justify-content: space-around;
-      min-height: 300px;
-      max-height: 300px;
-      min-width: 300px;
-      max-width: 300px;
+      min-height: 240px;
+      max-height: 260px;
+      min-width: 240px;
+      max-width: 260px;
       border: 0.3px solid $color-bordes;
       padding: 0;
       margin: 1%;
 
       .container {
+
         .texto {
           padding-left: 9%;
         }
@@ -40,8 +48,7 @@
   }
 
   #modal-dialog {
-    margin-top: 5%;
-    max-width: 70% !important;
+    max-width: 55% !important;
 
     .modal-content {
       border-radius: 0;

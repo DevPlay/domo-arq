@@ -22,13 +22,19 @@
       text-decoration: none;
     }
   }
+  .menu-logo{
+    background-color: $color-blanco;
+    height: 15vh;
+      .logo {
+        padding: 25%;
+      }
+  }
 
   .menu-items {
     ul {
       list-style: none;
-      height: 70vh;
+      height: 55vh;
       margin: auto;
-      width: 100%;
       padding: 25%;
 
       li {

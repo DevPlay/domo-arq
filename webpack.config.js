@@ -23,6 +23,7 @@ const webpack = require('webpack');
 
 let targetServerConfiguration = serverConfiguration.internal;
 
+// eslint-disable-next-line func-names
 const config = function (env, args) {
   if (args.externalServer !== undefined && args.externalServer) {
     targetServerConfiguration = serverConfiguration.external;
@@ -134,8 +135,22 @@ const config = function (env, args) {
       new HtmlWebpackPlugin({
         inject: true,
         hash: false,
-        filename: 'detalleProyecto.html',
-        template: path.resolve(__dirname, 'src', 'detalleProyecto.html'),
+        filename: 'detalleDeProyectos/domoPerdriel.html',
+        template: path.resolve(__dirname, 'src', 'detalleDeProyectos/domoPerdriel.html'),
+        favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: 'detalleDeProyectos/domoMaux.html',
+        template: path.resolve(__dirname, 'src', 'detalleDeProyectos/domoMaux.html'),
+        favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
+      }),
+      new HtmlWebpackPlugin({
+        inject: true,
+        hash: false,
+        filename: 'detalleDeProyectos/domoPerdrielDos.html',
+        template: path.resolve(__dirname, 'src', 'detalleDeProyectos/domoPerdrielDos.html'),
         favicon: path.resolve(__dirname, 'src', 'images', 'favicon.ico'),
       }),
       new MiniCssExtractPlugin({

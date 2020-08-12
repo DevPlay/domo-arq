@@ -19,6 +19,9 @@
     padding-left: 35px;
     z-index: 99;
   }
+  .carousel-text {
+    font-size: 1rem !important;
+  }
   #estudio {
     .article_container {
       // flex-direction: row;
@@ -120,8 +123,8 @@
       z-index: 1;
       transform-origin: 4px 0px;
 
-      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
-        opacity 0.55s ease;
+      transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
     }
 
     .hamburguer-menu-trigger span:first-child {
@@ -238,7 +241,7 @@
 
     &:before,
     &:after {
-      content: "";
+      content: '';
       width: 50%;
       height: 2px;
       background: #fff;
@@ -287,6 +290,9 @@
   body {
     padding-left: 35px;
     z-index: 99;
+  }
+  .carousel-text {
+    font-size: 1rem !important;
   }
   #estudio {
     .article_container {

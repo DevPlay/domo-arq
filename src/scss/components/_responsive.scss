@@ -1,5 +1,6 @@
 // Media Queries
 @media screen and (max-width: 1200px) {
+
   .carousel-text {
     font-size: 1.5rem;
   }
@@ -19,9 +20,21 @@
     padding-left: 35px;
     z-index: 99;
   }
-  .carousel-text {
-    font-size: 1rem !important;
+
+  #caption_1, 
+  #caption_2,
+  #caption_3,
+  #caption_4 {
+    left: 25% !important;
+    bottom: 5%;
+    margin: auto !important;;
+    width: 100% !important;
+  
   }
+  .carousel-text{
+    width: 60% !important;
+  }
+
   #estudio {
     .article_container {
       // flex-direction: row;
@@ -292,7 +305,7 @@
     z-index: 99;
   }
   .carousel-text {
-    font-size: 1rem !important;
+    font-size: 1.5rem !important;
   }
   #estudio {
     .article_container {
@@ -314,3 +327,21 @@
     }
   }
 }
+
+// @media screen and (max-width: 1440px) {
+//   .carousel-caption {
+//     width: 34%;
+//   }
+//   #caption_2, #caption_3 {
+//     margin-left: 0 !important;
+//   }
+// }
+
+// @media screen and (max-width: 2560px) {
+//   .carousel-caption {
+//     width: 34%;
+//   }
+//   #caption_2, #caption_3 {
+//     margin-left: 0 !important;
+//   }
+// }

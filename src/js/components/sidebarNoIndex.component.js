@@ -49,7 +49,7 @@ class SidebarNoIndex extends HTMLElement {
       </div>
       <div class="d-flex align-items-center menu-logo">
         <div class="logo">
-          <img src="./images/logo-grande.jpeg" alt="logo Domo" />
+          <img src="./images/logo-grande.png" alt="logo Domo" />
         </div>
       </div>
       <div class="d-flex menu-items">

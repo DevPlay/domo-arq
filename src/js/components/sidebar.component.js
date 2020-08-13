@@ -12,7 +12,7 @@ class Sidebar extends HTMLElement {
         <ul class="hamburguer-menu">
         <div class="d-flex align-items-center menu-logo">
         <div class="logo">
-          <img src="./images/logo-grande.jpeg" alt="logo Domo" />
+          <img src="./images/logo-grande.png" alt="logo Domo" />
         </div>
       </div>
           <ul class="hamburguer-menu-items">
@@ -53,7 +53,7 @@ class Sidebar extends HTMLElement {
 
       <div class="d-flex align-items-center menu-logo">
         <div class="logo">
-          <img src="./images/logo-grande.jpeg" alt="logo Domo" />
+          <img src="./images/logo-grande.png" alt="logo Domo" />
         </div>
       </div>
       <div class="d-flex menu-items">

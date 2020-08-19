@@ -22,18 +22,18 @@
       text-decoration: none;
     }
   }
-  .menu-logo {
-    background-color: $color-blanco;
-    height: 15vh;
-    .logo {
-      padding: 25%;
-    }
-  }
+  // .menu-logo {
+  //   background-color: $color-blanco;
+  //   height: 15vh;
+  //   .logo {
+  //     padding: 25%;
+  //   }
+  // }
 
   .menu-items {
     ul {
       list-style: none;
-      height: 60vh;
+      height: 70vh;
       margin: auto;
       padding: 25%;
 
@@ -56,7 +56,7 @@
     color: $color-secondary-text;
     text-align: left;
     font-size: 1rem;
-    height: 25vh;
+    height: 30vh;
 
     ul {
       list-style: none;

@@ -11982,14 +11982,9 @@ main {
     color: #000; }
     .menu a:hover {
       text-decoration: none; }
-  .menu .menu-logo {
-    background-color: #fff;
-    height: 15vh; }
-    .menu .menu-logo .logo {
-      padding: 25%; }
   .menu .menu-items ul {
     list-style: none;
-    height: 60vh;
+    height: 70vh;
     margin: auto;
     padding: 25%; }
     .menu .menu-items ul li:focus, .menu .menu-items ul li:active {
@@ -12002,7 +11997,7 @@ main {
     color: #fff;
     text-align: left;
     font-size: 1rem;
-    height: 25vh; }
+    height: 30vh; }
     .menu .menu-social ul {
       list-style: none;
       margin: auto; }
